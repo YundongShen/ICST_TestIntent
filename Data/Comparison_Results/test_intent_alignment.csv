@@ -1,0 +1,211 @@
+framework,test_case,Qwen3.5-27B_Independent,Qwen3.5-27B_Combined,Qwen3.5-27B_Chain,DeepSeek-7B_Independent,Gemini-2.5-Flash_Independent,Gemini-3.1-Pro_Independent
+cucumber,Login_1,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cucumber,Login_2,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cucumber,Login_3,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cucumber,US06_1,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Partially Aligned,Fully Aligned
+cucumber,US06_2,Fully Aligned,Partially Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned
+cucumber,US10_1,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+cucumber,US10_2,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+cucumber,US13_1,Partially Aligned,Partially Aligned,Misaligned,Misaligned,Partially Aligned,Partially Aligned
+cucumber,US13_2,Fully Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+cucumber,boot,Fully Aligned,Misaligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+cucumber,curl_1,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+cucumber,curl_2,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+cucumber,curl_3,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+cucumber,demo_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cucumber,demo_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cucumber,main_1,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Partially Aligned,Partially Aligned
+cucumber,main_2,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Partially Aligned,Partially Aligned
+cucumber,main_3,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned
+cucumber,main_4,Partially Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+cypress,Amazon.cy_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+cypress,Amazon.cy_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cypress,Frames.cy_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cypress,Frames.cy_2,Partially Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Partially Aligned,Fully Aligned
+cypress,Frames.cy_3,Partially Aligned,Partially Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned
+cypress,Game.cy,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+cypress,kalkulator.cy_1,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned
+cypress,kalkulator.cy_2,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned
+cypress,kalkulator.cy_3,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cypress,nav.cy,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+cypress,spec.cy_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cypress,spec.cy_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+cypress,spec.cy_3,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+cypress,teste2e.cy_1,Fully Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+cypress,teste2e.cy_2,Fully Aligned,Misaligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+cypress,teste2e.cy_3,Fully Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+cypress,xhr.cy_1,Fully Aligned,Misaligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+cypress,xhr.cy_2,Fully Aligned,Misaligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+cypress,xhr.cy_3,Fully Aligned,Misaligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+jest_spec,App.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,App.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,cli.spec_1,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_spec,cli.spec_2,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_spec,cli.spec_3,Fully Aligned,Partially Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+jest_spec,cli.spec_4,Fully Aligned,Partially Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+jest_spec,cssCode.directive.spec,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_spec,grid.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,grid.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,opts.spec_1,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned,Partially Aligned,Fully Aligned
+jest_spec,opts.spec_2,Partially Aligned,Misaligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+jest_spec,opts.spec_3,Partially Aligned,Misaligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+jest_spec,opts.spec_4,Partially Aligned,Misaligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+jest_spec,opts.spec_5,Partially Aligned,Misaligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+jest_spec,opts.spec_6,Partially Aligned,Misaligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+jest_spec,opts.spec_7,Partially Aligned,Misaligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+jest_spec,player.spec,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_spec,server.spec_1_1,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,server.spec_1_2,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_spec,server.spec_1_3,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,utils.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,utils.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,utils.spec_3,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,utils.spec_4,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_spec,utils.spec_5,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+jest_test,SilderMenu.test_1,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,SilderMenu.test_2,Fully Aligned,Misaligned,Fully Aligned,Misaligned,Misaligned,Fully Aligned
+jest_test,SilderMenu.test_3,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,SilderMenu.test_4,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,SilderMenu.test_5,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,configurationeditor.test_1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,configurationeditor.test_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+jest_test,get_output.test_1,Fully Aligned,Fully Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+jest_test,get_output.test_2,Fully Aligned,Fully Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+jest_test,jsx.test_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+jest_test,jsx.test_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+jest_test,lyraexport.test,Fully Aligned,Misaligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,paths.test_1,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,paths.test_2,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,paths.test_3,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,paths.test_4,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,sample.test_3_1,Misaligned,Misaligned,Misaligned,Misaligned,Misaligned,Misaligned
+jest_test,sample.test_3_2,Fully Aligned,Misaligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,sample.test_3_3,Fully Aligned,Misaligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,sample.test_3_4,Fully Aligned,Misaligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,vgSpecEditor.test,Fully Aligned,Misaligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+jest_test,vlSpecEditor.test,Fully Aligned,Misaligned,Misaligned,Partially Aligned,Fully Aligned,Partially Aligned
+junit_spring,ContinentRepositoryTest,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+junit_spring,CountryResourceTest,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+junit_spring,DemoApplicationIntegrationTest,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+junit_spring,ESClientTest_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+junit_spring,ESClientTest_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+junit_spring,ESClientTest_3,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned
+junit_spring,ESClientTest_4,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+junit_spring,MapperTest_1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+junit_spring,MapperTest_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+junit_spring,SampleSmokeTest,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+junit_spring,TestMapperTest,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+junit_unit,AssertTest,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+junit_unit,ConcurrencyTest_1,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+junit_unit,ConcurrencyTest_2,Fully Aligned,Fully Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+junit_unit,EstadistiquesTest_1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+junit_unit,ExampleJMockTest,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+junit_unit,FirstTest_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+junit_unit,FirstTest_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+junit_unit,GraphTest,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+junit_unit,StubHandlerTest,Fully Aligned,Misaligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+junit_unit,UserServiceTest_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+junit_unit,UserServiceTest_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+k6,Auth,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+k6,delete,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Partially Aligned,Fully Aligned
+k6,nextload,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+k6,script,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+k6,simian,Fully Aligned,Partially Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+k6,soak,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+locust,locustfile,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+locust,locustfile_1,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+locust,locustfile_2,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+locust,locustfile_3,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+locust,locustfile_6,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+locust,locustfile_8,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+playwright,api.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,api.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,csp.spec_1,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+playwright,csp.spec_2,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+playwright,csp.spec_3,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+playwright,csp.spec_4,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+playwright,e2e.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+playwright,e2e.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,module.spec_1,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+playwright,module.spec_2,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+playwright,module.spec_3,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned,Fully Aligned
+playwright,module.spec_4,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+playwright,module.spec_5,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+playwright,module.spec_6,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Fully Aligned
+playwright,qa.spec_1,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+playwright,qa.spec_2,Fully Aligned,Partially Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+playwright,qa.spec_3,Fully Aligned,Partially Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+playwright,qa.spec_4,Fully Aligned,Partially Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+playwright,rss.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,rss.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,rss.spec_3,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,top.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,top.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,top.spec_3,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,umd.spec_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+playwright,umd.spec_2,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_api,REMOTE_FILE_test__1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_api,REMOTE_FILE_test__2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+pytest_api,REMOTE_FILE_test__3,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+pytest_api,test__11,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_api,test__2,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_api,test__3,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_api,test__6,Partially Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_api,test__9,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_api,unit_test_,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+pytest_unit,ABS_test__1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,ABS_test__2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,ABS_test__3,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,ADD_test__1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_unit,ADD_test__2,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_unit,ADD_test__3,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+pytest_unit,BUTTER_test_,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_unit,DET_test_,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_unit,LOG_test__1,Fully Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,LOG_test__2,Fully Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,LOG_test__3,Fully Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,POPULATE_test__1,Fully Aligned,Partially Aligned,Partially Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_unit,POPULATE_test__2,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Fully Aligned,Fully Aligned
+pytest_unit,POPULATE_test__3,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Fully Aligned,Fully Aligned
+pytest_unit,test__1,Fully Aligned,Partially Aligned,Partially Aligned,Misaligned,Fully Aligned,Fully Aligned
+pytest_unit,test__1_1,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,test__1_2,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,test__1_3,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,test__2,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_unit,test__3,Fully Aligned,Partially Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+pytest_unit,test__3_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,test__3_2,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+pytest_unit,test__5,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+rtl,A.test_1,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+rtl,A.test_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+rtl,A.test_3,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+rtl,Drawer.test,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+rtl,Row.test_1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+rtl,Row.test_2,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+rtl,Row.test_3,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+rtl,Row.test_4,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+rtl,basic.test,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+rtl,index.test,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned,Fully Aligned
+supertest,App.test_1,Fully Aligned,Fully Aligned,Misaligned,Partially Aligned,Fully Aligned,Fully Aligned
+supertest,App.test_2,Fully Aligned,Fully Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,api.test_1_1,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned
+supertest,api.test_1_2,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned,Partially Aligned
+supertest,api.test_1_3,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+supertest,api.test_1_4,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+supertest,api.test_1_5,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+supertest,api.test_1_6,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+supertest,api.test_1_7,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+supertest,api.test_1_8,Partially Aligned,Partially Aligned,Partially Aligned,Misaligned,Partially Aligned,Partially Aligned
+supertest,app.test_1,Fully Aligned,Partially Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,app.test_2,Fully Aligned,Partially Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,app.test_3,Partially Aligned,Partially Aligned,Misaligned,Misaligned,Partially Aligned,Partially Aligned
+supertest,auth.test,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+supertest,dog.test_1,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned,Fully Aligned
+supertest,dog.test_2,Fully Aligned,Partially Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,dog.test_3,Fully Aligned,Partially Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,dog.test_4,Fully Aligned,Partially Aligned,Misaligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,index.test_1,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,index.test_2,Fully Aligned,Partially Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,posts.test,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
+supertest,put.test_1,Fully Aligned,Fully Aligned,Fully Aligned,Partially Aligned,Fully Aligned,Fully Aligned
+supertest,put.test_2,Fully Aligned,Fully Aligned,Fully Aligned,Misaligned,Fully Aligned,Fully Aligned
