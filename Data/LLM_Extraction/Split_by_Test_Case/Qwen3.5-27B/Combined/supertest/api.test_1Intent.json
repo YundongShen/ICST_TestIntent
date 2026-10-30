@@ -1,0 +1,119 @@
+{
+  "test_case_id": "tc_api_test_1",
+  "source_file": "dataset/raw/supertest/api.test_1.js",
+  "framework": "supertest",
+  "extraction_timestamp": "2026-08-13T04:55:52.497458",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "api.test_1_1",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "send GET request to retrieve all books",
+        "verify response status code is 200",
+        "verify response body is an array"
+      ]
+    },
+    {
+      "test_case": "api.test_1_2",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "send GET request to retrieve specific book by ID",
+        "verify response status code is 200",
+        "verify response body id matches request id"
+      ]
+    },
+    {
+      "test_case": "api.test_1_3",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "send GET request to retrieve book with invalid ID",
+        "verify response status code is 404"
+      ]
+    },
+    {
+      "test_case": "api.test_1_4",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "prepare new book data object",
+        "send POST request to create new book",
+        "verify response status code is 201",
+        "verify response body title matches sent data"
+      ]
+    },
+    {
+      "test_case": "api.test_1_5",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "send PUT request to update existing book",
+        "verify response status code is 200",
+        "verify response body title matches update data"
+      ]
+    },
+    {
+      "test_case": "api.test_1_6",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "send PUT request to update non-existent book",
+        "verify response status code is 404"
+      ]
+    },
+    {
+      "test_case": "api.test_1_7",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "send DELETE request to delete existing book",
+        "verify response status code is 200"
+      ]
+    },
+    {
+      "test_case": "api.test_1_8",
+      "objects": [
+        "Books API"
+      ],
+      "goals": [
+        "verify CRUD operations and error handling for book resources"
+      ],
+      "activities": [
+        "send DELETE request to delete non-existent book",
+        "verify response status code is 404"
+      ]
+    }
+  ]
+}

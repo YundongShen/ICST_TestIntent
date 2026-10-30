@@ -1,0 +1,101 @@
+{
+  "test_case_id": "tc_opts_spec",
+  "source_file": "dataset/raw/jest_spec/opts.spec.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-05-13T14:42:01.693325",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "opts.spec_1",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "opts.spec_2",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "opts.spec_3",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "opts.spec_4",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "opts.spec_5",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "opts.spec_6",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "opts.spec_7",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    }
+  ]
+}

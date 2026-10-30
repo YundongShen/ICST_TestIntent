@@ -1,0 +1,37 @@
+{
+  "test_case_id": "tc_US13",
+  "source_file": "dataset/raw/cucumber/US13.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-05-13T14:28:36.491112",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "US13_1",
+      "objects": [
+        "Navegador de cultivos"
+      ],
+      "goals": [
+        "Verificar la bsqueda de plantas y la visualizacin de detalles"
+      ],
+      "activities": [
+        "entrar al navegador de cultivos",
+        "escribir el nombre de la planta",
+        "verificar la lista de plantas coincidentes"
+      ]
+    },
+    {
+      "test_case": "US13_2",
+      "objects": [
+        "Navegador de cultivos"
+      ],
+      "goals": [
+        "Verificar la bsqueda de plantas y la visualizacin de detalles"
+      ],
+      "activities": [
+        "hacer click en la planta deseada",
+        "verificar la pgina detallada de la planta"
+      ]
+    }
+  ]
+}

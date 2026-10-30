@@ -1,0 +1,48 @@
+{
+  "test_case_id": "tc_module_spec",
+  "source_file": "dataset/raw/playwright/module.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-08-10T07:57:38.216448",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "module.spec_1",
+      "objects": [],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "module.spec_2",
+      "objects": [],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "module.spec_3",
+      "objects": [],
+      "goals": [
+        "test 'shouldstylealertmessages' passes when alert color changes from initial to modified state"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "module.spec_4",
+      "objects": [],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "module.spec_5",
+      "objects": [],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "module.spec_6",
+      "objects": [],
+      "goals": [],
+      "activities": []
+    }
+  ]
+}

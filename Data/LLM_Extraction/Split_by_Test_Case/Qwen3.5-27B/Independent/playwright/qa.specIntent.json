@@ -1,0 +1,59 @@
+{
+  "test_case_id": "tc_qa_spec",
+  "source_file": "dataset/raw/playwright/qa.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-02T01:39:31.864450",
+  "extract_mode": "independent",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "qa.spec_1",
+      "objects": [
+        "page",
+        "body"
+      ],
+      "goals": [
+        "Verify QA View page navigation and rendering"
+      ],
+      "activities": [
+        "..."
+      ]
+    },
+    {
+      "test_case": "qa.spec_2",
+      "objects": [
+        "metrics"
+      ],
+      "goals": [
+        "Verify presence of QA metrics, results, and coverage elements"
+      ],
+      "activities": [
+        "..."
+      ]
+    },
+    {
+      "test_case": "qa.spec_3",
+      "objects": [
+        "results"
+      ],
+      "goals": [
+        "Verify presence of QA metrics, results, and coverage elements"
+      ],
+      "activities": [
+        "..."
+      ]
+    },
+    {
+      "test_case": "qa.spec_4",
+      "objects": [
+        "charts"
+      ],
+      "goals": [
+        "Verify presence of QA metrics, results, and coverage elements"
+      ],
+      "activities": [
+        "..."
+      ]
+    }
+  ]
+}

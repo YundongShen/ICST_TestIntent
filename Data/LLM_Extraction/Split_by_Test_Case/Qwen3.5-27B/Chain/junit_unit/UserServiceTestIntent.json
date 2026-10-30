@@ -1,0 +1,38 @@
+{
+  "test_case_id": "tc_UserServiceTest",
+  "source_file": "dataset/raw/junit_unit/UserServiceTest.java",
+  "framework": "junit_unit",
+  "extraction_timestamp": "2026-05-13T19:03:12.787727",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "UserServiceTest_1",
+      "objects": [
+        "UserService"
+      ],
+      "goals": [
+        "Verify that validateAge returns true for valid positive age inputs"
+      ],
+      "activities": [
+        "Initialize UserService instance with mocked dependencies",
+        "Execute validateAge method with input value 18",
+        "Assert validateAge result equals true"
+      ]
+    },
+    {
+      "test_case": "UserServiceTest_2",
+      "objects": [
+        "UserService"
+      ],
+      "goals": [
+        "Verify that createUser invokes request.execute with the provided user object"
+      ],
+      "activities": [
+        "Initialize UserService instance with mocked dependencies",
+        "Execute createUser method with user object",
+        "Verify request.execute method is called with user and userService arguments"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "test_case_id": "tc_US10",
+  "source_file": "dataset/raw/cucumber/US10.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-08-11T07:34:33.895943",
+  "extract_mode": "independent",
+  "model": "gemini-3.1-pro-preview",
+  "test_cases": [
+    {
+      "test_case": "US10_1",
+      "objects": [
+        "gasto",
+        "cultivo",
+        "total invertido"
+      ],
+      "goals": [
+        "Verify the registration of an individual expense to a specific crop and its addition to the total invested amount."
+      ],
+      "activities": [
+        "Comprar fertilizante",
+        "Registrar la compra de fertilizante por S/ 150 en el cultivo de papa",
+        "Verificar que el gasto se asocia al cultivo y se suma al total invertido"
+      ]
+    },
+    {
+      "test_case": "US10_2",
+      "objects": [
+        "gasto",
+        "cultivo",
+        "total invertido",
+        "panel financiero",
+        "resumen de gastos"
+      ],
+      "goals": [
+        "Verify the display of an accumulated expenses report for a selected crop, including expense details and total amount."
+      ],
+      "activities": [
+        "Seleccionar un cultivo",
+        "Acceder al panel financiero",
+        "Verificar que se visualiza un resumen de todos los gastos realizados con fechas, conceptos y montos"
+      ]
+    }
+  ]
+}

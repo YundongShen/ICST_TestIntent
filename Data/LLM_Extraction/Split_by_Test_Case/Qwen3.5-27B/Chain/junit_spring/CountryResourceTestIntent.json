@@ -1,0 +1,23 @@
+{
+  "test_case_id": "tc_CountryResourceTest",
+  "source_file": "dataset/raw/junit_spring/CountryResourceTest.java",
+  "framework": "junit_spring",
+  "extraction_timestamp": "2026-05-13T18:38:46.978107",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "CountryResourceTest",
+      "objects": [
+        "response"
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "Send HTTP GET request to /countries endpoint",
+        "Verify response contains 'Brasil' and 'Brazil'"
+      ]
+    }
+  ]
+}

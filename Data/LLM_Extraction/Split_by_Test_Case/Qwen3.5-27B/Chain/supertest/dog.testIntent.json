@@ -1,0 +1,78 @@
+{
+  "test_case_id": "tc_dog_test",
+  "source_file": "dataset/raw/supertest/dog.test.js",
+  "framework": "supertest",
+  "extraction_timestamp": "2026-05-13T20:31:09.889485",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "dog.test_1",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "string1",
+        "string2"
+      ],
+      "activities": [
+        "Initialize test database environment",
+        "Create test user with hashed password",
+        "Send POST request to /users/connection with valid credentials",
+        "Verify successful login response",
+        "Clean up test database environment"
+      ]
+    },
+    {
+      "test_case": "dog.test_2",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "string1",
+        "string2"
+      ],
+      "activities": [
+        "Initialize test database environment",
+        "Create test user with hashed password",
+        "Send POST request to /users/connection with missing email",
+        "Verify error response for missing email",
+        "Clean up test database environment"
+      ]
+    },
+    {
+      "test_case": "dog.test_3",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "string1",
+        "string2"
+      ],
+      "activities": [
+        "Initialize test database environment",
+        "Create test user with hashed password",
+        "Send POST request to /users/connection with incorrect password",
+        "Verify error response for incorrect password",
+        "Clean up test database environment"
+      ]
+    },
+    {
+      "test_case": "dog.test_4",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "string1",
+        "string2"
+      ],
+      "activities": [
+        "Initialize test database environment",
+        "Create test user with hashed password",
+        "Send POST request to /users/connection with non-existent user",
+        "Verify error response for non-existent user",
+        "Clean up test database environment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "test_case_id": "tc_main",
+  "source_file": "dataset/raw/cucumber/main.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-08-10T07:48:08.634180",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "main_1",
+      "objects": [
+        "wood_processing_machine",
+        "user",
+        "indicator_light"
+      ],
+      "goals": [
+        "verifythatthewoodprocessingmachineturnsonwhenthepowerbuttonisset"
+      ],
+      "activities": [
+        "start_wood_processing_machine"
+      ]
+    },
+    {
+      "test_case": "main_2",
+      "objects": [
+        "wood_processing_machine",
+        "user",
+        "cutting_thickness"
+      ],
+      "goals": [
+        "verifythatthewoodprocessingmachinestopshowingthedefaultthicknessandreplacingitwiththesetthickness"
+      ],
+      "activities": [
+        "set_cutting_thickness"
+      ]
+    },
+    {
+      "test_case": "main_3",
+      "objects": [
+        "wood_processing_machine",
+        "user",
+        "wood",
+        "processing_mode",
+        "wood_piece"
+      ],
+      "goals": [
+        "verifythatthemachinecandetectthewoodwhenawoodpieceisfixedintothefeeder"
+      ],
+      "activities": [
+        "load_wood_for_processing"
+      ]
+    },
+    {
+      "test_case": "main_4",
+      "objects": [
+        "wood_processing_machine",
+        "user",
+        "wood",
+        "cutting_thickness",
+        "wood_plank",
+        "specified_thickness",
+        "start_processing_button"
+      ],
+      "goals": [
+        "verifythatthemachineisabletocorrectlyprocessthewoodandoutputitatthespecifiedthickness"
+      ],
+      "activities": [
+        "process_wood_plank"
+      ]
+    }
+  ]
+}

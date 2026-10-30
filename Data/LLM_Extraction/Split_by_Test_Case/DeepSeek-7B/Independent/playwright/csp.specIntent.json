@@ -1,0 +1,50 @@
+{
+  "test_case_id": "tc_csp_spec",
+  "source_file": "dataset/raw/playwright/csp.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-08-10T07:55:50.481847",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "csp.spec_1",
+      "objects": [],
+      "goals": [
+        "test 'serverreturnsstrictCSPheader' should return a non-null response"
+      ],
+      "activities": [
+        "test 'serverreturnsstrictCSPheader'"
+      ]
+    },
+    {
+      "test_case": "csp.spec_2",
+      "objects": [],
+      "goals": [
+        "test 'serverreturnsadditionalsecurityheaders' should set various security headers"
+      ],
+      "activities": [
+        "test 'serverreturnsadditionalsecurityheaders'"
+      ]
+    },
+    {
+      "test_case": "csp.spec_3",
+      "objects": [],
+      "goals": [
+        "test 'pageloadswithoutCSPviolations' should load the page without CSP violations"
+      ],
+      "activities": [
+        "test 'pageloadswithoutCSPviolations'"
+      ]
+    },
+    {
+      "test_case": "csp.spec_4",
+      "objects": [],
+      "goals": [
+        "test 'noinlinestylesinservedHTML' should not have inline styles in the served HTML"
+      ],
+      "activities": [
+        "test 'noinlinestylesinservedHTML'"
+      ]
+    }
+  ]
+}

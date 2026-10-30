@@ -1,0 +1,46 @@
+{
+  "test_case_id": "tc_A_test",
+  "source_file": "dataset/raw/rtl/A.test.tsx",
+  "framework": "rtl",
+  "extraction_timestamp": "2026-05-13T20:19:00.975810",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "A.test_1",
+      "objects": [
+        "A"
+      ],
+      "goals": [
+        "Verify component A renders content correctly"
+      ],
+      "activities": [
+        "string"
+      ]
+    },
+    {
+      "test_case": "A.test_2",
+      "objects": [
+        "A"
+      ],
+      "goals": [
+        "Verify component A handles click events and missing href warnings"
+      ],
+      "activities": [
+        "string"
+      ]
+    },
+    {
+      "test_case": "A.test_3",
+      "objects": [
+        "A"
+      ],
+      "goals": [
+        "Verify component A handles click events and missing href warnings"
+      ],
+      "activities": [
+        "string"
+      ]
+    }
+  ]
+}

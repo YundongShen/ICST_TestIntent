@@ -1,0 +1,75 @@
+{
+  "test_case_id": "tc_utils_spec",
+  "source_file": "dataset/raw/jest_spec/utils.spec.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-05-13T14:45:23.758433",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "utils.spec_1",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "verify Levenshtein distance calculation accuracy"
+      ],
+      "activities": [
+        "invoke levenstein with identical strings",
+        "assert result equals zero"
+      ]
+    },
+    {
+      "test_case": "utils.spec_2",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "verify Levenshtein distance calculation accuracy"
+      ],
+      "activities": [
+        "invoke levenstein with different strings",
+        "assert result equals three"
+      ]
+    },
+    {
+      "test_case": "utils.spec_3",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "verify Levenshtein distance calculation accuracy"
+      ],
+      "activities": [
+        "invoke levenstein with similar strings",
+        "assert result equals one"
+      ]
+    },
+    {
+      "test_case": "utils.spec_4",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "verify Levenshtein distance calculation accuracy"
+      ],
+      "activities": [
+        "invoke levenstein with gmail.com and gnaul.com",
+        "assert result equals two"
+      ]
+    },
+    {
+      "test_case": "utils.spec_5",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "verify Levenshtein distance calculation accuracy"
+      ],
+      "activities": [
+        "invoke levenstein with mail.com and gnaul.com",
+        "assert result equals three"
+      ]
+    }
+  ]
+}

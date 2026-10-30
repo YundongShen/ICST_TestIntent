@@ -1,0 +1,59 @@
+{
+  "test_case_id": "tc_sample_test_3",
+  "source_file": "dataset/raw/jest_test/sample.test_3.js",
+  "framework": "jest_test",
+  "extraction_timestamp": "2026-05-01T18:14:03.910127",
+  "extract_mode": "independent",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "sample.test_3_1",
+      "objects": [
+        "config"
+      ],
+      "goals": [],
+      "activities": [
+        "Load and assign authentication configuration to global scope",
+        "Verify configuration object is defined"
+      ]
+    },
+    {
+      "test_case": "sample.test_3_2",
+      "objects": [
+        "config"
+      ],
+      "goals": [
+        "Verify configuration object sanitization excludes sensitive credentials"
+      ],
+      "activities": [
+        "Verify client ID does not match GUID pattern"
+      ]
+    },
+    {
+      "test_case": "sample.test_3_3",
+      "objects": [
+        "config"
+      ],
+      "goals": [
+        "Verify configuration object sanitization excludes sensitive credentials"
+      ],
+      "activities": [
+        "Verify tenant ID does not match GUID pattern"
+      ]
+    },
+    {
+      "test_case": "sample.test_3_4",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify API endpoint protection returns 401 for unauthorized access"
+      ],
+      "activities": [
+        "Set Node environment variable to test mode",
+        "Send GET request to /api endpoint",
+        "Verify response status code is 401"
+      ]
+    }
+  ]
+}

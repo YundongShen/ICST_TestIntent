@@ -1,0 +1,37 @@
+{
+  "test_case_id": "tc_kalkulator_cy",
+  "source_file": "dataset/raw/cypress/kalkulator.cy.js",
+  "framework": "cypress",
+  "extraction_timestamp": "2026-08-10T07:48:57.986925",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "kalkulator.cy_1",
+      "objects": [],
+      "goals": [
+        "testkalkulatora",
+        "verifythatadding2+3=5"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "kalkulator.cy_2",
+      "objects": [],
+      "goals": [
+        "testkalkulatora",
+        "verifythatmultiplication6*7=42"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "kalkulator.cy_3",
+      "objects": [],
+      "goals": [
+        "testkalkulatora",
+        "verifyclearingthescreen"
+      ],
+      "activities": []
+    }
+  ]
+}

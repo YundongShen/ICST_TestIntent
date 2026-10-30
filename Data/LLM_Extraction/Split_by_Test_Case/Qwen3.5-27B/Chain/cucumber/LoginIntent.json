@@ -1,0 +1,62 @@
+{
+  "test_case_id": "tc_Login",
+  "source_file": "dataset/raw/cucumber/Login.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-05-13T16:38:45.858104",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "Login_1",
+      "objects": [
+        "Login Page",
+        "Profile Page",
+        "Username Field",
+        "Password Field",
+        "Login Button"
+      ],
+      "goals": [
+        "Verify the login process correctly handles valid and invalid credentials"
+      ],
+      "activities": [
+        "Navigate to the Login Page",
+        "Enter valid username and password",
+        "Click the Login Button",
+        "Verify redirection to Profile Page and welcome message"
+      ]
+    },
+    {
+      "test_case": "Login_2",
+      "objects": [
+        "Login Page",
+        "Username Field",
+        "Password Field",
+        "Login Button"
+      ],
+      "goals": [
+        "Verify the login process correctly handles valid and invalid credentials"
+      ],
+      "activities": [
+        "Navigate to the Login Page",
+        "Enter username and invalid password",
+        "Click the Login Button",
+        "Verify invalid credentials error message"
+      ]
+    },
+    {
+      "test_case": "Login_3",
+      "objects": [
+        "Profile Page",
+        "User Authentication State"
+      ],
+      "goals": [
+        "Verify the system restricts access to protected pages based on authentication status"
+      ],
+      "activities": [
+        "Ensure user is not logged in",
+        "Navigate to the Profile Page",
+        "Verify access restriction message"
+      ]
+    }
+  ]
+}

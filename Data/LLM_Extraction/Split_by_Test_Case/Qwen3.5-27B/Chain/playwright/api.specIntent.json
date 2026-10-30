@@ -1,0 +1,32 @@
+{
+  "test_case_id": "tc_api_spec",
+  "source_file": "dataset/raw/playwright/api.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T19:30:53.923178",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "api.spec_1",
+      "objects": [],
+      "goals": [
+        "Verify application launches and displays correct page title"
+      ],
+      "activities": [
+        "Verify application page title is 'Heroic Games Launcher'"
+      ]
+    },
+    {
+      "test_case": "api.spec_2",
+      "objects": [],
+      "goals": [
+        "Verify integrated backend components meet minimum version requirements"
+      ],
+      "activities": [
+        "Verify heroic version meets minimum requirement",
+        "Verify legendary version meets minimum requirement",
+        "Verify gogdl version meets minimum requirement"
+      ]
+    }
+  ]
+}

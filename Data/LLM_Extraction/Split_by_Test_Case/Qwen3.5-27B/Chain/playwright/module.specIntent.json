@@ -1,0 +1,84 @@
+{
+  "test_case_id": "tc_module_spec",
+  "source_file": "dataset/raw/playwright/module.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T19:36:41.052545",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "module.spec_1",
+      "objects": [
+        "body"
+      ],
+      "goals": [
+        "Verify page content visibility transitions during initialization"
+      ],
+      "activities": [
+        "string1"
+      ]
+    },
+    {
+      "test_case": "module.spec_2",
+      "objects": [
+        "body"
+      ],
+      "goals": [
+        "Verify page content visibility transitions during initialization"
+      ],
+      "activities": [
+        "string1"
+      ]
+    },
+    {
+      "test_case": "module.spec_3",
+      "objects": [
+        "alert"
+      ],
+      "goals": [
+        "Verify Bootstrap component styling and modal interaction functionality"
+      ],
+      "activities": [
+        "string2"
+      ]
+    },
+    {
+      "test_case": "module.spec_4",
+      "objects": [
+        "modal"
+      ],
+      "goals": [
+        "Verify Bootstrap component styling and modal interaction functionality"
+      ],
+      "activities": [
+        "string2"
+      ]
+    },
+    {
+      "test_case": "module.spec_5",
+      "objects": [
+        "modal",
+        "button"
+      ],
+      "goals": [
+        "Verify Bootstrap component styling and modal interaction functionality"
+      ],
+      "activities": [
+        "string2"
+      ]
+    },
+    {
+      "test_case": "module.spec_6",
+      "objects": [
+        "modal",
+        "button"
+      ],
+      "goals": [
+        "Verify Bootstrap component styling and modal interaction functionality"
+      ],
+      "activities": [
+        "string2"
+      ]
+    }
+  ]
+}

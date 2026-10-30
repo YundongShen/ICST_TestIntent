@@ -1,0 +1,72 @@
+{
+  "test_case_id": "tc_rss_spec",
+  "source_file": "dataset/raw/playwright/rss.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-08-10T07:59:58.388388",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "rss.spec_1",
+      "objects": [
+        "page",
+        "playwright",
+        "playwright/test",
+        "/",
+        "RSS",
+        "role",
+        "link",
+        "expect",
+        "test"
+      ],
+      "goals": [],
+      "activities": [
+        "navigate_to_website",
+        "find_link_by_role_and_name",
+        "validate_feed_exists"
+      ]
+    },
+    {
+      "test_case": "rss.spec_2",
+      "objects": [
+        "page",
+        "page.context",
+        "playwright",
+        "playwright/test",
+        "/",
+        "/rss.xml",
+        "RSS",
+        "link",
+        "waitForEvent",
+        "page.context.waitForEvent",
+        "pages",
+        "toHaveURL",
+        "expect",
+        "test"
+      ],
+      "goals": [],
+      "activities": [
+        "navigate_to_website",
+        "open_link_in_new_tab"
+      ]
+    },
+    {
+      "test_case": "rss.spec_3",
+      "objects": [
+        "XMLValidator",
+        "page",
+        "fast-xml-parser",
+        "playwright",
+        "playwright/test",
+        "/rss.xml",
+        "expect",
+        "test"
+      ],
+      "goals": [],
+      "activities": [
+        "validate_feed_content_is_valid_xml",
+        "validate_feed_content_is_valid"
+      ]
+    }
+  ]
+}

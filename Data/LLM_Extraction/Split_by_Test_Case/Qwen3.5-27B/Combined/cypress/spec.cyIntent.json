@@ -1,0 +1,56 @@
+{
+  "test_case_id": "tc_spec_cy",
+  "source_file": "dataset/raw/cypress/spec.cy.js",
+  "framework": "cypress",
+  "extraction_timestamp": "2026-05-13T14:38:46.391510",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "spec.cy_1",
+      "objects": [
+        "Login Page"
+      ],
+      "goals": [
+        "Verify login success, failure, and field validation"
+      ],
+      "activities": [
+        "Visit login page",
+        "Enter valid username",
+        "Enter valid password",
+        "Click submit button",
+        "Verify success message"
+      ]
+    },
+    {
+      "test_case": "spec.cy_2",
+      "objects": [
+        "Login Page"
+      ],
+      "goals": [
+        "Verify login success, failure, and field validation"
+      ],
+      "activities": [
+        "Visit login page",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click submit button",
+        "Verify error message"
+      ]
+    },
+    {
+      "test_case": "spec.cy_3",
+      "objects": [
+        "Login Page"
+      ],
+      "goals": [
+        "Verify login success, failure, and field validation"
+      ],
+      "activities": [
+        "Visit login page",
+        "Click submit button without input",
+        "Verify validation error message"
+      ]
+    }
+  ]
+}

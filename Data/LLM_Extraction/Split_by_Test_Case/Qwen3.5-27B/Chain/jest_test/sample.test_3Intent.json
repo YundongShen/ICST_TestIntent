@@ -1,0 +1,56 @@
+{
+  "test_case_id": "tc_sample_test_3",
+  "source_file": "dataset/raw/jest_test/sample.test_3.js",
+  "framework": "jest_test",
+  "extraction_timestamp": "2026-05-13T18:21:22.608671",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "sample.test_3_1",
+      "objects": [
+        "config"
+      ],
+      "goals": [],
+      "activities": [
+        "Load authentication configuration globally",
+        "Verify configuration object is defined"
+      ]
+    },
+    {
+      "test_case": "sample.test_3_2",
+      "objects": [
+        "config"
+      ],
+      "goals": [
+        "string1"
+      ],
+      "activities": [
+        "Validate credentials sanitization against GUID pattern"
+      ]
+    },
+    {
+      "test_case": "sample.test_3_3",
+      "objects": [
+        "config"
+      ],
+      "goals": [
+        "string2"
+      ],
+      "activities": [
+        "Validate credentials sanitization against GUID pattern"
+      ]
+    },
+    {
+      "test_case": "sample.test_3_4",
+      "objects": [
+        "app"
+      ],
+      "goals": [],
+      "activities": [
+        "Set environment variable to test mode",
+        "Verify API endpoint returns 401 status"
+      ]
+    }
+  ]
+}

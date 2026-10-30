@@ -1,0 +1,61 @@
+{
+  "test_case_id": "tc_ESClientTest",
+  "source_file": "dataset/raw/junit_spring/ESClientTest.java",
+  "framework": "junit_spring",
+  "extraction_timestamp": "2026-08-11T07:47:01.022516",
+  "extract_mode": "independent",
+  "model": "gemini-3.1-pro-preview",
+  "test_cases": [
+    {
+      "test_case": "ESClientTest_1",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify that QueryDAO can successfully perform core Elasticsearch operations including indexing, searching (match-all and wildcard), and deleting documents"
+      ],
+      "activities": [
+        "Send an index request with the test document and assert the result is not null"
+      ]
+    },
+    {
+      "test_case": "ESClientTest_2",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify that QueryDAO can successfully perform core Elasticsearch operations including indexing, searching (match-all and wildcard), and deleting documents"
+      ],
+      "activities": [
+        "Execute a match-all query and assert the result is not empty"
+      ]
+    },
+    {
+      "test_case": "ESClientTest_3",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify that QueryDAO can successfully perform core Elasticsearch operations including indexing, searching (match-all and wildcard), and deleting documents"
+      ],
+      "activities": [
+        "Execute a wildcard query with the term 'akd' and assert the result is not empty"
+      ]
+    },
+    {
+      "test_case": "ESClientTest_4",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify that QueryDAO can successfully perform core Elasticsearch operations including indexing, searching (match-all and wildcard), and deleting documents"
+      ],
+      "activities": [
+        "Retrieve all documents using a match-all query",
+        "Delete each retrieved document by its ID",
+        "Send a refresh request",
+        "Execute a match-all query and assert the result is empty"
+      ]
+    }
+  ]
+}

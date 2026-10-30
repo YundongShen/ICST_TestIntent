@@ -1,0 +1,50 @@
+{
+  "test_case_id": "tc_paths_test",
+  "source_file": "dataset/raw/jest_test/paths.test.js",
+  "framework": "jest_test",
+  "extraction_timestamp": "2026-08-10T07:50:50.840285",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "paths.test_1",
+      "objects": [
+        "treeviewString"
+      ],
+      "goals": [
+        "testthattreeviewStringreturnsastring"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "paths.test_2",
+      "objects": [
+        "fileviewString"
+      ],
+      "goals": [
+        "testthatfileviewStringreturnsastring"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "paths.test_3",
+      "objects": [
+        "pullTreeviewString"
+      ],
+      "goals": [
+        "testthatpullTreeviewStringreturnsastring"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "paths.test_4",
+      "objects": [
+        "pullFileviewString"
+      ],
+      "goals": [
+        "testthatpullFileviewStringreturnsastring"
+      ],
+      "activities": []
+    }
+  ]
+}

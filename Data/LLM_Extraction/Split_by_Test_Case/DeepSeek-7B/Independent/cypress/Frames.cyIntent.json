@@ -1,0 +1,58 @@
+{
+  "test_case_id": "tc_Frames_cy",
+  "source_file": "dataset/raw/cypress/Frames.cy.js",
+  "framework": "cypress",
+  "extraction_timestamp": "2026-08-10T07:48:52.109540",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "Frames.cy_1",
+      "objects": [
+        "iframe",
+        "cy.get('#mce_0_ifr')"
+      ],
+      "goals": [
+        "verifythattheiframeisvisibleandaccessible",
+        "verifythatthetypedtextcanbeenteredintheiframesbodyandbolded"
+      ],
+      "activities": [
+        "visitUrl",
+        "locateIframe",
+        "assertVisibility",
+        "typeTextInIframe",
+        "clickBoldButton"
+      ]
+    },
+    {
+      "test_case": "Frames.cy_2",
+      "objects": [
+        "iframe"
+      ],
+      "goals": [
+        "verifythatthetypedtextcanbeenteredintheiframesbodyandbolded"
+      ],
+      "activities": [
+        "visitUrl",
+        "locateIframe",
+        "typeTextInIframe",
+        "clickBoldButton"
+      ]
+    },
+    {
+      "test_case": "Frames.cy_3",
+      "objects": [
+        "iframe"
+      ],
+      "goals": [
+        "verifythatthetypedtextcanbeenteredintheiframesbodyandbolded"
+      ],
+      "activities": [
+        "visitUrl",
+        "locateIframe",
+        "typeTextInIframe",
+        "clickBoldButton"
+      ]
+    }
+  ]
+}

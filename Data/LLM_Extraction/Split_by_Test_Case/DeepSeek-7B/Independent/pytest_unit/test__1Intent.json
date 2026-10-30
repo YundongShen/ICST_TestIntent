@@ -1,0 +1,55 @@
+{
+  "test_case_id": "tc_test__1",
+  "source_file": "dataset/raw/pytest_unit/test__1.py",
+  "framework": "pytest_unit",
+  "extraction_timestamp": "2026-08-10T07:55:56.736197",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "test__1_1",
+      "objects": [
+        "myCode",
+        "myCode.BASE_URL",
+        "myCode.build_url"
+      ],
+      "goals": [
+        "verifythatthebuild_urlmethodbuildsamarkedURLwiththecorrectminPriceandmaxPriceparameters"
+      ],
+      "activities": [
+        "test_build_url",
+        "myCode.build_url",
+        "mockdemo.myCode.BASE_URL.return_value"
+      ]
+    },
+    {
+      "test_case": "test__1_2",
+      "objects": [
+        "myCode",
+        "myCode.get_meaning_of_life"
+      ],
+      "goals": [
+        "verifythattheget_meaning_of_lifemethodcallsthecorrectfunctiontocalculate_meaning_of_life"
+      ],
+      "activities": [
+        "mockdemo.myCode.calculate_meaning_of_life.return_value",
+        "myCode.get_meaning_of_life"
+      ]
+    },
+    {
+      "test_case": "test__1_3",
+      "objects": [
+        "myCode",
+        "myCode.DataLoader",
+        "myCode.get_product"
+      ],
+      "goals": [
+        "verifythattheget_productmethodloadsaproductwiththecorrectwibbleattribute"
+      ],
+      "activities": [
+        "mockdemo.myCode.DataLoader.load_product.return_value",
+        "myCode.get_product"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "test_case_id": "tc_top_spec",
+  "source_file": "dataset/raw/playwright/top.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-08-10T07:54:09.202806",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "top.spec_1",
+      "objects": [
+        "test",
+        "page",
+        "awaitexpect"
+      ],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "top.spec_2",
+      "objects": [
+        "test",
+        "page",
+        "awaitexpect"
+      ],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "top.spec_3",
+      "objects": [
+        "test",
+        "page",
+        "awaitexpect",
+        "items",
+        "first",
+        "firstItemId",
+        "searchText"
+      ],
+      "goals": [],
+      "activities": []
+    }
+  ]
+}

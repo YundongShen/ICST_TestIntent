@@ -1,0 +1,56 @@
+{
+  "test_case_id": "tc_curl",
+  "source_file": "dataset/raw/cucumber/curl.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-05-13T14:27:42.046537",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "curl_1",
+      "objects": [
+        "gauntlt command execution"
+      ],
+      "goals": [
+        "verify gauntlt executes attack files and reports correct pass status"
+      ],
+      "activities": [
+        "configure curl attack",
+        "copy attack files from examples folder",
+        "verify attack files exist",
+        "run gauntlt with simple.attack",
+        "verify pass output for simple attack"
+      ]
+    },
+    {
+      "test_case": "curl_2",
+      "objects": [
+        "gauntlt command execution"
+      ],
+      "goals": [
+        "verify gauntlt executes attack files and reports correct pass status"
+      ],
+      "activities": [
+        "configure curl attack",
+        "verify attack files exist",
+        "run gauntlt with cookies.attack",
+        "verify pass output for cookies attack"
+      ]
+    },
+    {
+      "test_case": "curl_3",
+      "objects": [
+        "gauntlt command execution"
+      ],
+      "goals": [
+        "verify gauntlt executes attack files and reports correct pass status"
+      ],
+      "activities": [
+        "configure curl attack",
+        "verify attack files exist",
+        "run gauntlt with verbs.attack",
+        "verify pass output for verbs attack"
+      ]
+    }
+  ]
+}

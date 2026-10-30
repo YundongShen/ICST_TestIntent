@@ -1,0 +1,64 @@
+{
+  "test_case_id": "tc_jsx_test",
+  "source_file": "dataset/raw/jest_test/jsx.test.js",
+  "framework": "jest_test",
+  "extraction_timestamp": "2026-08-10T07:50:55.222992",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "jsx.test_1",
+      "objects": [
+        "nano",
+        "create",
+        "addonRule",
+        "addonCache",
+        "addonJsx",
+        "jsx"
+      ],
+      "goals": [],
+      "activities": [
+        "createNano",
+        "addRule",
+        "addCache",
+        "addJsx",
+        "nano.jsx",
+        "create",
+        "expect",
+        "typeof",
+        "var",
+        "nano"
+      ]
+    },
+    {
+      "test_case": "jsx.test_2",
+      "objects": [
+        "nano",
+        "create",
+        "addonRule",
+        "addonCache",
+        "addonJsx",
+        "jsx",
+        "button",
+        "color"
+      ],
+      "goals": [],
+      "activities": [
+        "createNano",
+        "addRule",
+        "addCache",
+        "addJsx",
+        "nano.jsx",
+        "create",
+        "expect",
+        "typeof",
+        "var",
+        "nano",
+        "Comp",
+        "button",
+        "color",
+        "red"
+      ]
+    }
+  ]
+}

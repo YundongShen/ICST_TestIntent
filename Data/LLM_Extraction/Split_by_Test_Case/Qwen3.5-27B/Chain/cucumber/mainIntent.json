@@ -1,0 +1,67 @@
+{
+  "test_case_id": "tc_main",
+  "source_file": "dataset/raw/cucumber/main.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-05-13T16:49:20.431515",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "main_1",
+      "objects": [
+        "wood processing machine",
+        "power button",
+        "indicator light"
+      ],
+      "goals": [
+        "Verify the wood processing machine startup and status indication functionality"
+      ],
+      "activities": [
+        "Press power button and verify machine turns on with green indicator light"
+      ]
+    },
+    {
+      "test_case": "main_2",
+      "objects": [
+        "wood processing machine",
+        "machine display",
+        "blade"
+      ],
+      "goals": [
+        "Verify the wood processing workflow including thickness setting, wood detection, and processing execution"
+      ],
+      "activities": [
+        "Set cutting thickness to 2 inches and verify display shows value and blade adjusts"
+      ]
+    },
+    {
+      "test_case": "main_3",
+      "objects": [
+        "wood processing machine",
+        "machine display",
+        "wood",
+        "machine feeder"
+      ],
+      "goals": [
+        "Verify the wood processing workflow including thickness setting, wood detection, and processing execution"
+      ],
+      "activities": [
+        "Load wood piece onto machine feeder and verify detection message on display"
+      ]
+    },
+    {
+      "test_case": "main_4",
+      "objects": [
+        "wood processing machine",
+        "wood",
+        "Start Processing button"
+      ],
+      "goals": [
+        "Verify the wood processing workflow including thickness setting, wood detection, and processing execution"
+      ],
+      "activities": [
+        "Press Start Processing button and verify wood processing completes at specified thickness"
+      ]
+    }
+  ]
+}

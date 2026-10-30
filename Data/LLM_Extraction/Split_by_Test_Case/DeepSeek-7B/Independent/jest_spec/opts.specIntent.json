@@ -1,0 +1,95 @@
+{
+  "test_case_id": "tc_opts_spec",
+  "source_file": "dataset/raw/jest_spec/opts.spec.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-08-10T07:49:40.389757",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "opts.spec_1",
+      "objects": [
+        "themer-wallpaper-trianglifyoptions"
+      ],
+      "goals": [
+        "testthecorrectbehaviorofthegetSizesfunctionwhenverifyingthecorrectdefaultvaluesarereturnedforsnapshotandtestthecorrectbehaviorofthegetVariancesfunctionwhenverifyingthecorrectdefaultvaluesarereturnedforsnapshot"
+      ],
+      "activities": [
+        "getSizes",
+        "expect(getSizes()).toMatchSnapshot();",
+        "getVariances",
+        "expect(getVariances()).toEqual([{}]);"
+      ]
+    },
+    {
+      "test_case": "opts.spec_2",
+      "objects": [
+        "themer-wallpaper-trianglifyoptions"
+      ],
+      "goals": [],
+      "activities": [
+        "getSizes",
+        "expect(getSizes('200x200')).toEqual([{h:200,w:200}]);"
+      ]
+    },
+    {
+      "test_case": "opts.spec_3",
+      "objects": [
+        "themer-wallpaper-trianglifyoptions"
+      ],
+      "goals": [],
+      "activities": [
+        "getSizes",
+        "expect(getSizes(['100x200','300x400'])).toEqual([{w:100,h:200},{w:300,h:400}]);"
+      ]
+    },
+    {
+      "test_case": "opts.spec_4",
+      "objects": [
+        "themer-wallpaper-trianglifyoptions"
+      ],
+      "goals": [],
+      "activities": [
+        "getSizes",
+        "expect(getSizes('100xFoo')).toThrow();",
+        "it('shouldthrowwhenamalformedresolutionoptionisgiven',)"
+      ]
+    },
+    {
+      "test_case": "opts.spec_5",
+      "objects": [
+        "themer-wallpaper-trianglifyoptions"
+      ],
+      "goals": [],
+      "activities": [
+        "getVariances",
+        "expect(getVariances('0.61')).toEqual([0.61]);"
+      ]
+    },
+    {
+      "test_case": "opts.spec_6",
+      "objects": [
+        "themer-wallpaper-trianglifyoptions"
+      ],
+      "goals": [],
+      "activities": [
+        "getVariances",
+        "expect(getVariances(['0.333','0.1','1'])).toEqual([0.333,0.1,1]);"
+      ]
+    },
+    {
+      "test_case": "opts.spec_7",
+      "objects": [
+        "themer-wallpaper-trianglifyoptions"
+      ],
+      "goals": [],
+      "activities": [
+        "getVariances",
+        "expect(getVariances('1.1')).toThrow();",
+        "expect(getVariances('-1')).toThrow();",
+        "expect(getVariances('foo')).toThrow();",
+        "it('shouldthrowwhenaninvalidvarianceoptionisgiven',)"
+      ]
+    }
+  ]
+}

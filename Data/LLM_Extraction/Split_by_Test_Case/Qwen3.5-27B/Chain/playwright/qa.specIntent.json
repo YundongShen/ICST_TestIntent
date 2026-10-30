@@ -1,0 +1,50 @@
+{
+  "test_case_id": "tc_qa_spec",
+  "source_file": "dataset/raw/playwright/qa.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T19:42:38.300404",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "qa.spec_1",
+      "objects": [
+        "page"
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "string"
+      ]
+    },
+    {
+      "test_case": "qa.spec_2",
+      "objects": [
+        "metrics"
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "string"
+      ]
+    },
+    {
+      "test_case": "qa.spec_3",
+      "objects": [
+        "results"
+      ],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "qa.spec_4",
+      "objects": [
+        "charts"
+      ],
+      "goals": [],
+      "activities": []
+    }
+  ]
+}

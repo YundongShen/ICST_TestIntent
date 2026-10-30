@@ -1,0 +1,68 @@
+{
+  "test_case_id": "tc_qa_spec",
+  "source_file": "dataset/raw/playwright/qa.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-08-10T07:54:04.194431",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "qa.spec_1",
+      "objects": [
+        "test",
+        "describe",
+        "waitForApp",
+        "page",
+        "expect",
+        "mockApiRoutes",
+        "fixture"
+      ],
+      "goals": [
+        "testQAView"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "qa.spec_2",
+      "objects": [
+        "test",
+        "describe",
+        "page",
+        "expect",
+        "fixture"
+      ],
+      "goals": [
+        "verifyQAmetricsandcards"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "qa.spec_3",
+      "objects": [
+        "test",
+        "describe",
+        "page",
+        "expect",
+        "fixture"
+      ],
+      "goals": [
+        "verifytestresultsandstatus"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "qa.spec_4",
+      "objects": [
+        "test",
+        "describe",
+        "page",
+        "expect",
+        "fixture"
+      ],
+      "goals": [
+        "verifycoverageandchartelements"
+      ],
+      "activities": []
+    }
+  ]
+}

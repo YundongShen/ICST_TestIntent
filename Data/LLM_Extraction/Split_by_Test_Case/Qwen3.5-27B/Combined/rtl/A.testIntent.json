@@ -1,0 +1,51 @@
+{
+  "test_case_id": "tc_A_test",
+  "source_file": "dataset/raw/rtl/A.test.tsx",
+  "framework": "rtl",
+  "extraction_timestamp": "2026-08-13T04:46:16.853443",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "A.test_1",
+      "objects": [
+        "A"
+      ],
+      "goals": [
+        "verify rendering, warning behavior, and click interaction of component A"
+      ],
+      "activities": [
+        "render component A with testid and text",
+        "get element by testid",
+        "assert element contains HTML content"
+      ]
+    },
+    {
+      "test_case": "A.test_2",
+      "objects": [
+        "A"
+      ],
+      "goals": [
+        "verify rendering, warning behavior, and click interaction of component A"
+      ],
+      "activities": [
+        "mock console warn function",
+        "render component A without href"
+      ]
+    },
+    {
+      "test_case": "A.test_3",
+      "objects": [
+        "A"
+      ],
+      "goals": [
+        "verify rendering, warning behavior, and click interaction of component A"
+      ],
+      "activities": [
+        "define click handler",
+        "render component A with click handler",
+        "click element by testid"
+      ]
+    }
+  ]
+}

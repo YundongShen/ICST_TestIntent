@@ -1,0 +1,71 @@
+{
+  "test_case_id": "tc_server_spec_1",
+  "source_file": "dataset/raw/jest_spec/server.spec_1.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-08-10T07:49:57.668150",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "server.spec_1_1",
+      "objects": [
+        "request",
+        "server",
+        "describe",
+        "it",
+        "expect",
+        "toEqual"
+      ],
+      "goals": [
+        "The test case should verify that the server responds with a 200 status code when a GET request is made to the index route."
+      ],
+      "activities": [
+        "executeGETrequestonserver",
+        "verifyresponsestatusisf200",
+        "verifyresponsestatusisf200"
+      ]
+    },
+    {
+      "test_case": "server.spec_1_2",
+      "objects": [
+        "request",
+        "describe",
+        "it",
+        "expect",
+        "toEqual",
+        "type",
+        "html",
+        "text/html"
+      ],
+      "goals": [
+        "The test case should verify that the server returns a response in text format with the expected content 'HelloCity'."
+      ],
+      "activities": [
+        "verifyresponsetypeisftext",
+        "sendGETrequestto",
+        "verifyresponsetypeisftext"
+      ]
+    },
+    {
+      "test_case": "server.spec_1_3",
+      "objects": [
+        "request",
+        "describe",
+        "it",
+        "expect",
+        "text",
+        "toMatch",
+        "expected",
+        "City"
+      ],
+      "goals": [
+        "The test case should verify that the server returns a response in text format with the expected content 'HelloCity'."
+      ],
+      "activities": [
+        "verifyresponsecontentmatchsexpectedcontent",
+        "sendGETrequestto",
+        "verifyresponsecontentmatchsexpectedcontent"
+      ]
+    }
+  ]
+}

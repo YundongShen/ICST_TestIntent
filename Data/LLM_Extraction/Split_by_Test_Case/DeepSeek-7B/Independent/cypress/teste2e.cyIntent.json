@@ -1,0 +1,40 @@
+{
+  "test_case_id": "tc_teste2e_cy",
+  "source_file": "dataset/raw/cypress/teste2e.cy.js",
+  "framework": "cypress",
+  "extraction_timestamp": "2026-08-10T07:49:00.986328",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "teste2e.cy_1",
+      "objects": [
+        "cy"
+      ],
+      "goals": [
+        "verifythattheuserinterfaceisfunctional"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "teste2e.cy_2",
+      "objects": [
+        "cy"
+      ],
+      "goals": [
+        "verifythattheuserinterfaceisfunctional"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "teste2e.cy_3",
+      "objects": [
+        "cy"
+      ],
+      "goals": [
+        "verifythattheusercanaccessthemanagementpageafterlogin"
+      ],
+      "activities": []
+    }
+  ]
+}

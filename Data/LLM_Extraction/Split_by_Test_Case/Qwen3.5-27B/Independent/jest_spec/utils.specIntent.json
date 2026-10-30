@@ -1,0 +1,70 @@
+{
+  "test_case_id": "tc_utils_spec",
+  "source_file": "dataset/raw/jest_spec/utils.spec.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-05-01T17:37:25.601049",
+  "extract_mode": "independent",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "utils.spec_1",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "Verify the levenstein function correctly calculates the distance between two strings"
+      ],
+      "activities": [
+        "Verify Levenstein distance between 'aaa' and 'aaa' is 0"
+      ]
+    },
+    {
+      "test_case": "utils.spec_2",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "Verify the levenstein function correctly calculates the distance between two strings"
+      ],
+      "activities": [
+        "Verify Levenstein distance between 'abc' and 'def' is 3"
+      ]
+    },
+    {
+      "test_case": "utils.spec_3",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "Verify the levenstein function correctly calculates the distance between two strings"
+      ],
+      "activities": [
+        "Verify Levenstein distance between 'gmail.com' and 'gnail.com' is 1"
+      ]
+    },
+    {
+      "test_case": "utils.spec_4",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "Verify the levenstein function correctly calculates the distance between two strings"
+      ],
+      "activities": [
+        "Verify Levenstein distance between 'gmail.com' and 'gnaul.com' is 2"
+      ]
+    },
+    {
+      "test_case": "utils.spec_5",
+      "objects": [
+        "levenstein"
+      ],
+      "goals": [
+        "Verify the levenstein function correctly calculates the distance between two strings"
+      ],
+      "activities": [
+        "Verify Levenstein distance between 'mail.com' and 'gnaul.com' is 3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "test_case_id": "tc_FirstTest",
+  "source_file": "dataset/raw/junit_unit/FirstTest.java",
+  "framework": "junit_unit",
+  "extraction_timestamp": "2026-05-13T15:09:34.921840",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "FirstTest_1",
+      "objects": [
+        "TaskDaoImpl"
+      ],
+      "goals": [
+        "verify create and get method return values"
+      ],
+      "activities": [
+        "initialize mock annotations",
+        "configure create method stub",
+        "invoke create method",
+        "assert create return value"
+      ]
+    },
+    {
+      "test_case": "FirstTest_2",
+      "objects": [
+        "TaskDaoImpl"
+      ],
+      "goals": [
+        "verify create and get method return values"
+      ],
+      "activities": [
+        "initialize mock annotations",
+        "configure get method stub",
+        "invoke get method",
+        "assert get return value"
+      ]
+    }
+  ]
+}

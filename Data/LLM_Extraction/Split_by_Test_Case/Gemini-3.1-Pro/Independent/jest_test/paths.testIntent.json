@@ -1,0 +1,58 @@
+{
+  "test_case_id": "tc_paths_test",
+  "source_file": "dataset/raw/jest_test/paths.test.js",
+  "framework": "jest_test",
+  "extraction_timestamp": "2026-08-11T07:44:08.671347",
+  "extract_mode": "independent",
+  "model": "gemini-3.1-pro-preview",
+  "test_cases": [
+    {
+      "test_case": "paths.test_1",
+      "objects": [
+        "treeviewString"
+      ],
+      "goals": [
+        "Verify that the path generation functions (treeviewString, fileviewString, pullTreeviewString, pullFileviewString) correctly construct the expected URL path strings based on repository and pull request parameters"
+      ],
+      "activities": [
+        "Call treeviewString with owner 'foo' and repo 'bar' and assert it returns 'foo/bar/tree'"
+      ]
+    },
+    {
+      "test_case": "paths.test_2",
+      "objects": [
+        "fileviewString"
+      ],
+      "goals": [
+        "Verify that the path generation functions (treeviewString, fileviewString, pullTreeviewString, pullFileviewString) correctly construct the expected URL path strings based on repository and pull request parameters"
+      ],
+      "activities": [
+        "Call fileviewString with owner 'foo' and repo 'bar' and assert it returns 'foo/bar/blob'"
+      ]
+    },
+    {
+      "test_case": "paths.test_3",
+      "objects": [
+        "pullTreeviewString"
+      ],
+      "goals": [
+        "Verify that the path generation functions (treeviewString, fileviewString, pullTreeviewString, pullFileviewString) correctly construct the expected URL path strings based on repository and pull request parameters"
+      ],
+      "activities": [
+        "Call pullTreeviewString with owner 'foo', repo 'bar', and pullId '123' and assert it returns 'foo/bar/pull/123/tree'"
+      ]
+    },
+    {
+      "test_case": "paths.test_4",
+      "objects": [
+        "pullFileviewString"
+      ],
+      "goals": [
+        "Verify that the path generation functions (treeviewString, fileviewString, pullTreeviewString, pullFileviewString) correctly construct the expected URL path strings based on repository and pull request parameters"
+      ],
+      "activities": [
+        "Call pullFileviewString with owner 'foo', repo 'bar', and pullId '123' and assert it returns 'foo/bar/pull/123/blob'"
+      ]
+    }
+  ]
+}

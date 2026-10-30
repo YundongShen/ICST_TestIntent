@@ -1,0 +1,34 @@
+{
+  "test_case_id": "tc_FirstTest",
+  "source_file": "dataset/raw/junit_unit/FirstTest.java",
+  "framework": "junit_unit",
+  "extraction_timestamp": "2026-05-13T19:00:57.077673",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "FirstTest_1",
+      "objects": [
+        "TaskDaoImpl"
+      ],
+      "goals": [
+        "Verify TaskDaoImpl.create() returns expected key"
+      ],
+      "activities": [
+        "string1"
+      ]
+    },
+    {
+      "test_case": "FirstTest_2",
+      "objects": [
+        "TaskDaoImpl"
+      ],
+      "goals": [
+        "Verify TaskDaoImpl.get() returns expected Task object"
+      ],
+      "activities": [
+        "string2"
+      ]
+    }
+  ]
+}

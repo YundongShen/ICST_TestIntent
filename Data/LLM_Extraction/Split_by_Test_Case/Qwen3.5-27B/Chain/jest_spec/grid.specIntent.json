@@ -1,0 +1,34 @@
+{
+  "test_case_id": "tc_grid_spec",
+  "source_file": "dataset/raw/jest_spec/grid.spec.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-05-13T17:40:52.228347",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "grid.spec_1",
+      "objects": [
+        "Grid"
+      ],
+      "goals": [
+        "Verify Grid creation validates input seed length and throws error on invalid input"
+      ],
+      "activities": [
+        "string1"
+      ]
+    },
+    {
+      "test_case": "grid.spec_2",
+      "objects": [
+        "grid"
+      ],
+      "goals": [
+        "Verify Grid neighbors method returns correct array of adjacent cells for given indices"
+      ],
+      "activities": [
+        "string2"
+      ]
+    }
+  ]
+}

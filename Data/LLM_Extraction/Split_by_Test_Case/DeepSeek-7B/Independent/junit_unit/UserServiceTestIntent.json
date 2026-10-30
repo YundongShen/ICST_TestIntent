@@ -1,0 +1,36 @@
+{
+  "test_case_id": "tc_UserServiceTest",
+  "source_file": "dataset/raw/junit_unit/UserServiceTest.java",
+  "framework": "junit_unit",
+  "extraction_timestamp": "2026-08-10T08:00:02.633033",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "UserServiceTest_1",
+      "objects": [
+        "UserService",
+        "UserRepo"
+      ],
+      "goals": [],
+      "activities": [
+        "setupUserService",
+        "testValidAge_inputPositiveNumber_shouldValidateSuccess"
+      ]
+    },
+    {
+      "test_case": "UserServiceTest_2",
+      "objects": [
+        "User",
+        "UserService",
+        "request",
+        "UserRepo"
+      ],
+      "goals": [],
+      "activities": [
+        "setupUserService",
+        "testCreateUser_validUserProvided_shouldCallRequestExecuteWithUser"
+      ]
+    }
+  ]
+}

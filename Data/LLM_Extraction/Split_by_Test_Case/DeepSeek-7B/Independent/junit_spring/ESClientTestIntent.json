@@ -1,0 +1,52 @@
+{
+  "test_case_id": "tc_ESClientTest",
+  "source_file": "dataset/raw/junit_spring/ESClientTest.java",
+  "framework": "junit_spring",
+  "extraction_timestamp": "2026-08-10T07:51:28.694891",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "ESClientTest_1",
+      "objects": [
+        "com.kodcu.entity.Document"
+      ],
+      "goals": [],
+      "activities": [
+        "indexRequest",
+        "assertNotNull"
+      ]
+    },
+    {
+      "test_case": "ESClientTest_2",
+      "objects": [],
+      "goals": [],
+      "activities": [
+        "matchAllQuery",
+        "assertFalse"
+      ]
+    },
+    {
+      "test_case": "ESClientTest_3",
+      "objects": [],
+      "goals": [],
+      "activities": [
+        "assertFalse"
+      ]
+    },
+    {
+      "test_case": "ESClientTest_4",
+      "objects": [
+        "com.kodcu.entity.Document"
+      ],
+      "goals": [],
+      "activities": [
+        "deleteDocument",
+        "refreshRequest",
+        "matchAllQuery",
+        "forEach",
+        "dao.refreshRequest"
+      ]
+    }
+  ]
+}

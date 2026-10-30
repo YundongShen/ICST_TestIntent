@@ -1,0 +1,52 @@
+{
+  "test_case_id": "tc_cli_spec",
+  "source_file": "dataset/raw/jest_spec/cli.spec.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-08-10T07:49:30.531696",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "cli.spec_1",
+      "objects": [
+        "parseCozyURL",
+        "toto",
+        "https://toto.mycozy.cloud"
+      ],
+      "goals": [
+        "testobjectshouldreturncorrectvalueforthefirstparseCozyURLtestcase"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "cli.spec_2",
+      "objects": [
+        "parseCozyURL",
+        "toto",
+        "https://toto.mycozy.cloud"
+      ],
+      "goals": [
+        "testobjectshouldreturncorrectvalueforthesecondparseCozyURLtestcasenotincludingtrailingslash"
+      ],
+      "activities": []
+    },
+    {
+      "test_case": "cli.spec_3",
+      "objects": [
+        "parseCozyURL",
+        "toto-drive.mycozy.cloud"
+      ],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "cli.spec_4",
+      "objects": [
+        "parseCozyURL",
+        "toto"
+      ],
+      "goals": [],
+      "activities": []
+    }
+  ]
+}

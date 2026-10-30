@@ -1,0 +1,122 @@
+{
+  "test_case_id": "tc_api_test_1",
+  "source_file": "dataset/raw/supertest/api.test_1.js",
+  "framework": "supertest",
+  "extraction_timestamp": "2026-05-13T20:21:07.720455",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "api.test_1_1",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send GET request to /api/books endpoint",
+        "Verify response status code is 200 and body is an array"
+      ]
+    },
+    {
+      "test_case": "api.test_1_2",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send GET request to /api/books/1 endpoint",
+        "Verify response status code is 200 and book ID is correct"
+      ]
+    },
+    {
+      "test_case": "api.test_1_3",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send GET request to /api/books/999 endpoint",
+        "Verify response status code is 404 for invalid ID"
+      ]
+    },
+    {
+      "test_case": "api.test_1_4",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send POST request to /api/books endpoint with book data",
+        "Verify response status code is 201 and title matches"
+      ]
+    },
+    {
+      "test_case": "api.test_1_5",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send PUT request to /api/books/1 endpoint with update data",
+        "Verify response status code is 200 and title is updated"
+      ]
+    },
+    {
+      "test_case": "api.test_1_6",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send PUT request to /api/books/999 endpoint with update data",
+        "Verify response status code is 404 for invalid update"
+      ]
+    },
+    {
+      "test_case": "api.test_1_7",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send DELETE request to /api/books/1 endpoint",
+        "Verify response status code is 200 for successful deletion"
+      ]
+    },
+    {
+      "test_case": "api.test_1_8",
+      "objects": [
+        "app"
+      ],
+      "goals": [
+        "Verify the Books API endpoints correctly perform CRUD operations for books",
+        "Verify the Books API returns appropriate HTTP status codes and response data for valid and invalid requests"
+      ],
+      "activities": [
+        "Send DELETE request to /api/books/999 endpoint",
+        "Verify response status code is 404 for invalid deletion"
+      ]
+    }
+  ]
+}

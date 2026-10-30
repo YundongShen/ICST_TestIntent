@@ -1,0 +1,61 @@
+{
+  "test_case_id": "tc_csp_spec",
+  "source_file": "dataset/raw/playwright/csp.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T19:35:26.350613",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "csp.spec_1",
+      "objects": [
+        "response",
+        "res"
+      ],
+      "goals": [
+        "Verify the server response contains strict Content Security Policy and related security headers"
+      ],
+      "activities": [
+        "string1"
+      ]
+    },
+    {
+      "test_case": "csp.spec_2",
+      "objects": [
+        "response",
+        "res"
+      ],
+      "goals": [
+        "Verify the server response contains strict Content Security Policy and related security headers"
+      ],
+      "activities": [
+        "string1"
+      ]
+    },
+    {
+      "test_case": "csp.spec_3",
+      "objects": [
+        "page"
+      ],
+      "goals": [
+        "Verify the page loads without CSP violations and excludes insecure inline styles"
+      ],
+      "activities": [
+        "string2"
+      ]
+    },
+    {
+      "test_case": "csp.spec_4",
+      "objects": [
+        "page",
+        "res"
+      ],
+      "goals": [
+        "Verify the page loads without CSP violations and excludes insecure inline styles"
+      ],
+      "activities": [
+        "string2"
+      ]
+    }
+  ]
+}

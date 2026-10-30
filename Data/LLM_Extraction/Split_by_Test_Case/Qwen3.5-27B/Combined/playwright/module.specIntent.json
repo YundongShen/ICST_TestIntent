@@ -1,0 +1,98 @@
+{
+  "test_case_id": "tc_module_spec",
+  "source_file": "dataset/raw/playwright/module.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T15:26:55.262737",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "module.spec_1",
+      "objects": [
+        "Bootstrap 4 web page"
+      ],
+      "goals": [
+        "Verify visibility, styling, and interaction of Bootstrap 4 components"
+      ],
+      "activities": [
+        "navigate to home page",
+        "verify body is hidden"
+      ]
+    },
+    {
+      "test_case": "module.spec_2",
+      "objects": [
+        "Bootstrap 4 web page"
+      ],
+      "goals": [
+        "Verify visibility, styling, and interaction of Bootstrap 4 components"
+      ],
+      "activities": [
+        "navigate to home page",
+        "verify body is visible"
+      ]
+    },
+    {
+      "test_case": "module.spec_3",
+      "objects": [
+        "Bootstrap 4 web page"
+      ],
+      "goals": [
+        "Verify visibility, styling, and interaction of Bootstrap 4 components"
+      ],
+      "activities": [
+        "navigate to home page",
+        "locate alert element",
+        "get initial alert background color",
+        "wait for CSS resource load",
+        "get styled alert background color",
+        "verify alert color changed"
+      ]
+    },
+    {
+      "test_case": "module.spec_4",
+      "objects": [
+        "Bootstrap 4 web page"
+      ],
+      "goals": [
+        "Verify visibility, styling, and interaction of Bootstrap 4 components"
+      ],
+      "activities": [
+        "navigate to home page",
+        "locate modal element",
+        "verify modal count is one",
+        "verify modal is hidden"
+      ]
+    },
+    {
+      "test_case": "module.spec_5",
+      "objects": [
+        "Bootstrap 4 web page"
+      ],
+      "goals": [
+        "Verify visibility, styling, and interaction of Bootstrap 4 components"
+      ],
+      "activities": [
+        "navigate to home page",
+        "locate launch modal button",
+        "verify button exists"
+      ]
+    },
+    {
+      "test_case": "module.spec_6",
+      "objects": [
+        "Bootstrap 4 web page"
+      ],
+      "goals": [
+        "Verify visibility, styling, and interaction of Bootstrap 4 components"
+      ],
+      "activities": [
+        "navigate to home page",
+        "locate modal element",
+        "locate launch modal button",
+        "click launch modal button",
+        "verify modal is visible"
+      ]
+    }
+  ]
+}

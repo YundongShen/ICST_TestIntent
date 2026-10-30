@@ -1,0 +1,38 @@
+{
+  "test_case_id": "tc_jsx_test",
+  "source_file": "dataset/raw/jest_test/jsx.test.js",
+  "framework": "jest_test",
+  "extraction_timestamp": "2026-08-11T07:43:44.539735",
+  "extract_mode": "independent",
+  "model": "gemini-3.1-pro-preview",
+  "test_cases": [
+    {
+      "test_case": "jsx.test_1",
+      "objects": [
+        "nano.jsx"
+      ],
+      "goals": [
+        "Verify that the jsx addon successfully installs the jsx interface on the nano instance"
+      ],
+      "activities": [
+        "Create a nano instance with rule, cache, and jsx addons",
+        "Verify that the nano.jsx property is a function"
+      ]
+    },
+    {
+      "test_case": "jsx.test_2",
+      "objects": [
+        "nano.jsx",
+        "Comp"
+      ],
+      "goals": [
+        "Verify that the jsx method can create a styling block component"
+      ],
+      "activities": [
+        "Create a new nano instance with rule, cache, and jsx addons",
+        "Create a JSX styling block component for a button with a specific color style",
+        "Verify that the created styling block component is a function"
+      ]
+    }
+  ]
+}

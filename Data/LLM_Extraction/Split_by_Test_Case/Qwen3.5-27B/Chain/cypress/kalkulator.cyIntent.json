@@ -1,0 +1,53 @@
+{
+  "test_case_id": "tc_kalkulator_cy",
+  "source_file": "dataset/raw/cypress/kalkulator.cy.js",
+  "framework": "cypress",
+  "extraction_timestamp": "2026-05-13T17:21:29.231846",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "kalkulator.cy_1",
+      "objects": [
+        "Calculator Button",
+        "Calculator Output Display"
+      ],
+      "goals": [
+        "Verify correct calculation results for basic arithmetic operations (addition and multiplication) on the output display"
+      ],
+      "activities": [
+        "string1",
+        "string2"
+      ]
+    },
+    {
+      "test_case": "kalkulator.cy_2",
+      "objects": [
+        "Calculator Button",
+        "Calculator Output Display"
+      ],
+      "goals": [
+        "Verify correct calculation results for basic arithmetic operations (addition and multiplication) on the output display"
+      ],
+      "activities": [
+        "string1",
+        "string2"
+      ]
+    },
+    {
+      "test_case": "kalkulator.cy_3",
+      "objects": [
+        "Calculator Button",
+        "Calculator Input Display",
+        "Calculator Output Display"
+      ],
+      "goals": [
+        "Verify the clear function resets both input and output displays to empty state"
+      ],
+      "activities": [
+        "string1",
+        "string2"
+      ]
+    }
+  ]
+}

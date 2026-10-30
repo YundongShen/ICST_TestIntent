@@ -1,0 +1,39 @@
+{
+  "test_case_id": "tc_curl",
+  "source_file": "dataset/raw/cucumber/curl.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-08-10T07:48:01.585513",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "curl_1",
+      "objects": [
+        "gauntlt",
+        "curl",
+        "examples/curl",
+        "simple.attack"
+      ],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "curl_2",
+      "objects": [
+        "gauntlt",
+        "cookies.attack"
+      ],
+      "goals": [],
+      "activities": []
+    },
+    {
+      "test_case": "curl_3",
+      "objects": [
+        "gauntlt",
+        "verbs.attack"
+      ],
+      "goals": [],
+      "activities": []
+    }
+  ]
+}

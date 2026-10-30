@@ -1,0 +1,65 @@
+{
+  "test_case_id": "tc_csp_spec",
+  "source_file": "dataset/raw/playwright/csp.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T15:22:53.499260",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "csp.spec_1",
+      "objects": [
+        "server"
+      ],
+      "goals": [
+        "verify server security headers and content compliance"
+      ],
+      "activities": [
+        "navigate to the root page",
+        "retrieve response headers",
+        "verify content security policy header values"
+      ]
+    },
+    {
+      "test_case": "csp.spec_2",
+      "objects": [
+        "server"
+      ],
+      "goals": [
+        "verify server security headers and content compliance"
+      ],
+      "activities": [
+        "navigate to the root page",
+        "retrieve response headers",
+        "verify additional security headers"
+      ]
+    },
+    {
+      "test_case": "csp.spec_3",
+      "objects": [],
+      "goals": [
+        "verify server security headers and content compliance"
+      ],
+      "activities": [
+        "navigate to the root page",
+        "listen for console messages and page errors",
+        "wait for page selector to load",
+        "check for security policy violations"
+      ]
+    },
+    {
+      "test_case": "csp.spec_4",
+      "objects": [
+        "server"
+      ],
+      "goals": [
+        "verify server security headers and content compliance"
+      ],
+      "activities": [
+        "fetch HTML content",
+        "parse HTML body content",
+        "check for inline style attributes"
+      ]
+    }
+  ]
+}

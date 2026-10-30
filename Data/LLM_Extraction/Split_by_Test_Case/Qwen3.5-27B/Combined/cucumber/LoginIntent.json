@@ -1,0 +1,49 @@
+{
+  "test_case_id": "tc_Login",
+  "source_file": "dataset/raw/cucumber/Login.feature",
+  "framework": "cucumber",
+  "extraction_timestamp": "2026-05-13T14:29:57.509514",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "Login_1",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "Login_2",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    },
+    {
+      "test_case": "Login_3",
+      "objects": [
+        "..."
+      ],
+      "goals": [
+        "..."
+      ],
+      "activities": [
+        "...",
+        "..."
+      ]
+    }
+  ]
+}

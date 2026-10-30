@@ -1,0 +1,72 @@
+{
+  "test_case_id": "tc_api_spec",
+  "source_file": "dataset/raw/playwright/api.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-08-10T07:53:42.473553",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "api.spec_1",
+      "objects": [
+        "expect",
+        "test",
+        "await",
+        "app",
+        "page",
+        "electronTest",
+        "declare",
+        "const",
+        "expect",
+        "test",
+        "awaitexpect",
+        "toHaveTitle",
+        "electronTest",
+        "awaittest",
+        "step",
+        "awaittest",
+        "async"
+      ],
+      "goals": [],
+      "activities": [
+        "testTitle"
+      ]
+    },
+    {
+      "test_case": "api.spec_2",
+      "objects": [
+        "window",
+        "compareVersions",
+        "expect",
+        "test",
+        "await",
+        "page",
+        "compareVersions",
+        "electronTest",
+        "declare",
+        "const",
+        "window",
+        "api",
+        "expect",
+        "test",
+        "electronTest",
+        "awaittest",
+        "step",
+        "awaittest",
+        "evaluate",
+        "async",
+        "trim",
+        "split",
+        "legendaryVersion",
+        "gogdlVersion"
+      ],
+      "goals": [],
+      "activities": [
+        "extractHeroicVersion",
+        "extractLegendaryVersion",
+        "extractGogdlVersion",
+        "testVersions"
+      ]
+    }
+  ]
+}

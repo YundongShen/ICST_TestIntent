@@ -1,0 +1,67 @@
+{
+  "test_case_id": "tc_ESClientTest",
+  "source_file": "dataset/raw/junit_spring/ESClientTest.java",
+  "framework": "junit_spring",
+  "extraction_timestamp": "2026-08-10T08:00:55.781290",
+  "extract_mode": "independent",
+  "model": "gemini-2.5-flash",
+  "test_cases": [
+    {
+      "test_case": "ESClientTest_1",
+      "objects": [
+        "QueryDAO",
+        "Document"
+      ],
+      "goals": [
+        "Verify the QueryDAO can successfully index and retrieve documents from ElasticSearch."
+      ],
+      "activities": [
+        "Call the indexRequest method with a document.",
+        "Assert that the result of the index request is not null."
+      ]
+    },
+    {
+      "test_case": "ESClientTest_2",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify the QueryDAO can successfully index and retrieve documents from ElasticSearch."
+      ],
+      "activities": [
+        "Execute a match-all query.",
+        "Assert that the result of the match-all query is not empty."
+      ]
+    },
+    {
+      "test_case": "ESClientTest_3",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify the QueryDAO can successfully index and retrieve documents from ElasticSearch."
+      ],
+      "activities": [
+        "Execute a wildcard query with 'akd'.",
+        "Assert that the result of the wildcard query is not empty."
+      ]
+    },
+    {
+      "test_case": "ESClientTest_4",
+      "objects": [
+        "QueryDAO",
+        "Document"
+      ],
+      "goals": [
+        "Verify the QueryDAO can successfully delete documents from ElasticSearch."
+      ],
+      "activities": [
+        "Execute a match-all query to retrieve documents.",
+        "Delete each retrieved document.",
+        "Refresh the data store.",
+        "Execute another match-all query.",
+        "Assert that the result of the second match-all query is empty."
+      ]
+    }
+  ]
+}

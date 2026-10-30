@@ -1,0 +1,62 @@
+{
+  "test_case_id": "tc_paths_test",
+  "source_file": "dataset/raw/jest_test/paths.test.js",
+  "framework": "jest_test",
+  "extraction_timestamp": "2026-05-01T18:06:25.999419",
+  "extract_mode": "independent",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "paths.test_1",
+      "objects": [
+        "treeviewString"
+      ],
+      "goals": [
+        "Verify the correct generation of path strings for standard repository views"
+      ],
+      "activities": [
+        "Invoke treeviewString with owner foo and repo bar",
+        "Assert result equals foo/bar/tree"
+      ]
+    },
+    {
+      "test_case": "paths.test_2",
+      "objects": [
+        "fileviewString"
+      ],
+      "goals": [
+        "Verify the correct generation of path strings for standard repository views"
+      ],
+      "activities": [
+        "Invoke fileviewString with owner foo and repo bar",
+        "Assert result equals foo/bar/blob"
+      ]
+    },
+    {
+      "test_case": "paths.test_3",
+      "objects": [
+        "pullTreeviewString"
+      ],
+      "goals": [
+        "Verify the correct generation of path strings for pull request views"
+      ],
+      "activities": [
+        "Invoke pullTreeviewString with owner foo, repo bar, and pullId 123",
+        "Assert result equals foo/bar/pull/123/tree"
+      ]
+    },
+    {
+      "test_case": "paths.test_4",
+      "objects": [
+        "pullFileviewString"
+      ],
+      "goals": [
+        "Verify the correct generation of path strings for pull request views"
+      ],
+      "activities": [
+        "Invoke pullFileviewString with owner foo, repo bar, and pullId 123",
+        "Assert result equals foo/bar/pull/123/blob"
+      ]
+    }
+  ]
+}

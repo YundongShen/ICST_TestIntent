@@ -1,0 +1,56 @@
+{
+  "test_case_id": "tc_qa_spec",
+  "source_file": "dataset/raw/playwright/qa.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T15:23:49.176236",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "qa.spec_1",
+      "objects": [
+        "QA View"
+      ],
+      "goals": [
+        "Verify QA View rendering and content visibility"
+      ],
+      "activities": [
+        "mock API routes",
+        "navigate to QA page",
+        "wait for app to load",
+        "verify page URL is /qa",
+        "verify page body is visible"
+      ]
+    },
+    {
+      "test_case": "qa.spec_2",
+      "objects": [],
+      "goals": [],
+      "activities": [
+        "locate QA metrics or cards elements",
+        "count metrics elements",
+        "assert metrics count is greater than or equal to zero"
+      ]
+    },
+    {
+      "test_case": "qa.spec_3",
+      "objects": [],
+      "goals": [],
+      "activities": [
+        "locate test results or status elements",
+        "count results elements",
+        "assert results count is greater than or equal to zero"
+      ]
+    },
+    {
+      "test_case": "qa.spec_4",
+      "objects": [],
+      "goals": [],
+      "activities": [
+        "locate coverage or chart elements",
+        "count chart elements",
+        "assert chart count is greater than or equal to zero"
+      ]
+    }
+  ]
+}

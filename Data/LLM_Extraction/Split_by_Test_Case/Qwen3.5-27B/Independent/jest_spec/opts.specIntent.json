@@ -1,0 +1,97 @@
+{
+  "test_case_id": "tc_opts_spec",
+  "source_file": "dataset/raw/jest_spec/opts.spec.js",
+  "framework": "jest_spec",
+  "extraction_timestamp": "2026-05-01T17:32:30.618198",
+  "extract_mode": "independent",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "opts.spec_1",
+      "objects": [
+        "getSizes",
+        "getVariances"
+      ],
+      "goals": [
+        "Verify correct parsing and validation of size options",
+        "Verify correct parsing and validation of variance options"
+      ],
+      "activities": [
+        "Verify getSizes returns defaults matching snapshot",
+        "Verify getVariances returns defaults matching snapshot"
+      ]
+    },
+    {
+      "test_case": "opts.spec_2",
+      "objects": [
+        "getSizes"
+      ],
+      "goals": [
+        "Verify correct parsing and validation of size options"
+      ],
+      "activities": [
+        "Verify getSizes parses single resolution option"
+      ]
+    },
+    {
+      "test_case": "opts.spec_3",
+      "objects": [
+        "getSizes"
+      ],
+      "goals": [
+        "Verify correct parsing and validation of size options"
+      ],
+      "activities": [
+        "Verify getSizes parses multiple resolution options"
+      ]
+    },
+    {
+      "test_case": "opts.spec_4",
+      "objects": [
+        "getSizes"
+      ],
+      "goals": [
+        "Verify correct parsing and validation of size options"
+      ],
+      "activities": [
+        "Verify getSizes throws on malformed resolution option"
+      ]
+    },
+    {
+      "test_case": "opts.spec_5",
+      "objects": [
+        "getVariances"
+      ],
+      "goals": [
+        "Verify correct parsing and validation of variance options"
+      ],
+      "activities": [
+        "Verify getVariances parses single variance option"
+      ]
+    },
+    {
+      "test_case": "opts.spec_6",
+      "objects": [
+        "getVariances"
+      ],
+      "goals": [
+        "Verify correct parsing and validation of variance options"
+      ],
+      "activities": [
+        "Verify getVariances parses multiple variance options"
+      ]
+    },
+    {
+      "test_case": "opts.spec_7",
+      "objects": [
+        "getVariances"
+      ],
+      "goals": [
+        "Verify correct parsing and validation of variance options"
+      ],
+      "activities": [
+        "Verify getVariances throws on invalid variance options"
+      ]
+    }
+  ]
+}

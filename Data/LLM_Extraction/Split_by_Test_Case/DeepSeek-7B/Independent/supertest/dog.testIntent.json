@@ -1,0 +1,58 @@
+{
+  "test_case_id": "tc_dog_test",
+  "source_file": "dataset/raw/supertest/dog.test.js",
+  "framework": "supertest",
+  "extraction_timestamp": "2026-08-10T07:56:55.431828",
+  "extract_mode": "independent",
+  "model": "DeepSeek-LLM-7B-Chat",
+  "test_cases": [
+    {
+      "test_case": "dog.test_1",
+      "objects": [],
+      "goals": [
+        "verifythatusercanloginsuccessfullywithcorrectemailandpassword"
+      ],
+      "activities": [
+        "BeforeAll: CreateMongoMemoryServer",
+        "BeforeAll: Importappandmodels",
+        "BeforeEach: Createuser",
+        "POST/users/connection: Loginwithcorrectcredentials"
+      ]
+    },
+    {
+      "test_case": "dog.test_2",
+      "objects": [],
+      "goals": [
+        "verifythatusercanloginsuccessfullywithcorrectemailonly"
+      ],
+      "activities": [
+        "BeforeAll: CreateMongoMemoryServer",
+        "BeforeAll: Importappandmodels",
+        "BeforeEach: Createuser",
+        "POST/users/connection: Loginwithmissingemail"
+      ]
+    },
+    {
+      "test_case": "dog.test_3",
+      "objects": [],
+      "goals": [],
+      "activities": [
+        "BeforeAll: CreateMongoMemoryServer",
+        "BeforeAll: Importappandmodels",
+        "BeforeEach: Createuser",
+        "POST/users/connection: Loginwithincorrectpassword"
+      ]
+    },
+    {
+      "test_case": "dog.test_4",
+      "objects": [],
+      "goals": [],
+      "activities": [
+        "BeforeAll: CreateMongoMemoryServer",
+        "BeforeAll: Importappandmodels",
+        "BeforeEach: Createuser",
+        "POST/users/connection: Loginwithnon-existinguser"
+      ]
+    }
+  ]
+}

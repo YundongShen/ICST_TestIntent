@@ -1,0 +1,46 @@
+{
+  "test_case_id": "tc_rss_spec",
+  "source_file": "dataset/raw/playwright/rss.spec.ts",
+  "framework": "playwright",
+  "extraction_timestamp": "2026-05-13T19:41:07.622357",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "rss.spec_1",
+      "objects": [
+        "rss"
+      ],
+      "goals": [
+        "Verify the RSS feed link exists and navigates to the correct URL in a new tab"
+      ],
+      "activities": [
+        "string1"
+      ]
+    },
+    {
+      "test_case": "rss.spec_2",
+      "objects": [
+        "pages[1]"
+      ],
+      "goals": [
+        "Verify the RSS feed link exists and navigates to the correct URL in a new tab"
+      ],
+      "activities": [
+        "string2"
+      ]
+    },
+    {
+      "test_case": "rss.spec_3",
+      "objects": [
+        "feed"
+      ],
+      "goals": [
+        "Verify the RSS feed content is valid XML"
+      ],
+      "activities": [
+        "string3"
+      ]
+    }
+  ]
+}

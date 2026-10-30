@@ -1,0 +1,58 @@
+{
+  "test_case_id": "tc_POPULATE_test_",
+  "source_file": "dataset/raw/pytest_unit/POPULATE_test_.py",
+  "framework": "pytest_unit",
+  "extraction_timestamp": "2026-08-13T04:30:33.420185",
+  "extract_mode": "combined",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "POPULATE_test__1",
+      "objects": [
+        "POPULATE.POPULATE"
+      ],
+      "goals": [
+        "verify POPULATE function generates correct distribution values and preserves input x-values"
+      ],
+      "activities": [
+        "import POPULATE module",
+        "create input Vector using numpy array",
+        "invoke POPULATE function with specific distribution settings",
+        "assert output x values equal input values",
+        "assert output y values meet distribution statistical requirements"
+      ]
+    },
+    {
+      "test_case": "POPULATE_test__2",
+      "objects": [
+        "POPULATE.POPULATE"
+      ],
+      "goals": [
+        "verify POPULATE function generates correct distribution values and preserves input x-values"
+      ],
+      "activities": [
+        "import POPULATE module",
+        "create input Vector using numpy array",
+        "invoke POPULATE function with specific distribution settings",
+        "assert output x values equal input values",
+        "assert output y values meet distribution statistical requirements"
+      ]
+    },
+    {
+      "test_case": "POPULATE_test__3",
+      "objects": [
+        "POPULATE.POPULATE"
+      ],
+      "goals": [
+        "verify POPULATE function generates correct distribution values and preserves input x-values"
+      ],
+      "activities": [
+        "import POPULATE module",
+        "create input Vector using numpy array",
+        "invoke POPULATE function with specific distribution settings",
+        "assert output x values equal input values",
+        "assert output y values meet distribution statistical requirements"
+      ]
+    }
+  ]
+}

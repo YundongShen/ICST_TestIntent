@@ -1,0 +1,58 @@
+{
+  "test_case_id": "tc_ESClientTest",
+  "source_file": "dataset/raw/junit_spring/ESClientTest.java",
+  "framework": "junit_spring",
+  "extraction_timestamp": "2026-05-13T18:42:24.128447",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "ESClientTest_1",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify QueryDAO document indexing and retrieval functionality"
+      ],
+      "activities": [
+        "..."
+      ]
+    },
+    {
+      "test_case": "ESClientTest_2",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify QueryDAO document indexing and retrieval functionality"
+      ],
+      "activities": [
+        "..."
+      ]
+    },
+    {
+      "test_case": "ESClientTest_3",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify QueryDAO search query and document deletion operations"
+      ],
+      "activities": [
+        "..."
+      ]
+    },
+    {
+      "test_case": "ESClientTest_4",
+      "objects": [
+        "QueryDAO"
+      ],
+      "goals": [
+        "Verify QueryDAO search query and document deletion operations"
+      ],
+      "activities": [
+        "..."
+      ]
+    }
+  ]
+}

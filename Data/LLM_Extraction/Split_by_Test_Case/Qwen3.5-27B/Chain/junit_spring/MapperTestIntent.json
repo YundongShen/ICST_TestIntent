@@ -1,0 +1,37 @@
+{
+  "test_case_id": "tc_MapperTest",
+  "source_file": "dataset/raw/junit_spring/MapperTest.java",
+  "framework": "junit_spring",
+  "extraction_timestamp": "2026-05-13T18:48:12.896080",
+  "extract_mode": "chain",
+  "model": "Qwen-3.5-27B",
+  "test_cases": [
+    {
+      "test_case": "MapperTest_1",
+      "objects": [
+        "TestModelMapper"
+      ],
+      "goals": [
+        "Verify TestModelMapper data insertion capability"
+      ],
+      "activities": [
+        "Prepare TestModel instance with attributes",
+        "Insert TestModel record via TestModelMapper"
+      ]
+    },
+    {
+      "test_case": "MapperTest_2",
+      "objects": [
+        "TestModelService"
+      ],
+      "goals": [
+        "Verify TestModelService pagination query capability"
+      ],
+      "activities": [
+        "Batch insert 100 TestModel records via TestModelMapper",
+        "Execute pagination query via TestModelService",
+        "Verify pagination result size and page size"
+      ]
+    }
+  ]
+}
