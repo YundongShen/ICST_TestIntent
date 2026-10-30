@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "csp.spec_1",
-      "objects": [],
+      "objects": [
+        "CSPheader"
+      ],
       "goals": [
         "test 'serverreturnsstrictCSPheader' should return a non-null response"
       ],
@@ -18,7 +20,9 @@
     },
     {
       "test_case": "csp.spec_2",
-      "objects": [],
+      "objects": [
+        "security headers"
+      ],
       "goals": [
         "test 'serverreturnsadditionalsecurityheaders' should set various security headers"
       ],
@@ -28,7 +32,9 @@
     },
     {
       "test_case": "csp.spec_3",
-      "objects": [],
+      "objects": [
+        "CSP violations"
+      ],
       "goals": [
         "test 'pageloadswithoutCSPviolations' should load the page without CSP violations"
       ],
@@ -38,7 +44,9 @@
     },
     {
       "test_case": "csp.spec_4",
-      "objects": [],
+      "objects": [
+        "served HTML"
+      ],
       "goals": [
         "test 'noinlinestylesinservedHTML' should not have inline styles in the served HTML"
       ],

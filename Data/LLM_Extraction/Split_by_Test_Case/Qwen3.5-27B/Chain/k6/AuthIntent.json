@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "Auth",
-      "objects": [],
+      "objects": [
+        "login API"
+      ],
       "goals": [
         "Verify login API returns HTTP 200 status for valid credentials"
       ],

@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "test__9",
-      "objects": [],
+      "objects": [
+        "file upload to workshop"
+      ],
       "goals": [
         "Verify the API returns HTTP 201 and correct response body for successful file upload to workshop",
         "Verify uploaded files are persisted in storage and workshop data is updated correctly"

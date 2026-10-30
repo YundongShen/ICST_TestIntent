@@ -8,7 +8,10 @@
   "test_cases": [
     {
       "test_case": "locustfile_2",
-      "objects": [],
+      "objects": [
+        "root endpoint",
+        "random page"
+      ],
       "goals": [
         "Verify the root endpoint returns the expected response content",
         "Verify the root endpoint response time meets the performance threshold"

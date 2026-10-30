@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "dog.test_1",
-      "objects": [],
+      "objects": [
+        "POST/users/connection"
+      ],
       "goals": [
         "verifythatusercanloginsuccessfullywithcorrectemailandpassword"
       ],

@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "vgSpecEditor.test",
-      "objects": [],
+      "objects": [
+        "vgSpecEditor directive"
+      ],
       "goals": [
         "Verify that the vgSpecEditor directive correctly displays the specification source code in the editor input field"
       ],

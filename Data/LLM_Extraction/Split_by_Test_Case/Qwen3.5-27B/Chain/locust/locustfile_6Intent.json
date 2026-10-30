@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "locustfile_6",
-      "objects": [],
+      "objects": [
+        "homepage and wallet dashboard endpoints"
+      ],
       "goals": [
         "Verify the homepage and wallet dashboard endpoints return HTTP 200 status codes",
         "Validate system stability under simulated concurrent user load"

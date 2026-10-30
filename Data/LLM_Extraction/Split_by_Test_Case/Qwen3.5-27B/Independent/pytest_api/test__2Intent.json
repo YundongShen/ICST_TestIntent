@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "test__2",
-      "objects": [],
+      "objects": [
+        "web service"
+      ],
       "goals": [
         "Verify Docker Compose integration successfully starts the web service",
         "Verify the web service returns expected responses and maintains state across requests"

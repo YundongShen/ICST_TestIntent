@@ -16,7 +16,9 @@
       "goals": [
         "test/whether/Concurrency.newDaemonThreadsetsdaemonpropertytoupdate"
       ],
-      "activities": []
+      "activities": [
+        "test/whether/Concurrency.newDaemonThreadsetsdaemonpropertytoupdate"
+      ]
     },
     {
       "test_case": "ConcurrencyTest_2",

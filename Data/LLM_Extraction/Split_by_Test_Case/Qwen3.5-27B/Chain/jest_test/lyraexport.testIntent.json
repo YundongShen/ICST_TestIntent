@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "lyraexport.test",
-      "objects": [],
+      "objects": [
+        "lyraExport directive"
+      ],
       "goals": [
         "Verify that the lyraExport directive renders the expected text content 'Export to lyra'"
       ],

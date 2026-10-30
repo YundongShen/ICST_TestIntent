@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "test__3",
-      "objects": [],
+      "objects": [
+        "GetWorkshop API"
+      ],
       "goals": [
         "Verify the GetWorkshop API successfully retrieves workshop data with correct status and content for a valid workshop ID"
       ],

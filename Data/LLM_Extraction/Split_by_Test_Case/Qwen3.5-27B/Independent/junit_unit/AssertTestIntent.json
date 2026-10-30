@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "AssertTest",
-      "objects": [],
+      "objects": [
+        "mockList"
+      ],
       "goals": [
         "Verify that the mocked list size returns the expected value 999"
       ],

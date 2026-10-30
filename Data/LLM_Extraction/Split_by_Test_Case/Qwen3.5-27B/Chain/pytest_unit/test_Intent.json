@@ -16,7 +16,9 @@
     },
     {
       "test_case": "test__2",
-      "objects": [],
+      "objects": [
+        "path"
+      ],
       "goals": [
         "Verify the client correctly forwards HTTP request parameters (path, headers) to the backend service"
       ],
@@ -24,7 +26,9 @@
     },
     {
       "test_case": "test__3",
-      "objects": [],
+      "objects": [
+        "headers"
+      ],
       "goals": [
         "Verify the client correctly forwards HTTP request parameters (path, headers) to the backend service",
         "Verify the client correctly retrieves and returns response content and headers from the backend service"

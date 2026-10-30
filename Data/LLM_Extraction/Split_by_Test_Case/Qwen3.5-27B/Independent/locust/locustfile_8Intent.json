@@ -8,7 +8,13 @@
   "test_cases": [
     {
       "test_case": "locustfile_8",
-      "objects": [],
+      "objects": [
+        "home page",
+        "login page",
+        "about us page",
+        "note page",
+        "user profile page"
+      ],
       "goals": [
         "Evaluate system performance and stability under simulated concurrent user load",
         "Verify key endpoint availability and response times under load"

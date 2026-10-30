@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "configurationeditor.test_1",
-      "objects": [],
+      "objects": [
+        "configurationEditor directive"
+      ],
       "goals": [
         "Verify the configurationEditor directive renders the expected form element"
       ],
@@ -20,7 +22,9 @@
     },
     {
       "test_case": "configurationeditor.test_2",
-      "objects": [],
+      "objects": [
+        "configurationEditor directive"
+      ],
       "goals": [
         "Verify the configurationEditor directive correctly binds Config to the isolate scope"
       ],

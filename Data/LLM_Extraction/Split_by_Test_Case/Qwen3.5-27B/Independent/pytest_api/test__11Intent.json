@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "test__11",
-      "objects": [],
+      "objects": [
+        "workshop update API"
+      ],
       "goals": [
         "Verify the workshop update API returns 200 OK status for valid requests",
         "Verify the workshop data is correctly updated and persisted in the database"

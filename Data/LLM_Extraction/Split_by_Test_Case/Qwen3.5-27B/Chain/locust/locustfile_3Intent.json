@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "locustfile_3",
-      "objects": [],
+      "objects": [
+        "index and prediction endpoints"
+      ],
       "goals": [
         "Assess system performance and stability under simulated user load",
         "Verify the availability and response time of the index and prediction endpoints"

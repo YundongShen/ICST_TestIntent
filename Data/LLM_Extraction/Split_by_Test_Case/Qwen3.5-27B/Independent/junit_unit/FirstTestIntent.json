@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "FirstTest_1",
-      "objects": [],
+      "objects": [
+        "TaskDaoImpl.create"
+      ],
       "goals": [
         "Verify TaskDaoImpl.create returns expected key"
       ],
@@ -21,7 +23,9 @@
     },
     {
       "test_case": "FirstTest_2",
-      "objects": [],
+      "objects": [
+        "TaskDaoImpl.get"
+      ],
       "goals": [
         "Verify TaskDaoImpl.get returns expected Task object"
       ],

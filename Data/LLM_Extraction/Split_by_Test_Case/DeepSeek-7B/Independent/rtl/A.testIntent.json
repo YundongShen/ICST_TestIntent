@@ -15,7 +15,9 @@
       "goals": [
         "testobjectshouldrenderalinkwithcorrecthtmlcontent"
       ],
-      "activities": []
+      "activities": [
+        "testobjectshouldrenderalinkwithcorrecthtmlcontent"
+      ]
     },
     {
       "test_case": "A.test_2",

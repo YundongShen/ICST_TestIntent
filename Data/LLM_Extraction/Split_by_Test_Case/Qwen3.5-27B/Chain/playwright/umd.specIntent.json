@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "umd.spec_1",
-      "objects": [],
+      "objects": [
+        "'globus' namespace"
+      ],
       "goals": [
         "Verify that the SDK is correctly exported globally under the 'globus' namespace with all expected modules defined"
       ],
@@ -19,7 +21,9 @@
     },
     {
       "test_case": "umd.spec_2",
-      "objects": [],
+      "objects": [
+        "authorization flow"
+      ],
       "goals": [
         "Verify that the authorization flow initiates correctly by redirecting to the Globus Auth service with valid OAuth parameters"
       ],

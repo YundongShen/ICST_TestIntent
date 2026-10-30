@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "put.test_1",
-      "objects": [],
+      "objects": [
+        "update comment endpoint"
+      ],
       "goals": [
         "Verify the update comment endpoint successfully updates comment content and returns HTTP 200 status"
       ],
@@ -28,7 +30,9 @@
     },
     {
       "test_case": "put.test_2",
-      "objects": [],
+      "objects": [
+        "update comment endpoint"
+      ],
       "goals": [
         "Verify the update comment endpoint returns HTTP 404 status when content field is missing"
       ],

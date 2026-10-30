@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "unit_test_",
-      "objects": [],
+      "objects": [
+        "obtainUserNameEmail endpoint"
+      ],
       "goals": [
         "Verify the obtainUserNameEmail endpoint returns HTTP 200 status upon successful authentication",
         "Verify the obtainUserNameEmail endpoint returns the correct user details in the response body"

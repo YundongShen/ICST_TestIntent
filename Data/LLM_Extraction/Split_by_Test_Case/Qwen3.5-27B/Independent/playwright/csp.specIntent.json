@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "csp.spec_1",
-      "objects": [],
+      "objects": [
+        "Content-Security-Policy header"
+      ],
       "goals": [
         "Verify the server returns strict Content Security Policy and additional security headers"
       ],
@@ -22,7 +24,12 @@
     },
     {
       "test_case": "csp.spec_2",
-      "objects": [],
+      "objects": [
+        "x-content-type-options header",
+        "x-frame-options header",
+        "referrer-policy header",
+        "permissions-policy header"
+      ],
       "goals": [
         "Verify the server returns strict Content Security Policy and additional security headers"
       ],
@@ -38,7 +45,10 @@
     },
     {
       "test_case": "csp.spec_3",
-      "objects": [],
+      "objects": [
+        "CSP messages",
+        "page error"
+      ],
       "goals": [
         "Verify the page loads without CSP violations or insecure inline styles"
       ],
@@ -54,7 +64,9 @@
     },
     {
       "test_case": "csp.spec_4",
-      "objects": [],
+      "objects": [
+        "response HTML text"
+      ],
       "goals": [
         "Verify the page loads without CSP violations or insecure inline styles"
       ],

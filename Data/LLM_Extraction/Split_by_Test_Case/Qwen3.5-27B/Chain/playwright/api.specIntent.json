@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "api.spec_1",
-      "objects": [],
+      "objects": [
+        "Heroic Games Launcher"
+      ],
       "goals": [
         "Verify application launches and displays correct page title"
       ],
@@ -18,7 +20,9 @@
     },
     {
       "test_case": "api.spec_2",
-      "objects": [],
+      "objects": [
+        "integrated backend components"
+      ],
       "goals": [
         "Verify integrated backend components meet minimum version requirements"
       ],

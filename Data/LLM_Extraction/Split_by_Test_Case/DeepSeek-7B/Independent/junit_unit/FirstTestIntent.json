@@ -14,7 +14,9 @@
       "goals": [
         "test_create_key_returns_correct_value"
       ],
-      "activities": []
+      "activities": [
+        "test_create_key_returns_correct_value"
+      ]
     },
     {
       "test_case": "FirstTest_2",
@@ -25,7 +27,9 @@
       "goals": [
         "test_get_returns_correct_task"
       ],
-      "activities": []
+      "activities": [
+        "test_get_returns_correct_task"
+      ]
     }
   ]
 }

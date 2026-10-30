@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "utils.spec_1",
-      "objects": [],
+      "objects": [
+        "levenstein"
+      ],
       "goals": [
         "Test the 'levenstein' function by calculating the distance between two identical strings, two different strings, two similar strings, and two strings with combined words"
       ],
@@ -18,7 +20,9 @@
     },
     {
       "test_case": "utils.spec_2",
-      "objects": [],
+      "objects": [
+        "levenstein"
+      ],
       "goals": [
         "Test the 'levenstein' function by calculating the distance between two identical strings, two different strings, two similar strings, and two strings with combined words"
       ],
@@ -28,7 +32,9 @@
     },
     {
       "test_case": "utils.spec_3",
-      "objects": [],
+      "objects": [
+        "levenstein"
+      ],
       "goals": [
         "Test the 'levenstein' function by calculating the distance between two identical strings, two different strings, two similar strings, and two strings with combined words"
       ],
@@ -38,7 +44,9 @@
     },
     {
       "test_case": "utils.spec_4",
-      "objects": [],
+      "objects": [
+        "levenstein"
+      ],
       "goals": [
         "Test the 'levenstein' function by calculating the distance between two identical strings, two different strings, two similar strings, and two strings with combined words"
       ],
@@ -48,7 +56,9 @@
     },
     {
       "test_case": "utils.spec_5",
-      "objects": [],
+      "objects": [
+        "levenstein"
+      ],
       "goals": [
         "Test the 'levenstein' function by calculating the distance between two identical strings, two different strings, two similar strings, and two strings with combined words"
       ],

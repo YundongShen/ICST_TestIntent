@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "index.test",
-      "objects": [],
+      "objects": [
+        "SimpleMdeReact component"
+      ],
       "goals": [
         "Verify that the SimpleMdeReact component renders successfully and correctly displays user input text"
       ],

@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "SampleSmokeTest",
-      "objects": [],
+      "objects": [
+        "root endpoint"
+      ],
       "goals": [
         "Verify the application is deployed and accessible via HTTP",
         "Verify the root endpoint returns a successful response with expected content"

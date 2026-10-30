@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "ADD_test__1",
-      "objects": [],
+      "objects": [
+        "ADD function"
+      ],
       "goals": [
         "Verify the correctness of the ADD function's arithmetic operations for Vector and Scalar inputs"
       ],
@@ -20,7 +22,9 @@
     },
     {
       "test_case": "ADD_test__2",
-      "objects": [],
+      "objects": [
+        "ADD function"
+      ],
       "goals": [
         "Verify the correctness of the ADD function's arithmetic operations for Vector and Scalar inputs"
       ],
@@ -32,7 +36,9 @@
     },
     {
       "test_case": "ADD_test__3",
-      "objects": [],
+      "objects": [
+        "ADD function"
+      ],
       "goals": [
         "Verify the ADD function correctly handles OrderedPair data structures during addition operations"
       ],
