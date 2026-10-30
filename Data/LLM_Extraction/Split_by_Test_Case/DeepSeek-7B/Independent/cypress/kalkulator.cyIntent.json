@@ -8,30 +8,42 @@
   "test_cases": [
     {
       "test_case": "kalkulator.cy_1",
-      "objects": [],
+      "objects": [
+        "adding2+3"
+      ],
       "goals": [
         "testkalkulatora",
         "verifythatadding2+3=5"
       ],
-      "activities": []
+      "activities": [
+        "verifythatadding2+3=5"
+      ]
     },
     {
       "test_case": "kalkulator.cy_2",
-      "objects": [],
+      "objects": [
+        "multiplication6*7"
+      ],
       "goals": [
         "testkalkulatora",
         "verifythatmultiplication6*7=42"
       ],
-      "activities": []
+      "activities": [
+        "verifythatmultiplication6*7=42"
+      ]
     },
     {
       "test_case": "kalkulator.cy_3",
-      "objects": [],
+      "objects": [
+        "clearingthescreen"
+      ],
       "goals": [
         "testkalkulatora",
         "verifyclearingthescreen"
       ],
-      "activities": []
+      "activities": [
+        "verifyclearingthescreen"
+      ]
     }
   ]
 }

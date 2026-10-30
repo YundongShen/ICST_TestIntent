@@ -22,7 +22,9 @@
       "goals": [
         "Verify the client correctly forwards HTTP request parameters (path, headers) to the backend service"
       ],
-      "activities": []
+      "activities": [
+        "Verify the client correctly forwards HTTP request parameters (path) to the backend service"
+      ]
     },
     {
       "test_case": "test__3",
@@ -33,7 +35,10 @@
         "Verify the client correctly forwards HTTP request parameters (path, headers) to the backend service",
         "Verify the client correctly retrieves and returns response content and headers from the backend service"
       ],
-      "activities": []
+      "activities": [
+        "Verify the client correctly forwards HTTP request parameters (headers) to the backend service",
+        "Verify the client correctly retrieves and returns response headers from the backend service"
+      ]
     }
   ]
 }

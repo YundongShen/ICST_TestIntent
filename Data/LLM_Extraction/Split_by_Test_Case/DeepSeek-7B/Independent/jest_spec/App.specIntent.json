@@ -18,7 +18,9 @@
       "goals": [
         "testthatrenderscorrectly"
       ],
-      "activities": []
+      "activities": [
+        "testthatrenderscorrectly"
+      ]
     },
     {
       "test_case": "App.spec_2",
@@ -33,7 +35,9 @@
       "goals": [
         "testthatcountincrementscorrectly"
       ],
-      "activities": []
+      "activities": [
+        "testthatcountincrementscorrectly"
+      ]
     }
   ]
 }

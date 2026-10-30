@@ -34,7 +34,9 @@
       "goals": [
         "verifyQAmetricsandcards"
       ],
-      "activities": []
+      "activities": [
+        "verifyQAmetricsandcards"
+      ]
     },
     {
       "test_case": "qa.spec_3",
@@ -48,7 +50,9 @@
       "goals": [
         "verifytestresultsandstatus"
       ],
-      "activities": []
+      "activities": [
+        "verifytestresultsandstatus"
+      ]
     },
     {
       "test_case": "qa.spec_4",
@@ -62,7 +66,9 @@
       "goals": [
         "verifycoverageandchartelements"
       ],
-      "activities": []
+      "activities": [
+        "verifycoverageandchartelements"
+      ]
     }
   ]
 }

@@ -35,7 +35,9 @@
       "goals": [
         "testobjectshouldtriggerclickwithcorrectbehavior"
       ],
-      "activities": []
+      "activities": [
+        "testobjectshouldtriggerclickwithcorrectbehavior"
+      ]
     }
   ]
 }
