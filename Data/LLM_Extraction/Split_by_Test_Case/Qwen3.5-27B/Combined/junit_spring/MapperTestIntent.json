@@ -22,7 +22,9 @@
     },
     {
       "test_case": "MapperTest_2",
-      "objects": [],
+      "objects": [
+        "TestModelMapper"
+      ],
       "goals": [
         "Verify TestModelMapper insertion and pagination retrieval functionality"
       ],

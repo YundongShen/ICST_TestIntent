@@ -20,7 +20,9 @@
     },
     {
       "test_case": "api.spec_2",
-      "objects": [],
+      "objects": [
+        "Heroic Games Launcher"
+      ],
       "goals": [
         "verify application rendering and component version compliance"
       ],
