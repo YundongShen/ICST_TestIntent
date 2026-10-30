@@ -1,0 +1,12 @@
+**Test Object**
+`GET /api/books/:id` Interface
+
+**Test Goal**
+Verify that requesting an existing resource returns a success status code with the correct data.
+
+**Test Activities**
+1. Send a GET request to `/api/books/1`.
+2. Check that the status code is 200.
+3. Check that the `id` field in the returned body is 1.
+
+---

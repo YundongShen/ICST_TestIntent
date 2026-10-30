@@ -1,0 +1,12 @@
+**Test Object**
+Other security response headers from the server
+
+**Test Goal**
+Confirm that the response contains the correct fields.
+
+**Test Activities**
+1. Access `/` and retrieve the response header.
+2. Assert `x-content-type-options` as `nosniff`.
+3. Assert `x-frame-options` as `DENY`.
+4. Assert `referrer-policy` as `strict-origin-when-cross-origin`.
+5. Assert `permissions-policy` as containing `camera=()`.

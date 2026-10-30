@@ -1,0 +1,11 @@
+**Test Object**
+`ADD.ADD` function
+
+**Test Goal**
+Verify that when given an `OrderedPair` and a vector, the output of the `OrderedPair` is: `x` remains unchanged, and `y` is equal to the original `y` plus the value at the corresponding position in the vector.
+
+**Test Activities**
+1. Construct an array of `x` (-10~9), an array of `y` (-20~18), and an array of `z` (-30~27).
+2. Create `OrderedPair(x=x, y=y)` as `a` and `Vector(v=z)` as `b`.
+3. Call `ADD.ADD(a=OrderedPair(x=x, y=y), b=[Vector(v=z)])`.
+4. Assert that the returned `res.x` is the same as the original `x`, and `res.y` is equal to `y + z`.

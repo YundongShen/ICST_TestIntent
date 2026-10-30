@@ -1,0 +1,13 @@
+**Test Object**
+Login Functionality (Incorrect Credential Handling)
+
+**Test Goal**
+Verify that after entering an invalid username and password, login fails and an error message is displayed.
+
+**Test Activities**
+1. Access `http://localhost:3000`.
+2. Click the login entry.
+3. Enter `9999999` in the username input box.
+4. Enter `9999` in the password input box.
+5. Click the login button.
+6. Assert the error message element `[data-content=""] > div` to be visible.

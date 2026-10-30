@@ -1,0 +1,9 @@
+**Test Object**
+Submodule of the UMD package `@globus/sdk`
+
+**Test Goal**
+Confirm that the UMD build exposes all expected modules and that `window.globus` itself is defined.
+
+**Test Activities**
+1. Open the UMD test page `umd` and verify the page title.
+2. Check `window.globus` and a series of fields using `page.evaluate` to ensure they are defined.

@@ -1,0 +1,9 @@
+**Test Object**
+The `getMeunMatcheys` function
+
+**Test Goal**
+Verify that a non-matching path returns an empty result.
+
+**Test Activities**
+1. Call `getMeunMatcheys(meun, '/dashboardname')`.
+2. Assert the return value as `[]`.

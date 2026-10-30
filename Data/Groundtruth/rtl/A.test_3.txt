@@ -1,0 +1,11 @@
+**Test Object**
+`<A>` Component
+
+**Test Goal**
+Exercise the component's click callback; the assertion is inside the callback and does not independently establish that the callback runs.
+
+**Test Activities**
+1. Prepare a flag variable `io`, initialized to 0, and an `onClick` callback.
+2. Render `<A data-testid="a.clickme" onClick={onClick}>click</A>`.
+3. Find the element using `data-testid` and simulate a click.
+4. If the callback runs, set `io` to 1 and assert that it is truthy inside the callback; no assertion after the click checks whether the callback ran.

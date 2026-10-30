@@ -1,0 +1,12 @@
+**Test Object**
+Modal element `[role="dialog"]`
+
+**Test Goal**
+Attempt to confirm that there is only one modal on the page and its initial state is hidden; neither condition is enforced by the current code.
+
+**Test Activities**
+1. Visit the homepage `/`.
+2. Locate the `[role="dialog"]` element.
+3. Get the `aria-hidden` attribute of this element.
+4. Compare the modal count with 1 and pass the result to `expect`, without calling a matcher.
+5. Compare the saved attribute value with `"true"` and pass the result to `expect`, without calling a matcher; neither comparison is asserted.

@@ -1,0 +1,12 @@
+**Test Object**
+Amazon India Product Search, Add-to-Cart, and Checkout Process
+
+**Test Goal**
+Exercise product search, product selection, adding to the cart, and clicking the checkout button; the code does not explicitly check the final checkout page or URL.
+
+**Test Activities**
+1. Open the Amazon India homepage.
+2. Enter `T-shirt` in the search box and click the search button.
+3. Locate the first product link in the search results, remove the `target` attribute, and click to enter the product details page.
+4. Click the "Add to Cart" button to add the product to your shopping cart.
+5. Click the "Proceed to checkout" button to proceed to the checkout page.

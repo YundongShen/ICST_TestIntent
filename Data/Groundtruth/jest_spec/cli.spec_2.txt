@@ -1,0 +1,10 @@
+**Test Object**
+The `cli.parseCozyURL` function
+
+**Test Goal**
+Verify that the function correctly removes the trailing forward slash when the URL has one at the end.
+
+**Test Activities**
+1. Prepare a URL with a trailing forward slash: `'https://toto.mycozy.cloud/'`.
+2. Call `cli.parseCozyURL(urlIn)`.
+3. Assert the return value to `'https://toto.mycozy.cloud'` without the forward slashes.

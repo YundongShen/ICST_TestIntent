@@ -1,0 +1,10 @@
+**Test Object**
+`cli.parseCozyURL` function
+
+**Test Goal**
+Check the error message if a URL without an `http` prefix causes an exception; the test does not require that an exception is thrown.
+
+**Test Activities**
+1. Prepare a URL that does not start with `http`: `'toto.mycozy.cloud'`.
+2. Call `cli.parseCozyURL(cozyUrl)` inside a try/catch block.
+3. If an exception is caught, assert that its message matches `'Cozy url must start with \`http\`'; the test also passes this block when no exception is thrown.

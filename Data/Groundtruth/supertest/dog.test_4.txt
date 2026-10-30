@@ -1,0 +1,9 @@
+**Test Object**
+POST /users/connection Login Interface
+
+**Test Goal**
+Verify that login with a non-existent email address fails and returns the appropriate error message.
+
+**Test Activities**
+1. Send a POST request with a non-existent email address `"nonexistent@example.com"` and a correct password.
+2. Check for a 200 status code, `result` of `false`, and `error` of `"User not found or wrong password"`.

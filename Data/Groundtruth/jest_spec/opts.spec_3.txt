@@ -1,0 +1,9 @@
+**Test Object**
+The `getSizes` function
+
+**Test Goal**
+Verify that an array of multiple resolution strings is correctly parsed into an array of objects of corresponding sizes. 
+
+**Test Activities**
+1. Call `getSizes(['100x200', '300x400'])`.
+2. Assert the result as `[{ w: 100, h: 200 }, { w: 300, h: 400 }]`.

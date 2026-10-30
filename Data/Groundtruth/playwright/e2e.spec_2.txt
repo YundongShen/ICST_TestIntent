@@ -1,0 +1,12 @@
+**Test Object**
+Blog List Page ("/blog")
+
+**Test Goal**
+Verify that after navigating to the blog list page, all articles are displayed and the expected number of links is present.
+
+**Test Activities**
+1. Open the homepage "http://localhost:3000/" and confirm that the title is "simple-remix-blog".
+2. Click the "Blog" navigation link.
+3. Check that the URL changes to "/blog".
+4. Check that the title "All posts" is visible on the page.
+5. Count the number of "Read more" links on the page and confirm that there are 4.

@@ -1,0 +1,11 @@
+**Test Object**
+`POST /api/books` API
+
+**Test Goal**
+Verify that creating a new book with valid data returns a success response with the correct book information.
+
+**Test Activities**
+1. Construct new book data (title: "Dune", author: "Frank Herbert", genre: "Sci-Fi", copiesAvailable: 4).
+2. Send a POST request to `/api/books`, carrying the above JSON data.
+3. Check that the status code is 201.
+4. Check that the `title` in the returned body is "Dune".

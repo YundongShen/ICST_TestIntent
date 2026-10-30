@@ -1,0 +1,11 @@
+**Test Object**
+Calculator's Addition Function
+
+**Test Goal**
+Confirm the correctness of the addition function in calculation mode.
+
+**Test Activities**
+1. Enter calculation mode and ensure the service is healthy.
+2. Enter the numbers 2 and 3.
+3. Perform the addition operation.
+4. Check that the result equals 5.

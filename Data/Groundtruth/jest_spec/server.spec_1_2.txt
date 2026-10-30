@@ -1,0 +1,9 @@
+**Test Object**
+GET / Root Route
+
+**Test Goal**
+Verify that the response type of the root path is `text/html`.
+
+**Test Activities**
+1. Send a GET request to `/`.
+2. Assert the response type to `"text/html"`.

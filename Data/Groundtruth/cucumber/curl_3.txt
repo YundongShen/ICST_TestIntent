@@ -1,0 +1,10 @@
+**Test Object**
+`verbs.attack` attack file
+
+- **Test Goal**
+Verify that the verbs attack script executes successfully and all scenarios pass.
+
+- **Test Activities**
+1. Ensure the `verbs.attack` file exists.
+2. Execute the command `gauntlt verbs.attack`.
+3. Check if the output contains `5 scenarios (5 passed)`.

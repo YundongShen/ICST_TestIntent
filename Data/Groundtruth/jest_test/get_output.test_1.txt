@@ -1,0 +1,11 @@
+**Test Object**
+`getOutput` Function
+
+**Test Goal**
+When there is no grouping information, the function directly puts the task into the output array, keeping the task name unchanged.
+
+**Test Activities**
+1. Prepare an empty array `output = []` and the task `{ name: 'mocha' }`.
+2. Call `getOutput(output, {}, task)`.
+3. Assert that the length of `output` is 1.
+4. Assert that `output[0].name` equals `'mocha'`.

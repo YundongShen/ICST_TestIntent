@@ -1,0 +1,12 @@
+**Test Object**
+The style of the `.alert-primary` element
+
+**Test Goal**
+Attempt to verify that the alert style is applied after Bootstrap CSS loads; the current code does not assert that the colors differ.
+
+**Test Activities**
+1. Visit the homepage `/`.
+2. Get the initial background color of the first `.alert-primary` element.
+3. Wait for the Bootstrap CSS request to complete.
+4. Get the background color of the same element again.
+5. Compare the two colors and pass the Boolean result to `expect`, without calling a matcher; this does not enforce that the colors differ.

@@ -1,0 +1,11 @@
+**Test Object**
+`GET /api/books` Interface
+
+**Test Goal**
+Verify that calling this interface returns the expected status code and the response body is an array.
+
+**Test Activities**
+1. Send a GET request to `/api/books`.
+2. Check that the status code is 200.
+
+3. Check that the response body is an array.

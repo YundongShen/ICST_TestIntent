@@ -1,0 +1,9 @@
+**Test Object**
+`getVariances` function
+
+**Test Goal**
+Throws an exception if an out-of-range or invalid variance value is passed in.
+
+**Test Activities**
+1. Call `getVariances('1.1')`, `getVariances('-1')`, and `getVariances('foo')` respectively.
+2. Assert that an exception is thrown on each call.

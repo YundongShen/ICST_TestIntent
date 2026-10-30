@@ -1,0 +1,10 @@
+**Test Object**
+A rich text editor within an iframe
+
+**Test Goal**
+Exercise iframe access through the custom command, text entry, selection, and the bold button; the code does not inspect the final bold formatting.
+
+**Test Activities**
+1. Open the page containing the iframe.
+2. Use the custom command `getIframe` to locate the editor and enter "Hello" to select all.
+3. Click the bold button.

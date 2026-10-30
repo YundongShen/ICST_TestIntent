@@ -1,0 +1,11 @@
+**Test Object**
+The `ADD.ADD` function
+
+**Test Goal**
+Verify that when given a vector and multiple scalars, the function correctly adds the scalars to each element of the vector.
+
+**Test Activities**
+1. Construct a vector `x` with values ​​from -10 to 9.
+2. Create a list of scalars `[Scalar(c=2), Scalar(c=3)]` as the `b` parameter.
+3. Call `ADD.ADD(a=x, b=[Scalar(c=2), Scalar(c=3)])`.
+4. Use NumPy assertions to show that the returned vector is equal to `x.v + 2 + 3`.

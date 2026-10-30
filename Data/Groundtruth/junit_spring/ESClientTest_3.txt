@@ -1,0 +1,9 @@
+**Test Object**
+`QueryDAO.wildcardQuery` Method
+
+**Test Goal**
+Verify that a wildcard query returns matching results.
+
+**Test Activities**
+1. Call `dao.wildcardQuery("akd")`.
+2. Assert that the returned list is not empty.

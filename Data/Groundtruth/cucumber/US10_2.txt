@@ -1,0 +1,12 @@
+**Test Object**
+**Report Functionality for Viewing Cumulative Expenses by Crop**
+
+**Test Goal**
+Verify that after a user selects a crop and enters the financial panel, they can see a summary table listing the date, concept, amount, and total investment amount for all expenses related to that crop.
+
+**Test Activities**
+1. Select a crop.
+2. (Optional) Set the query time range.
+3. Enter the financial panel for that crop.
+4. Check if the report table displayed on the page includes "Concepto de gasto" and "Monto" for each expense.
+5. Check if "Inversión total" and the correct cumulative total are displayed at the bottom of the table.

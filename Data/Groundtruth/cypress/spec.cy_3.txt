@@ -1,0 +1,10 @@
+**Test Object**
+Login page form submission functionality
+
+**Test Goal**
+If you submit the form without entering any information, the page will display an invalid username error message.
+
+**Test Activities**
+1. Open the login page.
+2. Click the login button directly (without entering any username or password).
+3. Check if the Flash error message contains `Your username is invalid!`.

@@ -1,0 +1,10 @@
+**Test Object**
+`POST /test` and `GET /test` Routes
+
+**Test Goal**
+Verify that after sending form data to `/test`, a subsequent GET request returns the previously stored array.
+
+**Test Activities**
+1. Send a POST request to `/test`, submitting `item=hey` in `form` format.
+2. Then send a GET request to `/test`.
+3. Verify that the response body is `{ array: ["hey"] }`.

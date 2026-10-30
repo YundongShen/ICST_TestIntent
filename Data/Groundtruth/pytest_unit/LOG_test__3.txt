@@ -1,0 +1,11 @@
+**Test Object**
+`LOG.LOG` Function
+
+**Test Goal**
+Verifies that when the input is an OrderedPair and a Vector, it can correctly calculate the logarithm with the base of the corresponding position in the base vector, and the output x remains unchanged while y is the calculated result.
+
+**Test Activities**
+1. Construct arrays `x` (10-19), `y` (20-29), and `z` (30-39).
+2. Create `OrderedPair(x=x, y=y)` as `a`, `Vector(v=z)` as `b`, and call `LOG.LOG`.
+3. Calculate `log(y) / log(z)` using NumPy as the expected value of `y`.
+4. Assert that `res.x` is consistent with the original `x`, and `res.y` is exactly consistent with the expected value.

@@ -1,0 +1,9 @@
+**Test Object**
+The `levenstein` function
+
+**Test Goal**
+Verify that the edit distance between two same strings is calculated correctly.
+
+**Test Activities**
+1. Call `levenstein('aaa', 'aaa')`.
+2. Assert the return value to 0.

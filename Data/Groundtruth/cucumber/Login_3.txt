@@ -1,0 +1,12 @@
+**Test Object**
+Access control for your profile page (`/profile`)
+
+
+**Test Goal**
+Verify that unauthenticated access to a protected page is blocked and a login prompt is displayed.
+
+
+**Test Activities**
+1. Ensure you are not currently logged in.
+2. Access the `/profile` page.
+3. Check the page displaying the text `Please log in to access your profile.`.

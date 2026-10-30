@@ -1,0 +1,9 @@
+**Test Object**
+The `getMeunMatcheys` function
+
+**Test Goal**
+Verify that a nested parameterized path is correctly matched against the route pattern.
+
+**Test Activities**
+1. Call `getMeunMatcheys(meun, '/userinfo/2144/info')`.
+2. Assert the return value as `['/userinfo/:id/info']`.

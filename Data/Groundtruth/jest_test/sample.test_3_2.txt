@@ -1,0 +1,9 @@
+**Test Object**
+The `credentials.clientID` field in `authConfig.js`
+
+**Test Goal**
+Verify that the client ID field does not contain a real GUID to prevent sensitive information leakage.
+
+**Test Activities**
+1. Use a GUID regular expression to match `config.credentials.clientID`.
+2. Assert that the match result is false.

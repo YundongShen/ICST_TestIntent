@@ -1,0 +1,9 @@
+**Test Object**
+The page's `body` element
+
+**Test Goal**
+Confirm that the `body` element is hidden during initial page load.
+
+**Test Activities**
+1. Visit the homepage `/`.
+2. Check that the `body` element is hidden.

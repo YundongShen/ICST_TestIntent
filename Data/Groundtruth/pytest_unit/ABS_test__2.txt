@@ -1,0 +1,10 @@
+**Test Object**
+`ABS.ABS` function
+
+**Test Goal**
+Verify that the absolute value of each element in a vector is correctly calculated.
+
+**Test Activities**
+1. Construct a vector `x` with values from -10 to 9.
+2. Call `ABS.ABS(default=x)`.
+3. Assert that `res.x` matches the input `x.v` and `res.y` matches `np.abs(x.v)`.

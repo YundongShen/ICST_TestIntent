@@ -1,0 +1,11 @@
+**Test Object**
+`LOG.LOG` Function
+
+**Test Goal**
+Verifies that when the input is a Vector and a Scalar, it can correctly calculate the logarithm with the base of the Scalar, and the result is consistent with the direct calculation by NumPy.
+
+**Test Activities**
+1. Construct a vector `x` with a range of 1 to 10 and a base Scalar `c=2`.
+2. Call `LOG.LOG(a=x, b=[Scalar(c=2)], log_base="input")`.
+3. Calculate `log(x) / log(2)` using NumPy as the expected value.
+4. Assert that the returned vector `res.v` is completely consistent with the expected value.

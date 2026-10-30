@@ -1,0 +1,11 @@
+**Test Object**
+Complete Wood Processing Flow
+
+**Test Goal**
+Verify that when the wood is loaded and the thickness is set, pressing the "Start Processing" button allows the machine to complete the processing and achieve the specified wood thickness.
+
+**Test Activities**
+1. Confirm that the wood is loaded onto the machine.
+2. Confirm that the cutting thickness has been set.
+3. Press the "Start Processing" button.
+4. Check if the machine has executed the processing procedure. 5. Check whether the thickness of the processed wood matches the set value.

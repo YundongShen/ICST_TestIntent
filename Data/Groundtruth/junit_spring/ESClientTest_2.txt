@@ -1,0 +1,9 @@
+**Test Object**
+`QueryDAO.matchAllQuery` Method
+
+**Test Goal**
+Verify that a full query returns data and the result list is not empty.
+
+**Test Activities**
+1. Call `dao.matchAllQuery()`.
+2. Assert that the returned list is not empty.

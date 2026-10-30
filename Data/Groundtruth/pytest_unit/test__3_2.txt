@@ -1,0 +1,10 @@
+**Test Object**
+The `find_data` function
+
+**Test Goal**
+Confirms that `find_data` returns `None` when searching for a non-existent name.
+
+**Test Activities**
+1. Use the same mock worksheet data.
+2. Call `find_data(mock_sheet, search_value_not_found)` with a non-existent name `'Николай Николаев'`.
+3. Assert that the returned result is `None`.

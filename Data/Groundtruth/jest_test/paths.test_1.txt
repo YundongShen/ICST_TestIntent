@@ -1,0 +1,9 @@
+**Test Object**
+`treeviewString` function
+
+**Test Goal**
+Verify that this function can construct the correct tree path based on `owner` and `repo`.
+
+**Test Activities**
+1. Call `treeviewString({ owner: 'foo', repo: 'bar' })`.
+2. Assert that the return value is `'foo/bar/tree'`.

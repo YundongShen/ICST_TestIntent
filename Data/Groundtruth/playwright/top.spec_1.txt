@@ -1,0 +1,10 @@
+**Test Object**
+Homepage (`/`) Navigation Area
+
+**Test Goal**
+Verify that the homepage navigation bar displays the application name and that the login link is visible.
+
+**Test Activities**
+1. Open the homepage `/`.
+2. Check that the navigation area contains the text "SPARQList".
+3. Check that the link named "Login" is visible.

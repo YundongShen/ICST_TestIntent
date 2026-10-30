@@ -1,0 +1,9 @@
+**Test Object**
+The `getMeunMatcheys` function
+
+**Test Goal**
+Verify that a second-level path is correctly matched.
+
+**Test Activities**
+1. Call `getMeunMatcheys(meun, '/dashboard/name')`.
+2. Assert the return value as `['/dashboard/name']`.

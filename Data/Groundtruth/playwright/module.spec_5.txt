@@ -1,0 +1,10 @@
+**Test Object**
+“Launch demo modal” button
+
+**Test Goal**
+Locate the modal launch button and check that its Locator object is defined; this does not verify that a matching DOM element exists.
+
+**Test Activities**
+1. Visit the homepage `/`.
+2. Create a Locator for the text `"Launch demo modal"`.
+3. Assert that the Locator object is defined, without checking whether it matches a DOM element.

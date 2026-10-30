@@ -1,0 +1,9 @@
+**Test Object**
+The `authConfig.js` configuration file
+
+**Test Goal**
+Confirm that the configuration object can be loaded and defined correctly.
+
+**Test Activities**
+1. Load `authConfig.js` before testing and assign it to the global `config`.
+2. Assert that `config` is not undefined.

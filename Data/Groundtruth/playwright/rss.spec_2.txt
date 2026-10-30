@@ -1,0 +1,12 @@
+**Test Object**
+RSS Link Redirect Behavior and New Page
+
+**Test Goal**
+Verify that clicking the RSS link opens the RSS feed in a new tab.
+
+**Test Activities**
+1. Open the homepage `/`.
+2. Wait for the new page event.
+3. Click the link named "RSS".
+4. Wait for the new page to open.
+5. Retrieve all pages in the context and assert that the URL of the second page is `/rss.xml`.

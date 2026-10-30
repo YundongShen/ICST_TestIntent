@@ -1,0 +1,9 @@
+**Test Object**
+The `getMeunMatcheys` function
+
+**Test Goal**
+Verify that an exact simple path is correctly matched.
+
+**Test Activities**
+1. Call `getMeunMatcheys(meun, '/dashboard')`.
+2. Assert the return value as `['/dashboard']`.

@@ -1,0 +1,10 @@
+**Test Object**
+`GET /watermelon` route
+
+**Test Goal**
+Verify that accessing this path via async/await returns the correct status code and content.
+
+**Test Activities**
+1. Send a GET request to `/watermelon` using async/await.
+2. Verify that the response status code is 200.
+3. Verify that the response text is `"watermelon 🐓"`.

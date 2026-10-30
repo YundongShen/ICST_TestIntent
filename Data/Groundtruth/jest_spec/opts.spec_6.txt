@@ -1,0 +1,9 @@
+**Test Object**
+`getVariances` function
+
+**Test Goal**
+Verifies that multiple variance string arrays can be correctly parsed into corresponding numeric arrays.
+
+**Test Activities**
+1. Call `getVariances(['0.333', '0.1', '1'])`.
+2. Assert the result as `[0.333, 0.1, 1]`.

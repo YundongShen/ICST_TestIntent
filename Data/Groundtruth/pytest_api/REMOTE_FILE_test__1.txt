@@ -1,0 +1,10 @@
+**Test Object**
+`REMOTE_FILE.REMOTE_FILE` Function
+
+**Test Goal**
+Verifies that this function can correctly load and return an object of the expected type from a remote URL for various file types.
+
+**Test Activities**
+1. For each file type, pass in the corresponding remote file URL and the `file_type` parameter.
+2. Call `REMOTE_FILE.REMOTE_FILE(file_url, file_type)`.
+3. Assert that the type of the returned object matches the expected output type.

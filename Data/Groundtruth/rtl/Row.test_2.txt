@@ -1,0 +1,11 @@
+**Test Object**
+`Row` Component
+
+**Test Goal**
+Verify that changing the unit recalculates the result correctly.
+
+**Test Activities**
+1. Render the `Row` component with `scale={1}`.
+2. Enter `1` in the input box and confirm that the initial result displays `116.0 g`.
+3. Open the first dropdown menu (unit selection) and select `Ounce`.
+4. Confirm that the result is updated to `14.5 g`.

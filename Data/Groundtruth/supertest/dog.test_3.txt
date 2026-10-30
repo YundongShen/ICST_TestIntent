@@ -1,0 +1,9 @@
+**Test Object**
+POST /users/connection Login Interface
+
+**Test Goal**
+Verify that login with an incorrect password fails and returns the appropriate error message.
+
+**Test Activities**
+1. Send a POST request with a correct email address but an incorrect password `"wrongpassword"`.
+2. Check for a 200 status code, `result` of `false`, and `error` of `"User not found or wrong password"`.

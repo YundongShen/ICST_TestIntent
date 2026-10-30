@@ -1,0 +1,12 @@
+**Test Object**
+Login Page Form Submission Functionality
+
+**Test Goal**
+Confirming invalid username and password login will display an invalid username error message.
+
+**Test Activities**
+1. Open the login page.
+2. Enter `invalidUser` in the username input box.
+3. Enter `invalidPassword` in the password input box.
+4. Click the login button.
+5. Check that the flash error message includes `Your username is invalid!`.

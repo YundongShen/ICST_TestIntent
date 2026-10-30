@@ -1,0 +1,10 @@
+**Test Object**
+The `myCode.get_product` function
+
+**Test Goal**
+Verify that `get_product` returns the correct string when the data loader is mocked.
+
+**Test Activities**
+1. Replace `myCode.DataLoader.load_product` with a lambda that returns `'wibble'` using a mocker.
+2. Call `myCode.get_product()`.
+3. Assert the return value as `'Product is wibble'`.

@@ -1,0 +1,9 @@
+**Test Object**
+`UserService.validateAge` method
+
+**Test Goal**
+Verify that the validation method returns true for a valid age.
+
+**Test Activities**
+1. Call `userService.validateAge(18)`.
+2. Assert that the return value is true.

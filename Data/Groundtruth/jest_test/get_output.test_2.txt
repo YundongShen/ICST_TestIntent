@@ -1,0 +1,12 @@
+**Test Object**
+`getOutput` Function
+
+**Test Goal**
+When there is grouping information, the function can group the task into the corresponding group based on the task name.
+
+**Test Activities**
+1. Define the group `{ 'Lint tools': ['jshint', 'mocha'] }`.
+2. First, call `getOutput(output, groups, task)` to process `{ name: 'mocha' }`.
+3. Then call `getOutput(output, groups, { name: 'jshint' })`.
+4. Assert that the length of `output` is 2.
+5. Assert that `output[1].group` is equal to `'Lint tools'`.

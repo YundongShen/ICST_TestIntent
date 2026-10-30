@@ -1,0 +1,9 @@
+**Test Object**
+GET / Root Route
+
+**Test Goal**
+Verify that the root path response contains the expected text content.
+
+**Test Activities**
+1. Send a GET request to `/`.
+2. Assert the response text to match `"Hello City"`.

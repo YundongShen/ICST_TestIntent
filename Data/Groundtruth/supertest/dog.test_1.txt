@@ -1,0 +1,10 @@
+**Test Object**
+`POST /users/connection` Login Interface
+
+**Test Goal**
+Verify that login with correct credentials returns a successful result with a valid token.
+
+**Test Activities**
+1. Create a user before each test.
+2. Send a POST request to `/users/connection` with the correct email address and password.
+3. Check that the status code is 200, `result` in the body is true, and `token` and `username` are consistent with those created.

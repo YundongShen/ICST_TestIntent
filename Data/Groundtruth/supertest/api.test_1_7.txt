@@ -1,0 +1,9 @@
+**Test Object**
+`DELETE /api/books/:id` Interface
+
+**Test Goal**
+Verify that deleting an existing book returns a success status code.
+
+**Test Activities**
+1. Send a DELETE request to `/api/books/1`.
+2. Check that the status code is 200.

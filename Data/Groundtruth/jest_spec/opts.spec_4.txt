@@ -1,0 +1,9 @@
+**Test Object**
+The `getSizes` function
+
+**Test Goal**
+An exception is thrown if an incorrectly formatted resolution string is passed in.
+
+**Test Activities**
+1. Call `getSizes('100xFoo')`.
+2. The assertion function throws an exception.

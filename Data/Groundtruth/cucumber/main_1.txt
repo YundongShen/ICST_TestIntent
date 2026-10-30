@@ -1,0 +1,11 @@
+**Test Object**
+Power-on Function of the Wood Processing Machine
+
+**Test Goal**
+Confirm that the machine starts normally after pressing the power button from the off position, and the indicator light turns green.
+
+**Test Activities**
+1. Confirm that the machine is off.
+2. Press the power button.
+3. Check if the machine is on.
+4. Check if the indicator light turns green.

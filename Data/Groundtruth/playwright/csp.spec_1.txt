@@ -1,0 +1,10 @@
+**Test Object**
+Server's Content-Security-Policy response header
+
+**Test Goal**
+Verify that the CSP header returned by the homepage contains all necessary security directives.
+
+**Test Activities**
+1. Access the homepage `/` and retrieve the response object.
+2. Extract the value of `content-security-policy` from the response header.
+3. Assert that this header exists and contains, in order: `default-src 'none'`, `script-src 'self'`, `style-src 'self'`, `img-src 'self' data:`, `frame-src blob:`, `object-src blob:`, `form-action 'none'`.

@@ -1,0 +1,11 @@
+**Test Object**
+`Row` Component
+
+**Test Goal**
+Verify that changing the ingredient recalculates the result based on the new ingredient's density.
+
+**Test Activities**
+1. Render the `Row` component with `scale={1}`.
+2. Enter `1` in the input box and confirm the initial result displays `116.0 g`.
+3. Open the second dropdown (ingredient selection) and select `Agave syrup`.
+4. Confirm the result is updated to `336.0 g`.

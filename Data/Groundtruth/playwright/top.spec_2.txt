@@ -1,0 +1,10 @@
+**Test Object**
+Homepage "Login" Link and Login Page Route
+
+**Test Goal**
+Verify that clicking the login link correctly redirects to the login page.
+
+**Test Activities**
+1. Open the homepage `/`.
+2. Click the link with the text "Login".
+3. Check that the current URL changes to `/-login`.

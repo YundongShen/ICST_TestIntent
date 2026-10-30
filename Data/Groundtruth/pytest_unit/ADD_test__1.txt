@@ -1,0 +1,11 @@
+**Test Object**
+The `ADD.ADD` function
+
+**Test Goal**
+Verify that when given two vectors, the function correctly calculates the sum of their corresponding elements.
+
+**Test Activities**
+1. Construct a vector `x` with values ​​from -10 to 9.
+2. Construct a vector `y` with values ​​from -20 to 18, with a step size of 2.
+3. Call `ADD.ADD(a=x, b=[y])`.
+4. Use NumPy to assert that the returned vector `res.v` is equal to `x.v + y.v`.

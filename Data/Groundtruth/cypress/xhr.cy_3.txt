@@ -1,0 +1,9 @@
+**Test Object**
+The `https://jsonplaceholder.cypress.io/comments` API
+
+**Test Goal**
+Verify that the API returns the expected Content-Type and status code.
+
+**Test Activities**
+1. Make the first request, using `.its('headers').its('content-type')` chained assertions to confirm that it contains `'application/json'`.
+2. Make the second request, using `.its('status')` to confirm that the status code is 200.

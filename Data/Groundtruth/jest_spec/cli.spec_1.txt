@@ -1,0 +1,10 @@
+**Test Object**
+The `cli.parseCozyURL` function
+
+**Test Goal**
+Verify that the function returns the URL as is when the input cozy URL does not end with a trailing forward slash.
+
+**Test Activities**
+1. Prepare a URL without a trailing forward slash: `'https://toto.mycozy.cloud'`.
+2. Call `cli.parseCozyURL(urlIn)`.
+3. Assert that the return value equals `'https://toto.mycozy.cloud'`.

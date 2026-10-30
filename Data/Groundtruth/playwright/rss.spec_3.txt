@@ -1,0 +1,11 @@
+**Test Object**
+The XML content returned by `/rss.xml`
+
+**Test Goal**
+Validate that the RSS feed XML content is well-formed.
+
+**Test Activities**
+1. Directly access `/rss.xml`.
+2. Retrieve the complete page content.
+3. Validate the content using `XMLValidator.validate`.
+4. Assert the validation result as `true`.

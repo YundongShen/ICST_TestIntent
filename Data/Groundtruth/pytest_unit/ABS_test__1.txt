@@ -1,0 +1,9 @@
+**Test Object**
+`ABS.ABS` function
+
+**Test Goal**
+Verify that the absolute value of a scalar input is correctly calculated.
+
+**Test Activities**
+1. Call `ABS.ABS(default=Scalar(c=-1.0))`.
+2. Assert that `res.x` equals `-1.0` and `res.y` equals `1.0`.

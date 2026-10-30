@@ -1,0 +1,10 @@
+**Test Object**
+`<A>` Component
+
+**Test Goal**
+Check the warning text if rendering the component without `href` calls `console.warn`; the test does not require that a warning actually occurs.
+
+**Test Activities**
+1. Simulate the `console.warn` function.
+2. Render `<A>click link</A>`.
+3. If the replacement `console.warn` function is called, assert that its argument is `'missing href'`; there is no separate assertion that the function was called.

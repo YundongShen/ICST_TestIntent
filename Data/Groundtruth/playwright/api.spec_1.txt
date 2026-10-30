@@ -1,0 +1,9 @@
+**Test Object**
+Heroic Games Launcher Main Window/First Screen
+
+**Test Goal**
+Verify that the application window title is correctly displayed after startup.
+
+*Test Activities**
+1. Launch the application.
+2. Check if the page title is `'Heroic Games Launcher'`.

@@ -1,0 +1,9 @@
+**Test Object**
+`DELETE /api/books/:id` Interface
+
+**Test Goal**
+Verify that deleting a non-existent book returns an error.
+
+**Test Activities**
+1. Send a DELETE request to `/api/books/999`.
+2. The status code is 404.

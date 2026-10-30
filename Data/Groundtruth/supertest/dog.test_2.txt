@@ -1,0 +1,9 @@
+**Test Object**
+`POST /users/connection` Login Interface
+
+**Test Goal**
+Verify that login without required fields returns a failure result with an appropriate error message.
+
+**Test Activities**
+1. Send a POST request to `/users/connection`, sending only the password and not the email address.
+2. Check that the status code is 200, `result` is false, and `error` is "Missing or empty fields".

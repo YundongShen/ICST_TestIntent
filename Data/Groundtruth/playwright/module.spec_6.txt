@@ -1,0 +1,11 @@
+**Test Object**
+Modal `[role="dialog"]` and its launch button
+
+**Test Goal**
+Attempt to verify that the modal opens after clicking the button; the code uses a value read before the click and does not assert the result.
+
+**Test Activities**
+1. Access the homepage `/`.
+2. Locate the modal and obtain its `aria-hidden` attribute.
+3. Find the `"Launch demo modal"` button and click it.
+4. Compare the saved, pre-click `aria-hidden` value with `"false"` and pass the result to `expect`, without calling a matcher or reading the attribute again.

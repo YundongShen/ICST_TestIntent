@@ -1,0 +1,13 @@
+**Test Object**
+Login Page (`/login`) and Protected Profile (`/profile`)
+
+- **Test Goal**
+Verify that a user can successfully log in with valid credentials.
+
+- **Test Activities**
+1. Access the `/login` page.
+2. Enter `admin` in the "Username" input box.
+3. Enter `admin123` in the "Password" input box.
+4. Click the "Login" button.
+5. Check if the page redirects to `/profile`.
+6. Check if the page displays the text `Welcome, admin`.

@@ -1,0 +1,10 @@
+**Test Object**
+The `REMOTE_FILE.REMOTE_FILE` function
+
+**Test Goal**
+Verify that when a protocol not currently supported is passed in, the function throws `requests.exceptions.InvalidSchema` with the correct error message.
+
+**Test Activities**
+1. Use `"gcp://not_yet_supported"` and `"s3://not_yet_supported"` as URLs.
+2. Call `REMOTE_FILE.REMOTE_FILE(file_url, file_type="Image")`.
+3. Assert that `requests.exceptions.InvalidSchema` is thrown, and the error message matches `No connection adapters were found for '{file_url}'`.

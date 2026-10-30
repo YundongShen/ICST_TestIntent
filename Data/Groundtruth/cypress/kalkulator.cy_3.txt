@@ -1,0 +1,12 @@
+**Test Object**
+Calculator Clear Function
+
+**Test Goal**
+Verify the correctness of "clear" fuction.
+
+**Test Activities**
+1. Open the calculator page.
+2. Click the number key 9.
+3. Click the clear button.
+4. Check that the text in the input area is an empty string.
+5. Check that the text in the output area is an empty string.

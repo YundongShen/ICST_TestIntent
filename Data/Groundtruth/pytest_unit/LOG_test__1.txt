@@ -1,0 +1,11 @@
+**Test Object**
+`LOG.LOG` function
+
+**Test Goal**
+This function verifies that when the input consists of two vectors, it can correctly calculate the logarithm of `a` to the base `b`, and the returned vector is consistent with the result calculated directly by NumPy.
+
+**Test Activities**
+1. Construct vectors `x` (10-19) and `y` (20-29).
+2. Call `LOG.LOG(a=x, b=[y], log_base="input")`.
+3. Calculate `log(x) / log(y)` using NumPy as the expected value.
+4. Assert that the returned vector `res.v` is exactly the same as the expected value.

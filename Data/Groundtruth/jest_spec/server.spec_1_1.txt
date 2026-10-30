@@ -1,0 +1,9 @@
+**Test Object**
+GET / Root Route
+
+**Test Goal**
+Verify that a GET request to the server's root path returns a 200 status code.
+
+**Test Activities**
+1. Use supertest to send a GET request to `server` to `/`.
+2. Assert the response status code to 200.

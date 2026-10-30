@@ -1,0 +1,9 @@
+**Test Object**
+The `pullFileviewString` function
+
+**Test Goal**
+Verify that this function can construct the correct pull blob path based on owner, repo, and pullId.
+
+**Test Activities**
+1. Call `pullFileviewString({ owner: 'foo', repo: 'bar', pullId: '123' })`.
+2. The assertion returns `'foo/bar/pull/123/blob'`.

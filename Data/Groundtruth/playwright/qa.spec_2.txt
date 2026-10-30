@@ -1,0 +1,10 @@
+**Test Object**
+Metric Cards/Components in the QA Page
+
+**Test Goal**
+Verify that the QA page renders at least zero QA-related metric elements.
+
+**Test Activities**
+1. Locate all elements whose class contains `qa`, `metric`, `card`, or `quality`.
+2. Get the number of elements.
+3. Assert that the number is greater than or equal to 0.

@@ -1,0 +1,11 @@
+**Test Object**
+`GET /` Root Route
+
+**Test Goal**
+Verify that the root route responds correctly, returning the correct status code.
+
+**Test Activities**
+1. Send a GET request to `/`.
+2. Verify that the Content-Type is JSON.
+3. Verify that the response body is `{ name: "frodo" }`.
+4. Verify that the status code is 200.

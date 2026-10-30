@@ -1,0 +1,11 @@
+**Test Object**
+Crop Browser Search Function
+
+**Test Goal**
+Verify that after entering a plant name in the search box, a list of plants matching the name should be returned, each with a photo and basic information.
+
+**Test Activities**
+1. Access the Crop Browser page.
+2. Enter the target plant name in the search box.
+3. Check if a list of matching plants appears.
+4. Confirm that each list item contains a plant photo, name, and basic data.

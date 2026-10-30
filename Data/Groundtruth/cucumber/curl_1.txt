@@ -1,0 +1,10 @@
+**Test Object**
+`simple.attack` attack file
+
+**Test Goal**
+Verify that the simple attack script executes successfully and all steps pass.
+
+**Test Activities**
+1. Ensure the attack file `simple.attack` is copied to the `examples/curl` directory and exists.
+2. Execute the command `gauntlt simple.attack`.
+3. Check if the output contains `4 steps (4 passed)`.

@@ -1,0 +1,9 @@
+**Test Object**
+The `getVariances` function
+
+**Test Goal**
+Verify that a single variance string can be correctly parsed as an array.
+
+**Test Activities**
+1. Call `getVariances('0.61')`.
+2. Assert the result as `[0.61]`.

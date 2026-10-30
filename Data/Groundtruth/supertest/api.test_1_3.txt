@@ -1,0 +1,9 @@
+**Test Object**
+`GET /api/books/:id` API
+
+**Test Goal**
+Verify that requesting a non-existent resource returns an error status code.
+
+**Test Activities**
+1. Send a GET request to `/api/books/999`.
+2. Check that the status code is 404.

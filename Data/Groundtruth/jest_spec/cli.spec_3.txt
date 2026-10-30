@@ -1,0 +1,10 @@
+**Test Object**
+`cli.parseCozyURL` function
+
+**Test Goal**
+Verify that when the URL contains an `app` subdomain prefix, the function can remove the prefix, restoring a clean Cozy instance address.
+
+**Test Activities**
+1. Prepare a URL with an `app` prefix.
+2. Call `cli.parseCozyURL(urlIn)`.
+3. Assert the return value.

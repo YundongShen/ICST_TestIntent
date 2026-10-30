@@ -1,0 +1,10 @@
+**Test Object**
+GET /foo` API
+
+**Test Goal**
+Verify that the custom request header is forwarded correctly and echoed in the response.
+
+**Test Activities**
+1. Send a GET request to `/foo` with the custom header `{"here": "There"}`.
+2. Take the last request record and assert that `headers` exists and `headers["here"]` has the value `"There"`.
+3. Assert that the response header also contains "here", with a value of "There".

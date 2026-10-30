@@ -1,0 +1,11 @@
+**Test Object**
+Cutting Thickness Adjustment Function
+
+**Test Goal**
+Verify that the cutting thickness setting is correctly applied and displayed.
+
+**Test Activities**
+1. Ensure the machine is on and the screen displays the default thickness.
+2. Set the cutting thickness to 2 inches.
+3. Check if the screen displays "2 inches".
+4. Check if the blade is adjusted to 2 inches.

@@ -1,0 +1,9 @@
+**Test Object**
+`fileviewString` function
+
+**Test Goal**
+Verify that this function can construct the correct blob path based on `owner` and `repo`.
+
+**Test Activities**
+1. Call `fileviewString({ owner: 'foo', repo: 'bar' })`.
+2. Assert that the return value is `'foo/bar/blob'`.

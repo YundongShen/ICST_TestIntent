@@ -1,0 +1,12 @@
+**Test Object**
+Login Page Form Submission Functionality
+
+**Test Goal**
+Confirming successful login with the correct account will display a login success message.
+
+**Test Activities**
+1. Open the login page.
+2. Enter `tomsmith` in the username input box.
+3. Enter `SuperSecretPassword!` in the password input box.
+4. Click the login button.
+5. Check that the flash success message includes `You logged into a secure area!`.

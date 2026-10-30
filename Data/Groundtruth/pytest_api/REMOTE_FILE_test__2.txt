@@ -1,0 +1,10 @@
+**Test Object**
+`REMOTE_FILE.REMOTE_FILE` Function
+
+**Test Goal**
+Verifies that the function throws a `ValueError` when an invalid or unsupported URL format is passed in.
+
+**Test Activities**
+1. Use malformed or unrecognized URLs (e.g., `"not_valid", `"/not/a/valid/url", `"ftp://not_existing.url", `"htp://misstyped.url").
+2. Call `REMOTE_FILE.REMOTE_FILE(file_url, file_type="Image")`.
+3. Assert that a `ValueError` is thrown.

@@ -1,0 +1,11 @@
+**Test Object**
+The HTML page returned by the server
+
+- **Test Goal**
+Confirm that the `style=` inline style attribute does not exist in the HTML.
+
+- **Test Activities**
+1. Retrieve the homepage HTML text using an API request.
+2. Extract the content of the `<body>` section.
+3. Search for matches of `style="` in the body content.
+4. Assert the result as null (not found).

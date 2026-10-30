@@ -1,0 +1,10 @@
+**Test Object**
+Homepage RSS Link
+
+**Test Goal**
+Locate the homepage RSS link and check that its Locator object is truthy; this does not verify that the link exists in the DOM.
+
+**Test Activities**
+1. Open the homepage `/`.
+2. Create a Locator using the role "link" and name "RSS".
+3. Assert that the Locator object is truthy, without checking whether it matches a DOM element.

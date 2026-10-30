@@ -1,0 +1,19 @@
+**Test Object**
+Login and Role Management Functionality
+
+**Test Goal**
+Exercise login, navigation to role management, entry of a new role, and clicking Save; the code does not explicitly check that the role was created.
+
+
+**Test Activities**
+1. Access `http://localhost:3000`.
+2. Click the login entry.
+3. Enter the username.
+4. Enter the password.
+5. Click the login button and wait 3 seconds.
+6. Click the management menu link and wait 3 seconds.
+7. Click the second sub-menu item and wait 3 seconds.
+8. Click the "New" button and wait 3 seconds.
+9. Enter the character name in the first input box.
+10. Enter the description in the second input box and wait 3 seconds.
+11. Click the "Save" button and wait 3 seconds.

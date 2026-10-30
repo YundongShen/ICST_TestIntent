@@ -1,0 +1,9 @@
+**Test Object**
+`TaskDaoImpl.get` Method
+
+**Test Goal**
+Verify that the mock's `get` method returns the preset task object for the given key.
+
+**Test Activities**
+1. Call `mockDao.get("a_key")`.
+2. Assert that the returned Task object is the same as the preset `task`.

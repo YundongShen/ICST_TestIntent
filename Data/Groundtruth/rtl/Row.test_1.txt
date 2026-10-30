@@ -1,0 +1,10 @@
+**Test Object**
+`Row` Component
+
+**Test Goal**
+Verify that entering a value displays the correct conversion result.
+
+**Test Activities**
+1. Render the `Row` component with `scale={1}`.
+2. Locate the number input box and enter `2`.
+3. Wait and confirm that the result text `232.0 g` appears on the page.

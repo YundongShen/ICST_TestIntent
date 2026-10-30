@@ -1,0 +1,9 @@
+**Test Object**
+The `getSizes` and `getVariances` functions
+
+**Test Goal**
+Confirm that both functions return reasonable default values ​​when no arguments are passed.
+
+**Test Activities**
+1. Call `getSizes()` without arguments and use snapshot assertion to check the return value.
+2. Call `getVariances()` without arguments and use snapshot assertion to check the return value.

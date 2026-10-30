@@ -1,0 +1,10 @@
+**Test Object**
+The `myCode.get_meaning_of_life` function
+
+**Test Goal**
+Verify that `get_meaning_of_life` returns a correctly formatted string when the underlying calculation is mocked.
+
+**Test Activities**
+1. Replace `mockdemo.myCode.calculate_meaning_of_life` with a lambda that returns `'wibble'` using a mocker.
+2. Call `myCode.get_meaning_of_life()`.
+3. Assert the return value as `'The meaning of life is wibble'`.

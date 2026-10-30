@@ -1,0 +1,10 @@
+**Test Object**
+`PUT /api/books/:id` API
+
+**Test Goal**
+Verify that updating an existing book returns a success status code and the book data is updated.
+
+**Test Activities**
+1. Send a PUT request to `/api/books/1`, with the body containing `{ title: "Updated Title" }`.
+2. Check that the status code is 200.
+3. Check that the `title` in the returned body is "Updated Title".

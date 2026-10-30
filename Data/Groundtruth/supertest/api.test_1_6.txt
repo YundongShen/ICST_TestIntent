@@ -1,0 +1,9 @@
+**Test Object**
+`PUT /api/books/:id` API
+
+**Test Goal**
+Verify that updating a non-existent book returns an error.
+
+**Test Activities**
+1. Send a PUT request to `/api/books/999`, with the body containing `{ title: "No Book" }`.
+2. Check that the status code is 404.

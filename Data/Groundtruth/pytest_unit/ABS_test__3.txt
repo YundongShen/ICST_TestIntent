@@ -1,0 +1,10 @@
+**Test Object**
+`ABS.ABS` function
+
+**Test Goal**
+Verify that for an `OrderedPair` input, `x` is unchanged and `y` is the absolute value of the original `y`.
+
+**Test Activities**
+1. Construct arrays `x` (-10~9) and `y` (-20~19).
+2. Call `ABS.ABS(default=OrderedPair(x=x, y=y))`.
+3. Assert that `res.x` matches `x` and `res.y` matches `np.abs(y)`.

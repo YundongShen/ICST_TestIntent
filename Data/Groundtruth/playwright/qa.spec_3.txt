@@ -1,0 +1,10 @@
+**Test Object**
+Test results/status components on the QA page
+
+**Test Goal**
+Check that the count of elements related to test results or quality gates is greater than or equal to zero; this permits an empty result and does not establish that these elements are present.
+
+**Test Activities**
+1. Locate all elements whose class contains `test`, `result`, `status`, or `gate`.
+2. Get the number of elements.
+3. Assert that the number is greater than or equal to 0.
