@@ -1,0 +1,17 @@
+{
+  "test_case": "ABS_test__1",
+  "objects": [
+    "ABS.ABS"
+  ],
+  "goals": [
+    "Verify the ABS function correctly computes absolute values for Scalar, Vector, and OrderedPair inputs",
+    "Verify the ABS function output structure preserves original input in x and absolute value in y"
+  ],
+  "activities": [
+    "Import ABS module",
+    "Instantiate Scalar object with value -1.0",
+    "Invoke ABS function with Scalar default parameter",
+    "Verify result x attribute equals -1.0",
+    "Verify result y attribute equals 1.0"
+  ]
+}

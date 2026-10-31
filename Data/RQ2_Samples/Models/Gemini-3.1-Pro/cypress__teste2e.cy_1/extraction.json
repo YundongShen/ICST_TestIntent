@@ -1,0 +1,20 @@
+{
+  "test_case": "teste2e.cy_1",
+  "objects": [
+    "http://localhost:3000",
+    ".ml-auto.items-center > .flex",
+    "#user",
+    "#password",
+    ".z-0"
+  ],
+  "goals": [
+    "Validate the home page and the presence of login form elements"
+  ],
+  "activities": [
+    "Visit http://localhost:3000",
+    "Click the navigation/login button",
+    "Verify that the user input field exists",
+    "Verify that the password input field exists",
+    "Verify that the submit button is visible"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "test_case": "sample.test_3_4",
+  "objects": [
+    "app"
+  ],
+  "goals": [],
+  "activities": [
+    "Set environment variable to test mode",
+    "Verify API endpoint returns 401 status"
+  ]
+}

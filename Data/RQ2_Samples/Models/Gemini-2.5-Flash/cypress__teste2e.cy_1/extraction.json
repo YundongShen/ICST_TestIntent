@@ -1,0 +1,19 @@
+{
+  "test_case": "teste2e.cy_1",
+  "objects": [
+    ".ml-auto.items-center > .flex",
+    "#user",
+    "#password",
+    ".z-0"
+  ],
+  "goals": [
+    "Verify the initial state and error handling of the login functionality."
+  ],
+  "activities": [
+    "Visit the homepage at 'http://localhost:3000'.",
+    "Click on the navigation menu or a specific interactive element.",
+    "Verify that the user field exists.",
+    "Verify that the password field exists.",
+    "Verify that a specific UI element (e.g., a button or container) is visible."
+  ]
+}

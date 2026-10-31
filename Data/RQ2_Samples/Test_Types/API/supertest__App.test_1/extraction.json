@@ -1,0 +1,15 @@
+{
+  "test_case": "App.test_1",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify POST /send-message endpoint returns 400 status code for invalid request payload"
+  ],
+  "activities": [
+    "Send POST request to /send-message with name 'john'",
+    "Set Accept header to application/json",
+    "Verify response Content-Type is json",
+    "Verify response status code is 400"
+  ]
+}

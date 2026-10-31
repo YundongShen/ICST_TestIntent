@@ -1,0 +1,15 @@
+{
+  "test_case": "sample.test_3_4",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify that application routes are protected and require authentication."
+  ],
+  "activities": [
+    "Set the Node environment to 'test'.",
+    "Prepare to send an HTTP request to the application.",
+    "Send a GET request to the '/api' endpoint.",
+    "Verify the response status code is 401 (Unauthorized)."
+  ]
+}

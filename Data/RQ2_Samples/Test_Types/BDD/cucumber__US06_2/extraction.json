@@ -1,0 +1,13 @@
+{
+  "test_case": "US06_2",
+  "objects": [
+    "Climate Event Notification"
+  ],
+  "goals": [
+    "Verify that a notification is sent to the user when an extreme climate event is forecasted"
+  ],
+  "activities": [
+    "Receive extreme weather forecast; verify the event is approaching",
+    "Verify notification is sent to the user to prevent crop damage"
+  ]
+}

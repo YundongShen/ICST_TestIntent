@@ -1,0 +1,19 @@
+{
+  "test_case": "locustfile",
+  "objects": [
+    "..."
+  ],
+  "goals": [
+    "Verify the performance and stability of the profile, group, and split API endpoints under simulated concurrent user load"
+  ],
+  "activities": [
+    "Register two initial users",
+    "Register main user and extract authentication token",
+    "Create group and extract group ID",
+    "Select random test action",
+    "Retrieve user profile",
+    "Retrieve groups list",
+    "Retrieve specific group details",
+    "Submit split transaction"
+  ]
+}

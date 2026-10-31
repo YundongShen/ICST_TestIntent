@@ -1,0 +1,13 @@
+{
+  "test_case": "A.test_1",
+  "objects": [
+    "A"
+  ],
+  "goals": [
+    "Verify component A renders expected link content"
+  ],
+  "activities": [
+    "Render component A with data-testid \"a.link\" and text \"Link\"",
+    "Verify element with testid \"a.link\" contains HTML \"Link\""
+  ]
+}

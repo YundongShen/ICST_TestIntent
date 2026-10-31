@@ -1,0 +1,28 @@
+{
+  "test_case": "test__11",
+  "objects": [
+    "workshop update API"
+  ],
+  "goals": [
+    "Verify the workshop update API returns 200 OK status for valid requests",
+    "Verify the workshop data is correctly updated and persisted in the database"
+  ],
+  "activities": [
+    "Clean workshop test environment",
+    "Insert new workshop test record",
+    "Extract workshop ID",
+    "Prepare update request body",
+    "Construct API endpoint URL",
+    "Send PUT request to update workshop",
+    "Generate expected updated workshop object",
+    "Parse API response JSON",
+    "Verify HTTP status code is 200",
+    "Verify Content-Type header is application/json",
+    "Verify response body status is 200",
+    "Verify response body message matches success",
+    "Verify response body data matches expected",
+    "Verify response body excludes detail field",
+    "Check workshop data consistency by ID",
+    "Execute class teardown setup"
+  ]
+}

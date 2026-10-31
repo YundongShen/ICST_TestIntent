@@ -1,0 +1,16 @@
+{
+  "test_case": "xhr.cy_1",
+  "objects": [
+    "https://jsonplaceholder.cypress.io/comments"
+  ],
+  "goals": [
+    "Verify the API response from the `/comments` endpoint has a successful status (200), JSON content type, and expected body length (500)."
+  ],
+  "activities": [
+    "Send a GET request to 'https://jsonplaceholder.cypress.io/comments'.",
+    "Verify the response status is 200.",
+    "Verify the response body contains 500 items.",
+    "Verify the response includes headers.",
+    "Verify the 'content-type' header is 'application/json; charset=utf-8'."
+  ]
+}

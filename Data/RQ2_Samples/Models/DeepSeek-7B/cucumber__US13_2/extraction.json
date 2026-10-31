@@ -1,0 +1,21 @@
+{
+  "test_case": "US13_2",
+  "objects": [
+    "Plant",
+    "details",
+    "plant",
+    "basicos",
+    "detalle",
+    "necesidades",
+    "especificos",
+    "planta_seleccionada"
+  ],
+  "goals": [
+    "verifythattheusercannavigatetotheplantdetailpageandviewtherequiredinformation"
+  ],
+  "activities": [
+    "TestUserCanNavigateToPlantDetailsPage",
+    "TestUserCanNavigateToSelectedPlantDetailsPage",
+    "TestUserCanNavigateToPlantDetailsPage"
+  ]
+}

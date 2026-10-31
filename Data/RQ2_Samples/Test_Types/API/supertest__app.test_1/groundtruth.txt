@@ -1,0 +1,10 @@
+**Test Object**
+`GET /` Root Route
+
+**Test Goal**
+Confirm that accessing the root path returns the correct status code and text content.
+
+**Test Activities**
+1. Send a GET request to `/`.
+2. Verify that the response status code is 200.
+3. Verify that the response text is `"Helllooooo"`.

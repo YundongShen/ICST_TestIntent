@@ -1,0 +1,23 @@
+{
+  "test_case": "vlSpecEditor.test",
+  "objects": [
+    "vl",
+    "chart",
+    "mock",
+    "point"
+  ],
+  "goals": [
+    "testthecorrectfunctionalityofthevlSpecEditorbycheckingwhetheritshowsthesourcecodeandshorthandlespec"
+  ],
+  "activities": [
+    "_beforeEach",
+    "module",
+    "inject",
+    "compile",
+    "find",
+    "to",
+    "eql",
+    "_it",
+    "end"
+  ]
+}

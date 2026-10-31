@@ -1,0 +1,10 @@
+**Test Object**
+`<A>` Component
+
+**Test Goal**
+Confirm that the component renders correctly and displays the passed-in text content.
+
+**Test Activities**
+1. Render `<A data-testid="a.link">Link</A>`.
+2. Find the element using `data-testid`.
+3. Assert that the element contains the text `Link`.

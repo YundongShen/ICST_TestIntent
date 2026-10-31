@@ -1,0 +1,19 @@
+{
+  "test_case": "configurationeditor.test_1",
+  "objects": [
+    "element"
+  ],
+  "goals": [
+    "Verify that the configurationEditor directive renders a form element"
+  ],
+  "activities": [
+    "Load module 'polestar'",
+    "Mock Config service",
+    "Create new root scope",
+    "Create configuration-editor element",
+    "Compile element with scope",
+    "Trigger scope digest cycle",
+    "Find form element within compiled element",
+    "Assert form element length equals 1"
+  ]
+}

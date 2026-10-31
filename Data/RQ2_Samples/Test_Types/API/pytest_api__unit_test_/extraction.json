@@ -1,0 +1,20 @@
+{
+  "test_case": "unit_test_",
+  "objects": [
+    "app",
+    "obtainUserNameEmail"
+  ],
+  "goals": [
+    "Verify the obtainUserNameEmail endpoint returns correct user profile information (first_name, last_name, email) and HTTP 200 status after successful authentication"
+  ],
+  "activities": [
+    "Set test input variables for first name, last name, email, and password",
+    "Define expected output dictionary",
+    "Send POST request to login endpoint to get access token",
+    "Extract session token from login response JSON",
+    "Create authorization headers with the session token",
+    "Send POST request to obtainUserNameEmail endpoint with headers",
+    "Assert response status code is 200",
+    "Assert response JSON matches expected output"
+  ]
+}

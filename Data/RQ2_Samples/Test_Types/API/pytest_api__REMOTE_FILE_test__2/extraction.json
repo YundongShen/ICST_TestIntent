@@ -1,0 +1,14 @@
+{
+  "test_case": "REMOTE_FILE_test__2",
+  "objects": [
+    "REMOTE_FILE.REMOTE_FILE"
+  ],
+  "goals": [
+    "Verify that REMOTE_FILE raises appropriate exceptions for invalid URLs and unsupported protocols"
+  ],
+  "activities": [
+    "Import REMOTE_FILE module",
+    "Execute REMOTE_FILE function with invalid file URL",
+    "Verify ValueError exception is raised"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "test_case": "App.spec_2",
+  "objects": [
+    "App"
+  ],
+  "goals": [
+    "Verify counter increments correctly upon button click"
+  ],
+  "activities": [
+    "Render the App component",
+    "Get the first button element by role",
+    "Assert the button element is defined",
+    "Assert the button inner HTML equals 'count is 0'",
+    "Simulate a click event on the button",
+    "Assert the button inner HTML equals 'count is 1'"
+  ]
+}

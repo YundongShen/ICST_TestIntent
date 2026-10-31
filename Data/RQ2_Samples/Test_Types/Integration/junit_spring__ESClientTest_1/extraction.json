@@ -1,0 +1,13 @@
+{
+  "test_case": "ESClientTest_1",
+  "objects": [
+    "dao"
+  ],
+  "goals": [
+    "Verify the Elasticsearch QueryDAO indexing and search functionality"
+  ],
+  "activities": [
+    "Index the test document using QueryDAO",
+    "Verify the index request result is not null"
+  ]
+}

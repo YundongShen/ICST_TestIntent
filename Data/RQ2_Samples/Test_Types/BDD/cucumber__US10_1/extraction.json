@@ -1,0 +1,13 @@
+{
+  "test_case": "US10_1",
+  "objects": [
+    "Crop Expense"
+  ],
+  "goals": [
+    "Verify that an individual expense is registered and associated with the correct crop, and that the total investment is updated"
+  ],
+  "activities": [
+    "User purchases fertilizer; register expense \"Compra de fertilizante – S/ 150\" for potato crop",
+    "Verify expense is associated with the crop and total investment is updated"
+  ]
+}

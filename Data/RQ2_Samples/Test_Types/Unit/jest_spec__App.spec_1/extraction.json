@@ -1,0 +1,14 @@
+{
+  "test_case": "App.spec_1",
+  "objects": [
+    "App"
+  ],
+  "goals": [
+    "Verify App component renders expected initial text content"
+  ],
+  "activities": [
+    "Render the App component",
+    "Query for text 'Click on the Vite and Vue logos to learn more'",
+    "Assert the text element is defined"
+  ]
+}

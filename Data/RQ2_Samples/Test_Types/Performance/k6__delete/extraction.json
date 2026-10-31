@@ -1,0 +1,20 @@
+{
+  "test_case": "delete",
+  "objects": [
+    "books-api"
+  ],
+  "goals": [
+    "Verify the book deletion API returns expected status codes (200 or 404) under concurrent load"
+  ],
+  "activities": [
+    "Initialize test data by loading and expanding book titles to 200 items",
+    "Select a random book title from the prepared list",
+    "Send HTTP GET request to search for the book by title",
+    "Verify search response status is 200",
+    "Extract ISBN from the search response body",
+    "Verify ISBN exists in the response",
+    "Send HTTP DELETE request to remove the book by ISBN",
+    "Verify delete response status is 200 or 404",
+    "Pause execution for 0.5 seconds"
+  ]
+}

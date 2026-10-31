@@ -1,0 +1,10 @@
+{
+  "test_case": "app.test_1",
+  "objects": [],
+  "goals": [],
+  "activities": [
+    "describe_test_environment",
+    "test_hello_world_endpoint",
+    "verify_successful_responses"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "test_case": "ESClientTest_4",
+  "objects": [
+    "QueryDAO"
+  ],
+  "goals": [
+    "Verify QueryDAO search query and document deletion operations"
+  ],
+  "activities": [
+    "..."
+  ]
+}

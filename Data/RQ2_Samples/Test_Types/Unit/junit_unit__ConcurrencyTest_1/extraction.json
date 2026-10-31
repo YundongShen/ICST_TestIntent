@@ -1,0 +1,14 @@
+{
+  "test_case": "ConcurrencyTest_1",
+  "objects": [
+    "Concurrency",
+    "Thread"
+  ],
+  "goals": [
+    "Verify that Concurrency.newDaemonThread creates a daemon thread"
+  ],
+  "activities": [
+    "Create a daemon thread with name 't' and the mock runnable",
+    "Assert that the thread is a daemon"
+  ]
+}

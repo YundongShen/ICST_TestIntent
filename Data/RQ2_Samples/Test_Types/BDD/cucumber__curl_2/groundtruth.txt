@@ -1,0 +1,10 @@
+**Test Object**
+`cookies.attack` attack file
+
+**Test Goal**
+Verify that the cookies attack script executes successfully and all steps pass.
+
+**Test Activities**
+1. Ensure the `cookies.attack` file exists.
+2. Execute the command `gauntlt cookies.attack`.
+3. Check if the output contains `4 steps (4 passed)`.

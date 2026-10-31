@@ -1,0 +1,14 @@
+{
+  "test_case": "xhr.cy_1",
+  "objects": [
+    "response"
+  ],
+  "goals": [
+    "...",
+    "..."
+  ],
+  "activities": [
+    "...",
+    "..."
+  ]
+}

@@ -1,0 +1,10 @@
+**Test Object**
+GET /api` API
+
+**Test Goal**
+Verify that the API endpoint rejects unauthenticated requests.
+
+**Test Activities**
+1. Set the environment variable `NODE_ENV` to `'test'`.
+2. Send a GET request to `/api`.
+3. Assert the response status code as 401.

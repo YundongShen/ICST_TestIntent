@@ -1,0 +1,14 @@
+{
+  "test_case": "US06_1",
+  "objects": [
+    "Crop Alert"
+  ],
+  "goals": [
+    "Verify that an alert is sent to the user's mobile device when a crop disease or pest is detected and the risk level exceeds the threshold"
+  ],
+  "activities": [
+    "Process sensor data and crop images to detect abnormal crop state",
+    "Search for disease or pest in the crop; verify risk level exceeds the threshold",
+    "Verify alert is sent to the user's mobile device"
+  ]
+}

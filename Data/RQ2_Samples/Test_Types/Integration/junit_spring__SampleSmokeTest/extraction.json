@@ -1,0 +1,19 @@
+{
+  "test_case": "SampleSmokeTest",
+  "objects": [
+    "Response"
+  ],
+  "goals": [
+    "Verify the application is accessible and returns HTTP 200 status",
+    "Verify the response body starts with 'Welcome'"
+  ],
+  "activities": [
+    "Set RestAssured base URI to configured test URL",
+    "Enable relaxed HTTPS validation for RestAssured",
+    "Configure HTTP request with JSON content type",
+    "Execute HTTP GET request",
+    "Extract HTTP response object",
+    "Assert response status code equals 200",
+    "Assert response body starts with Welcome"
+  ]
+}

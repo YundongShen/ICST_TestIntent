@@ -1,0 +1,16 @@
+{
+  "test_case": "ContinentRepositoryTest",
+  "objects": [
+    "ContinentRepository"
+  ],
+  "goals": [
+    "Verify the correctness of the findPopulationInContinentFiltered method in retrieving and aggregating continent population data",
+    "Validate the accuracy of calculated city and rural population percentages within the returned results"
+  ],
+  "activities": [
+    "Execute findPopulationInContinentFiltered method",
+    "Assert result list is not null and contains 3 items",
+    "Validate first continent object attributes including population and percentages",
+    "Validate second continent object attributes including population and percentages"
+  ]
+}

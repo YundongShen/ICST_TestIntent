@@ -1,0 +1,11 @@
+**Test Object**
+**Expense Entry Interface and Total Investment Update Logic**
+
+**Test Goal**
+Verify that after registering an expense for a specified crop, this expense is associated with that crop, and the total investment amount for the crop is updated synchronously.
+
+**Test Activities**
+1. Prepare a crop.
+2. Enter an expense of S/150, assigned to Potato.
+3. Check if the expense has been saved to the database and associated with Potato.
+4. Check if the total investment amount for Potato has increased by 150.

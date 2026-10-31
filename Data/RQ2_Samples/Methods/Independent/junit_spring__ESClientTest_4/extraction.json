@@ -1,0 +1,16 @@
+{
+  "test_case": "ESClientTest_4",
+  "objects": [
+    "dao"
+  ],
+  "goals": [
+    "Verify the Elasticsearch QueryDAO deletion and refresh functionality"
+  ],
+  "activities": [
+    "Retrieve all documents via match all query",
+    "Delete all retrieved documents by their IDs",
+    "Refresh the index",
+    "Execute a match all query",
+    "Verify the query result is empty"
+  ]
+}

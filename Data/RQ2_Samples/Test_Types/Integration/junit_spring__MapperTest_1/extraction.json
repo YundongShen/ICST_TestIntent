@@ -1,0 +1,14 @@
+{
+  "test_case": "MapperTest_1",
+  "objects": [
+    "TestModelMapper"
+  ],
+  "goals": [
+    "Verify TestModelMapper insert operation executes successfully"
+  ],
+  "activities": [
+    "Create a new TestModel object",
+    "Set TestModel attributes including age, timestamps, and username",
+    "Insert the TestModel object into the database"
+  ]
+}

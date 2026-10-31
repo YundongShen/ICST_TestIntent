@@ -1,0 +1,17 @@
+{
+  "test_case": "dog.test_2",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "string1",
+    "string2"
+  ],
+  "activities": [
+    "Initialize test database environment",
+    "Create test user with hashed password",
+    "Send POST request to /users/connection with missing email",
+    "Verify error response for missing email",
+    "Clean up test database environment"
+  ]
+}

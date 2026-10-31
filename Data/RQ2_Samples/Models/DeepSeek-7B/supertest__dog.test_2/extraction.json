@@ -1,0 +1,13 @@
+{
+  "test_case": "dog.test_2",
+  "objects": [],
+  "goals": [
+    "verifythatusercanloginsuccessfullywithcorrectemailonly"
+  ],
+  "activities": [
+    "BeforeAll: CreateMongoMemoryServer",
+    "BeforeAll: Importappandmodels",
+    "BeforeEach: Createuser",
+    "POST/users/connection: Loginwithmissingemail"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "test_case": "ESClientTest_2",
+  "objects": [
+    "dao"
+  ],
+  "goals": [
+    "Verify the Elasticsearch QueryDAO indexing and search functionality"
+  ],
+  "activities": [
+    "Execute a match all query",
+    "Verify the query result is not empty"
+  ]
+}

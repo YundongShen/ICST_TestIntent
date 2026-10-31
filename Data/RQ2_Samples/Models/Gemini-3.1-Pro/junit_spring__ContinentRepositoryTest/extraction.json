@@ -1,0 +1,19 @@
+{
+  "test_case": "ContinentRepositoryTest",
+  "objects": [
+    "ContinentRepository",
+    "Continent"
+  ],
+  "goals": [
+    "Verify that findPopulationInContinentFiltered correctly retrieves and calculates continent population statistics, including total, city, and rural populations along with their respective percentages."
+  ],
+  "activities": [
+    "Retrieve the filtered population data for continents from the repository",
+    "Assert that the result list is not null",
+    "Assert that the result list contains 3 continents",
+    "Extract the first continent from the result list",
+    "Verify the first continent's name, total population, city population, city percentage, rural population, and rural percentage",
+    "Extract the second continent from the result list",
+    "Verify the second continent's name, total population, city population, city percentage, rural population, and rural percentage"
+  ]
+}

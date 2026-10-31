@@ -1,0 +1,14 @@
+{
+  "test_case": "app.test_2",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify HTTP GET request to '/watermelon' returns status 200 and expected response body"
+  ],
+  "activities": [
+    "Send GET request to /watermelon",
+    "Verify response body contains watermelon ",
+    "Verify HTTP status code is 200"
+  ]
+}

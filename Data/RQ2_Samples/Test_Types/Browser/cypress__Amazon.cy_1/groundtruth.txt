@@ -1,0 +1,13 @@
+**Test Object**
+Amazon India Login Functionality
+
+**Test Goal**
+Exercise login using an email address and password; the code enters credentials and clicks the login button but does not explicitly check that login succeeds.
+
+**Test Activities**
+1. Open the Amazon India homepage.
+2. Hover your mouse over the account list link and click to enter the login page.
+3. Enter `grewal.pukhraj@gmail.com` in the email input box.
+4. Click the Continue button.
+5. Enter `Password@1` in the password input box.
+6. Click the Login button to complete the login.

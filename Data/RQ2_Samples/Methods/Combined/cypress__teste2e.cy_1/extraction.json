@@ -1,0 +1,16 @@
+{
+  "test_case": "teste2e.cy_1",
+  "objects": [
+    "Web application login and role management interface"
+  ],
+  "goals": [
+    "Verify login page elements and role management workflow functionality"
+  ],
+  "activities": [
+    "visit application home page",
+    "click navigation menu",
+    "verify user input field exists",
+    "verify password input field exists",
+    "verify login button is visible"
+  ]
+}

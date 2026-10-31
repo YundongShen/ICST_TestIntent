@@ -1,0 +1,17 @@
+{
+  "test_case": "Login_1",
+  "objects": [
+    "Login",
+    "Profile Page"
+  ],
+  "goals": [
+    "Verify that valid credentials allow successful login and redirect to /profile with a 'Welcome, admin' message"
+  ],
+  "activities": [
+    "Navigate to /login",
+    "Fill in \"Username\" with \"admin\" and \"Password\" with \"admin123\"",
+    "Press \"Login\"",
+    "Verify redirection to /profile",
+    "Verify \"Welcome, admin\" is displayed"
+  ]
+}

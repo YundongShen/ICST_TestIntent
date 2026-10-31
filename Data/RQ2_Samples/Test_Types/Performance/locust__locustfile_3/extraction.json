@@ -1,0 +1,13 @@
+{
+  "test_case": "locustfile_3",
+  "objects": [
+    "index and prediction endpoints"
+  ],
+  "goals": [
+    "Verify performance and stability of index and prediction endpoints under simulated concurrent user load"
+  ],
+  "activities": [
+    "Send HTTP GET request to the root URL",
+    "Send HTTP POST request to the predict endpoint with booking parameters"
+  ]
+}

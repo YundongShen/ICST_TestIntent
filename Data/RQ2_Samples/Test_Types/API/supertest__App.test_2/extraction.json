@@ -1,0 +1,15 @@
+{
+  "test_case": "App.test_2",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify POST /send-message endpoint returns 200 status code for valid request payload"
+  ],
+  "activities": [
+    "Send POST request to /send-message with sender, registrationIds, and data",
+    "Set Accept header to application/json",
+    "Verify response Content-Type is json",
+    "Verify response status code is 200"
+  ]
+}

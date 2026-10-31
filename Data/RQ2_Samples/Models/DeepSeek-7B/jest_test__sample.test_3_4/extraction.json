@@ -1,0 +1,19 @@
+{
+  "test_case": "sample.test_3_4",
+  "objects": [
+    "request",
+    "app",
+    "expect",
+    "res"
+  ],
+  "goals": [
+    "testthesanitizefunctionalityofconfigobjectandensurethatthetotesservedendpointisprotected"
+  ],
+  "activities": [
+    "defineTestActivities",
+    "extractTestActions",
+    "aggregateTestActions",
+    "executeTestExecution",
+    "assertTestResults"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "test_case": "soak",
+  "objects": [
+    "response"
+  ],
+  "goals": [
+    "Verify the HTTP response status is 301"
+  ],
+  "activities": [
+    "Send HTTP GET request to http://localhost:5249/urls/test",
+    "Verify response status is 301"
+  ]
+}

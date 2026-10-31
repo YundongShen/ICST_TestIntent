@@ -1,0 +1,16 @@
+{
+  "test_case": "dog.test_2",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify the user login functionality of the POST /users/connection endpoint, ensuring successful authentication with valid credentials and proper error handling for missing or incorrect credentials."
+  ],
+  "activities": [
+    "Initialize and connect to an in-memory MongoDB server",
+    "Create a test user with a hashed password in the database",
+    "Send a POST request to '/users/connection' with a missing email field",
+    "Verify the response indicates failure with a 'Missing or empty fields' error",
+    "Close the database connection and stop the in-memory server"
+  ]
+}

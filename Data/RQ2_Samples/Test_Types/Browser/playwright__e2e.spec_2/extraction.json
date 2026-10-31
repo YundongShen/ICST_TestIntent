@@ -1,0 +1,17 @@
+{
+  "test_case": "e2e.spec_2",
+  "objects": [
+    "page"
+  ],
+  "goals": [
+    "Verify navigation to blog list page and validation of post list count"
+  ],
+  "activities": [
+    "Navigate to http://localhost:3000/",
+    "Verify page title is simple-remix-blog",
+    "Click the Blog link",
+    "Verify URL is http://localhost:3000/blog",
+    "Verify text All posts is visible",
+    "Verify count of Read more links is 4"
+  ]
+}

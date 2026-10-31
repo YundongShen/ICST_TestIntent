@@ -1,0 +1,10 @@
+**Test Object**
+Crop Details Page
+
+**Test Goal**
+Verify that clicking on a plant from the search results should open a complete information page containing its detailed requirements and characteristics.
+
+**Test Activities**
+1. Find the target plant in the search results.
+2. Click on the plant's entry.
+3. Check if the opened page displays the plant photo, basic information, planting requirements, and detailed data.

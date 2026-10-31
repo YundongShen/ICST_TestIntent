@@ -1,0 +1,14 @@
+{
+  "test_case": "A.test_2",
+  "objects": [
+    "A"
+  ],
+  "goals": [
+    "Verify component A click interaction and missing href warning behavior"
+  ],
+  "activities": [
+    "Mock console.warn function",
+    "Render component A with text \"click link\"",
+    "Verify warning message equals \"missing href\""
+  ]
+}

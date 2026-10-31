@@ -1,0 +1,18 @@
+{
+  "test_case": "Auth",
+  "objects": [
+    "res"
+  ],
+  "goals": [
+    "Verify login API returns 200 status code"
+  ],
+  "activities": [
+    "Set login endpoint URL",
+    "Prepare authentication payload",
+    "Configure request headers",
+    "Send HTTP POST request",
+    "Log response body",
+    "Verify response status is 200",
+    "Wait for 1 second"
+  ]
+}

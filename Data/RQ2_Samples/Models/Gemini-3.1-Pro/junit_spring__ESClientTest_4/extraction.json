@@ -1,0 +1,15 @@
+{
+  "test_case": "ESClientTest_4",
+  "objects": [
+    "QueryDAO"
+  ],
+  "goals": [
+    "Verify that QueryDAO can successfully perform core Elasticsearch operations including indexing, searching (match-all and wildcard), and deleting documents"
+  ],
+  "activities": [
+    "Retrieve all documents using a match-all query",
+    "Delete each retrieved document by its ID",
+    "Send a refresh request",
+    "Execute a match-all query and assert the result is empty"
+  ]
+}

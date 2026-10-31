@@ -1,0 +1,14 @@
+{
+  "test_case": "CountryResourceTest",
+  "objects": [
+    "CountryResource"
+  ],
+  "goals": [
+    "Verify that the /countries endpoint returns a response containing expected country names"
+  ],
+  "activities": [
+    "Execute HTTP GET request to /countries endpoint",
+    "Assert response contains 'Brasil'",
+    "Assert response contains 'Brazil'"
+  ]
+}

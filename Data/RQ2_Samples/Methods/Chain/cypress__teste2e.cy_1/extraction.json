@@ -1,0 +1,17 @@
+{
+  "test_case": "teste2e.cy_1",
+  "objects": [
+    ".ml-auto.items-center > .flex",
+    "#user",
+    "#password",
+    ".z-0"
+  ],
+  "goals": [
+    "..."
+  ],
+  "activities": [
+    "Navigate to login page",
+    "Verify login form fields exist",
+    "Verify submit button is visible"
+  ]
+}

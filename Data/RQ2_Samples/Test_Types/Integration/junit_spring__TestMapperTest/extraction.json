@@ -1,0 +1,14 @@
+{
+  "test_case": "TestMapperTest",
+  "objects": [
+    "testMapper"
+  ],
+  "goals": [
+    "Verify that TestMapper.version() returns the expected version string '5.7.21'"
+  ],
+  "activities": [
+    "Call testMapper.version() method to retrieve version",
+    "Print version string to console",
+    "Assert version string equals expected value 5.7.21"
+  ]
+}

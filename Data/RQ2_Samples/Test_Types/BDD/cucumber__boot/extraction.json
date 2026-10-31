@@ -1,0 +1,17 @@
+{
+  "test_case": "boot",
+  "objects": [
+    "Fedora Virtual Machine"
+  ],
+  "goals": [
+    "Verify that the Fedora VM boots successfully and displays a login prompt within the required time limits for both x86_64 and i386 images"
+  ],
+  "activities": [
+    "Download VM image from the specified Fedora 20 URL (x86_64 or i386)",
+    "Power on the virtual machine",
+    "Verify bootloader prompt appears within 30 seconds",
+    "Verify kernel is loaded within 60 seconds",
+    "Verify systemd is running",
+    "Verify login prompt appears within 480 seconds"
+  ]
+}

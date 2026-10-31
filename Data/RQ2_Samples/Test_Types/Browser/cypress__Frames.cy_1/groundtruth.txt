@@ -1,0 +1,11 @@
+**Test Object**
+A rich text editor within an iframe
+
+**Test Goal**
+Exercise text entry, selection, and the bold button in the iframe editor; the code checks that the iframe body is visible but does not inspect the final bold formatting.
+
+**Test Activities**
+1. Open the page containing the iframe.
+2. Locate the iframe, obtain its internal `body` element, and confirm its visibility.
+3. Enter "Hello" in the editor and select all.
+4. Click the bold button in the toolbar.

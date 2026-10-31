@@ -1,0 +1,16 @@
+{
+  "test_case": "xhr.cy_1",
+  "objects": [
+    "response"
+  ],
+  "goals": [
+    "Verify that cy.request correctly fetches data from an API endpoint and returns the expected response status, body length, and headers."
+  ],
+  "activities": [
+    "Send a GET request to 'https://jsonplaceholder.cypress.io/comments'",
+    "Verify the response status is 200",
+    "Verify the response body length is 500",
+    "Verify the response has a 'headers' property",
+    "Verify the response header 'content-type' is 'application/json; charset=utf-8'"
+  ]
+}

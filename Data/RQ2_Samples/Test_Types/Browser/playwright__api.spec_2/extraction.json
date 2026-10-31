@@ -1,0 +1,18 @@
+{
+  "test_case": "api.spec_2",
+  "objects": [
+    "window.api"
+  ],
+  "goals": [
+    "Verify Heroic, Legendary, and GOG component versions meet minimum requirements"
+  ],
+  "activities": [
+    "Retrieve heroic version",
+    "Assert heroic version is greater than or equal to 2.6.3",
+    "Retrieve legendary version",
+    "Process legendary version string",
+    "Assert legendary version is greater than or equal to 0.20.32",
+    "Retrieve gogdl version",
+    "Assert gogdl version is greater than or equal to 0.7.1"
+  ]
+}

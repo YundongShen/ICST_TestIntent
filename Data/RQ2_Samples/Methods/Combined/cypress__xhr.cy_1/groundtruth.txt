@@ -1,0 +1,12 @@
+**Test Object**
+`https://jsonplaceholder.cypress.io/comments` API
+
+**Test Goal**
+Verify the correctness of the API's return value.
+
+**Test Activities**
+1. Send a GET request directly to this address using `cy.request`.
+2. Check in the callback if the response status code is 200.
+3. Check if the array length of the response body is 500.
+4. Check if the response object contains the `headers` property.
+5. Check if the response header `content-type` is `'application/json; charset=utf-8'`.

@@ -1,0 +1,14 @@
+{
+  "test_case": "sample.test_3_4",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify API endpoint protection returns 401 for unauthorized access"
+  ],
+  "activities": [
+    "Set Node environment variable to test mode",
+    "Send GET request to /api endpoint",
+    "Verify response status code is 401"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "test_case": "xhr.cy_1",
+  "objects": [
+    "response"
+  ],
+  "goals": [
+    "Verify the API endpoint returns a 200 status code",
+    "Verify the response body length is 500 and content-type is application/json"
+  ],
+  "activities": [
+    "Send HTTP request to comments endpoint",
+    "Verify response status is 200",
+    "Verify response body length is 500",
+    "Verify response has headers property",
+    "Verify content-type header is application/json; charset=utf-8"
+  ]
+}

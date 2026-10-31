@@ -1,0 +1,21 @@
+{
+  "test_case": "vlSpecEditor.test",
+  "objects": [
+    "vlSpecEditor"
+  ],
+  "goals": [
+    "Verify that the vlSpecEditor directive correctly displays the initial source code and shorthand values"
+  ],
+  "activities": [
+    "Load module 'polestar'",
+    "Mock 'vl' constant",
+    "Mock 'uiZeroclipDirective' factory",
+    "Mock 'Spec' value",
+    "Create new root scope",
+    "Create angular element '<vl-spec-editor>'",
+    "Compile element with scope",
+    "Run scope digest",
+    "Assert '.vlspec' value equals '{}'",
+    "Assert '.shorthand' value equals 'point.'"
+  ]
+}

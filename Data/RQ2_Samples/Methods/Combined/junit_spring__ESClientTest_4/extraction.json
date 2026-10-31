@@ -1,0 +1,16 @@
+{
+  "test_case": "ESClientTest_4",
+  "objects": [
+    "QueryDAO"
+  ],
+  "goals": [
+    "Verify QueryDAO indexing, querying, and deletion operations"
+  ],
+  "activities": [
+    "retrieve all documents via match all query",
+    "delete each document in the retrieved list",
+    "execute refresh request via dao",
+    "execute match all query via dao",
+    "verify match all query returns empty list"
+  ]
+}

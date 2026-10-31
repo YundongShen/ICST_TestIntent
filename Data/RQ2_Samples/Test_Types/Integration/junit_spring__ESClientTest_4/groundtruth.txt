@@ -1,0 +1,11 @@
+**Test Object**
+Combination of the `matchAllQuery`, `deleteDocument`, and `refreshRequest` methods of `QueryDAO`
+
+**Test Goal**
+Verify that after retrieving all documents, deleting them one by one and refreshing the index, the final full query result is empty, meaning all data has been cleared.
+
+**Test Activities**
+1. Call `dao.matchAllQuery()` to retrieve the list of all documents.
+2. Iterate through the list, calling `dao.deleteDocument(doc.getId())` to delete each document.
+3. Call `dao.refreshRequest()` to refresh the index.
+4. Call `dao.matchAllQuery()` again and assert that the returned list is empty.

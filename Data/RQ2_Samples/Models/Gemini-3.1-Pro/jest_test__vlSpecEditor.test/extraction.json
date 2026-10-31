@@ -1,0 +1,21 @@
+{
+  "test_case": "vlSpecEditor.test",
+  "objects": [
+    "vl-spec-editor",
+    "element"
+  ],
+  "goals": [
+    "Verify that the vlSpecEditor directive correctly displays the source code"
+  ],
+  "activities": [
+    "Load the polestar module",
+    "Mock the vl constant and uiZeroclipDirective factory",
+    "Mock the Spec service with a predefined chart object",
+    "Create a new scope",
+    "Create a DOM element for the vl-spec-editor directive",
+    "Compile the directive element with the scope",
+    "Trigger a scope digest cycle",
+    "Assert that the .vlspec element's value is '{}'",
+    "Assert that the .shorthand element's value is 'point.'"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "test_case": "soak",
+  "objects": [
+    "response"
+  ],
+  "goals": [
+    "Verify that the URL endpoint successfully returns a 301 redirect status under high concurrent load (up to 5000 users)"
+  ],
+  "activities": [
+    "Send a GET request to the target URL",
+    "Verify that the response status code is 301",
+    "Pause execution for 1 second"
+  ]
+}

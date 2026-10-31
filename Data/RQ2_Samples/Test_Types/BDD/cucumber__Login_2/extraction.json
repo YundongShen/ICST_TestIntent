@@ -1,0 +1,15 @@
+{
+  "test_case": "Login_2",
+  "objects": [
+    "Login"
+  ],
+  "goals": [
+    "Verify that invalid credentials display 'Invalid credentials' and that unauthenticated access to /profile is blocked"
+  ],
+  "activities": [
+    "Navigate to /login",
+    "Fill in \"Username\" with \"admin\" and \"Password\" with \"wrongpassword\"",
+    "Press \"Login\"",
+    "Verify \"Invalid credentials\" message is displayed"
+  ]
+}

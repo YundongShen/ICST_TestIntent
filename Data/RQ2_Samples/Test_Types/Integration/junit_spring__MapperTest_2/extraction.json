@@ -1,0 +1,15 @@
+{
+  "test_case": "MapperTest_2",
+  "objects": [
+    "TestModelService"
+  ],
+  "goals": [
+    "Verify TestModelService pagination query returns expected data size"
+  ],
+  "activities": [
+    "Iterate 100 times to create and insert TestModel objects",
+    "Invoke service method to query models with pagination",
+    "Assert page size is greater than or equal to 5",
+    "Assert result list size is equal to 20"
+  ]
+}

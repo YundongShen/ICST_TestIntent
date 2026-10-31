@@ -1,0 +1,13 @@
+{
+  "test_case": "US13_2",
+  "objects": [
+    "Navegador de cultivos"
+  ],
+  "goals": [
+    "Verificar la bsqueda de plantas y la visualizacin de detalles"
+  ],
+  "activities": [
+    "hacer click en la planta deseada",
+    "verificar la pgina detallada de la planta"
+  ]
+}

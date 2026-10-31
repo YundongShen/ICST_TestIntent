@@ -1,0 +1,9 @@
+**Test Object**
+`TestModelMapper.insert` method
+
+**Test Goal**
+Verify that a TestModel record can be successfully constructed and inserted into the database without throwing an exception.
+
+**Test Activities**
+1. Create a new `TestModel` object, set age=1, createdAt/updatedAt to the current time, and userName="lalal".
+2. Call the insert function.

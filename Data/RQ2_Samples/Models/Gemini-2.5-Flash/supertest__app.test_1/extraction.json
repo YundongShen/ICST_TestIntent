@@ -1,0 +1,15 @@
+{
+  "test_case": "app.test_1",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify the root endpoint ('/') returns status 200 and body 'Helllooooo'."
+  ],
+  "activities": [
+    "Initialize a Supertest request with the application.",
+    "Send a GET request to the \"/\" path.",
+    "Assert that the response body is \"Helllooooo\".",
+    "Assert that the response status code is 200."
+  ]
+}

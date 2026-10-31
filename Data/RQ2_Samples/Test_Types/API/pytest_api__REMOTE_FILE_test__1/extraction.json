@@ -1,0 +1,14 @@
+{
+  "test_case": "REMOTE_FILE_test__1",
+  "objects": [
+    "REMOTE_FILE.REMOTE_FILE"
+  ],
+  "goals": [
+    "Verify that REMOTE_FILE correctly loads supported file types from valid remote URLs and returns expected output types"
+  ],
+  "activities": [
+    "Import REMOTE_FILE module",
+    "Execute REMOTE_FILE function with valid file URL and type",
+    "Verify output is instance of expected type"
+  ]
+}

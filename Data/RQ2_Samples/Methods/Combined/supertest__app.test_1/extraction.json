@@ -1,0 +1,14 @@
+{
+  "test_case": "app.test_1",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "verify HTTP endpoint responses and status codes"
+  ],
+  "activities": [
+    "send GET request to root path",
+    "assert response body matches expected text",
+    "assert HTTP status code is 200"
+  ]
+}

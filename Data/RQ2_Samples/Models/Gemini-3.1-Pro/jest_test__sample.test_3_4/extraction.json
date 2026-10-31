@@ -1,0 +1,14 @@
+{
+  "test_case": "sample.test_3_4",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify that the API endpoint is protected and rejects unauthenticated requests with a 401 status code."
+  ],
+  "activities": [
+    "Set the NODE_ENV environment variable to 'test'",
+    "Send a GET request to the '/api' endpoint",
+    "Assert that the response status code is 401"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "test_case": "DemoApplicationIntegrationTest",
+  "objects": [
+    "DemoApplication"
+  ],
+  "goals": [
+    "Verify the Spring Boot application starts correctly and the root endpoint returns the expected response 'Hello world'"
+  ],
+  "activities": [
+    "Send HTTP GET request to localhost root endpoint",
+    "Verify response equals 'Hello world'"
+  ]
+}

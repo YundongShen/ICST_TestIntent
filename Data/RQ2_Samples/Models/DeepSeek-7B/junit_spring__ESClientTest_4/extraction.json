@@ -1,0 +1,14 @@
+{
+  "test_case": "ESClientTest_4",
+  "objects": [
+    "com.kodcu.entity.Document"
+  ],
+  "goals": [],
+  "activities": [
+    "deleteDocument",
+    "refreshRequest",
+    "matchAllQuery",
+    "forEach",
+    "dao.refreshRequest"
+  ]
+}

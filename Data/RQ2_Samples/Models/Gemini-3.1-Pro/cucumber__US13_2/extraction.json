@@ -1,0 +1,15 @@
+{
+  "test_case": "US13_2",
+  "objects": [
+    "planta",
+    "página detallada"
+  ],
+  "goals": [
+    "Verify that clicking on a specific plant from the search results opens a detailed page displaying its needs and properties."
+  ],
+  "activities": [
+    "Set precondition that the user finds the searched plant in the navigator",
+    "Click on the desired plant",
+    "Verify that a detailed page about the plant's needs and properties opens"
+  ]
+}

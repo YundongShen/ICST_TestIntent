@@ -1,0 +1,11 @@
+- **Test Object**
+Automatic Alarm System's Disease/Pest Detection and Notification Function
+
+- **Test Goal**
+Verify that when the system detects a potential disease or pest and the risk level exceeds a threshold, it can automatically send an alert to the user's mobile phone, reminding them to check the disease details.
+
+- **Test Activities**
+1. The system detects abnormal crop conditions through sensor data and crop images.
+2. The system searches for and identifies specific diseases or pests.
+3. When the risk level exceeds a preset threshold, a notification is triggered.
+4. Check if the user's mobile phone received the alert.

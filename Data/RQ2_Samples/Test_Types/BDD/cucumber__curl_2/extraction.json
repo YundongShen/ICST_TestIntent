@@ -1,0 +1,14 @@
+{
+  "test_case": "curl_2",
+  "objects": [
+    "gauntlt",
+    "HTTP Attack"
+  ],
+  "goals": [
+    "Verify that gauntlt successfully executes simple, cookies, and http method verbs attack scenarios and all steps/scenarios pass"
+  ],
+  "activities": [
+    "Verify simple.attack, cookies.attack, and verbs.attack files exist",
+    "Run `gauntlt cookies.attack`; verify passes with 4 steps (4 passed)"
+  ]
+}

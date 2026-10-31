@@ -1,0 +1,21 @@
+{
+  "test_case": "Amazon.cy_2",
+  "objects": [
+    "#twotabsearchtextbox",
+    "#nav-search-submit-button",
+    "//div[@class='s-widget-container s-spacing-small s-widget-container-height-small celwidget slot=MAIN template=SEARCH_RESULTS widgetId=search-results_1']//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal']",
+    "#add-to-cart-button",
+    "//span[@class='a-button-inner']//input[@value='Proceed to checkout']"
+  ],
+  "goals": [
+    "Verify the product search, add to cart, and checkout initiation process on the Amazon website"
+  ],
+  "activities": [
+    "Visit Amazon India homepage",
+    "Enter T-shirt in search box",
+    "Click search button",
+    "Click first search result product link",
+    "Click add to cart button",
+    "Click proceed to checkout button"
+  ]
+}

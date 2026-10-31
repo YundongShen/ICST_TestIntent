@@ -1,0 +1,10 @@
+{
+  "test_case": "teste2e.cy_1",
+  "objects": [
+    "cy"
+  ],
+  "goals": [
+    "verifythattheuserinterfaceisfunctional"
+  ],
+  "activities": []
+}
