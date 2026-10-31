@@ -3,4 +3,8 @@ transformers>=5.2
 accelerate>=1.0
 numpy>=1.26
 google-genai>=1.0
+requests
+Markdown
+htmldocx
+python-docx
 
