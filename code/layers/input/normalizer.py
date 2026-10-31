@@ -97,7 +97,7 @@ class Normalizer:
     def clean(self, source):
         if self.cleaner is not None:
             return self.cleaner(source)
-        # Comments, indentation, and blank lines may carry evidence or literal test data.
+
         return source
 
     def link_context(self, case, doc):
@@ -126,4 +126,3 @@ def normalize(doc, **options) -> List[TestCase]:
 
 def find_case(cases: List[TestCase], title: str) -> Optional[TestCase]:
     return next((c for c in cases if c.title == title), None)
-

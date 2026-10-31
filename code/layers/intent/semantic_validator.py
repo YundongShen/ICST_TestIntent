@@ -117,4 +117,3 @@ class SemanticValidator:
             consistent, more = self.consistent(intent)
             issues += more
         return ValidationReport(complete, supported, consistent, issues)
-

@@ -50,4 +50,3 @@ def extractor_from_layer(extract_layer):
         result = extract_layer.process({"content": source, "extraction_feedback": feedback})
         return {name: result.get(name, []) for name in FIELDS}
     return run
-

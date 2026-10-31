@@ -11,4 +11,3 @@ from layers.extract.chain.chain_goal_extractor import ChainGoalExtractor
 from layers.extract.chain.chain_activity_extractor import ChainActivityExtractor
 
 __all__ = ['ChainObjectExtractor', 'ChainGoalExtractor', 'ChainActivityExtractor']
-

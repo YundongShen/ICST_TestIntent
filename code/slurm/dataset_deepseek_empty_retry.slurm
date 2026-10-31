@@ -8,8 +8,6 @@
 #SBATCH --output=ds_empty_retry_%A_%a.out
 #SBATCH --exclude=node061
 
-# Dataset jobs: submit with python slurm/submit_dataset_jobs.py dataset_deepseek_empty_retry.slurm.
-# Arrays address source files; each source is split into case-level records.
 
 TASK_ROOT="${PROJECT_ROOT:-${SLURM_SUBMIT_DIR:-$PWD}}"
 if [[ -f "$TASK_ROOT/code/main.py" ]]; then
@@ -22,6 +20,5 @@ export EXTRACT_MODE=independent
 export INFERENCE_BACKEND=local
 export RUN_KIND="${RUN_KIND:-diagnostic}"
 export RETRY_REASON="${RETRY_REASON:-empty_output}"
-# Reruns preserve first-run outputs and write into a separate run directory.
 source "$PROJECT_ROOT/slurm/dataset_job.sh"
 

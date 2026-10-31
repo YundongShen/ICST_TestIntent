@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-Grouped-suite onboarding template, tried on the 4 cases in dog.test.js.
-Cases are taken straight from the reviewed Groundtruth, no re-extraction —
-just checks the grouping + document generation step.
-"""
+"Template demonstration using predefined Ground Truth records from dog.test.js."
 import os
 import sys
 
@@ -40,7 +36,7 @@ CASES = [
             "Send a POST request to `/users/connection` with the correct email address and password.",
             "Check that the status code is 200, `result` in the body is true, and `token` and `username` are consistent with those created.",
         ],
-        "dependencies": ["supertest", "bcrypt"],  # beforeEach (bcrypt) + request(app) (supertest) run for every case
+        "dependencies": ["supertest", "bcrypt"],
     },
     {
         "id": "TC-LOGIN-02",
@@ -50,7 +46,7 @@ CASES = [
             "Send a POST request to `/users/connection`, sending only the password and not the email address.",
             "Check that the status code is 200, `result` is false, and `error` is \"Missing or empty fields\".",
         ],
-        "dependencies": ["supertest", "bcrypt"],  # beforeEach (bcrypt) + request(app) (supertest) run for every case
+        "dependencies": ["supertest", "bcrypt"],
     },
     {
         "id": "TC-LOGIN-03",
@@ -60,7 +56,7 @@ CASES = [
             "Send a POST request with a correct email address but an incorrect password \"wrongpassword\".",
             "Check for a 200 status code, `result` of false, and `error` of \"User not found or wrong password\".",
         ],
-        "dependencies": ["supertest", "bcrypt"],  # beforeEach (bcrypt) + request(app) (supertest) run for every case
+        "dependencies": ["supertest", "bcrypt"],
     },
     {
         "id": "TC-LOGIN-04",
@@ -70,7 +66,7 @@ CASES = [
             "Send a POST request with a non-existent email address \"nonexistent@example.com\" and a correct password.",
             "Check for a 200 status code, `result` of false, and `error` of \"User not found or wrong password\".",
         ],
-        "dependencies": ["supertest", "bcrypt"],  # beforeEach (bcrypt) + request(app) (supertest) run for every case
+        "dependencies": ["supertest", "bcrypt"],
     },
 ]
 

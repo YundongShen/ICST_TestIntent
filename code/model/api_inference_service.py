@@ -1,8 +1,4 @@
-"""
-Google Gemini API Inference Service
-Standalone API inference layer dedicated to Gemini API.
-Fully isolated from local model inference (inference_service.py).
-"""
+"Gemini API inference."
 
 import os
 import time
@@ -10,15 +6,11 @@ from typing import Optional
 
 
 class GeminiInferenceService:
-    """Gemini API inference service — standalone implementation."""
+
 
     def __init__(self, api_key: Optional[str] = None):
-        """
-        Initialize the Gemini inference service.
 
-        If VERTEX_API_KEY is set, uses Vertex AI client (vertexai=True).
-        Otherwise falls back to GOOGLE_API_KEY with standard Gemini API.
-        """
+
         self.vertex_api_key = os.getenv("VERTEX_API_KEY")
         self.use_vertex = bool(self.vertex_api_key)
 
@@ -39,7 +31,7 @@ class GeminiInferenceService:
         print(f"[GeminiInference] Service initialized with {mode}")
 
     def _initialize_client(self):
-        """Initialize the Gemini API client (Vertex AI or standard)."""
+
         try:
             from google import genai
             if self.use_vertex:
@@ -57,7 +49,7 @@ class GeminiInferenceService:
             raise RuntimeError(f"[GeminiInference] Failed to configure client: {e}")
 
     def infer(self, prompt: str, max_tokens: int = 1000) -> str:
-        """Call the Gemini API, retrying with backoff on 429s."""
+
         if not self.client:
             raise RuntimeError("[GeminiInference] Client not initialized")
 
@@ -83,7 +75,7 @@ class GeminiInferenceService:
                     print("[GeminiInference] Warning: Empty response from Gemini")
                     return ""
                 result = response.text.strip()
-                time.sleep(5)  # proactive delay: 5s between calls keeps well under 15 RPM
+                time.sleep(5)
                 return result
             except Exception as e:
                 last_exc = e
@@ -95,20 +87,19 @@ class GeminiInferenceService:
         raise last_exc
 
     def infer_json(self, prompt: str, max_tokens: int = 1000) -> str:
-        """Same as infer(); kept as a separate name for call sites expecting JSON back."""
+
         return self.infer(prompt, max_tokens)
 
     def infer_no_thinking(self, prompt: str, max_tokens: int = 1000) -> str:
-        """Gemini API has no extended-thinking toggle here; same as infer()."""
+
         return self.infer(prompt, max_tokens)
 
 
-# Global singleton instance
 _gemini_service: Optional[GeminiInferenceService] = None
 
 
 def get_gemini_service(api_key: Optional[str] = None) -> GeminiInferenceService:
-    """Get the shared GeminiInferenceService, creating it on first call."""
+
     global _gemini_service
 
     if _gemini_service is None:
@@ -118,7 +109,7 @@ def get_gemini_service(api_key: Optional[str] = None) -> GeminiInferenceService:
 
 
 def reset_gemini_service():
-    """Reset the Gemini service (useful for testing or switching API keys)."""
+
     global _gemini_service
     _gemini_service = None
 
@@ -128,4 +119,3 @@ __all__ = [
     'get_gemini_service',
     'reset_gemini_service'
 ]
-

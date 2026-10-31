@@ -24,4 +24,3 @@ def get_inference_backend(backend=None):
 
 
 __all__ = ["get_inference_backend"]
-

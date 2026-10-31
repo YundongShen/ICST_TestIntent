@@ -118,4 +118,3 @@ class GranularityAdjuster:
                 raise GranularityAdjustmentError("Adjustment did not preserve verification meaning" +
                                                  (": " + reasons if reasons else ""))
         return {**intent, **rewritten, "granularity": {name: float(value) for name, value in requested.items()}}
-

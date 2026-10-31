@@ -140,4 +140,3 @@ def write(content: Content, path, fmt=None):
     with open(path, "wb") as f:
         f.write(data)
     return path
-

@@ -8,4 +8,3 @@ class ObjectExtractor(ElementExtractor):
 
     def extract(self, code_text, feedback=""):
         return self._extract(code_text, feedback=feedback)
-

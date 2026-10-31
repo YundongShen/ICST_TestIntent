@@ -1,4 +1,4 @@
-"""Shared suite/test-case definitions for the 5-suite independent-extraction onboarding run."""
+"Fixed suite and case definitions for onboarding test scripts."
 
 SUITES = [
     {
@@ -65,8 +65,8 @@ SUITES = [
             "styling, and modal dialog behavior."
         ),
         "dependencies": ["@playwright/test"],
-        # Cases 1-3 sit directly under 'Bootstrap 4'; cases 4-6 sit under the
-        # nested 'Modal' describe, which also inherits the outer beforeEach.
+
+
         "wrapper": (
             "import {{ test, expect }} from '@playwright/test';\n\n"
             "test.beforeEach(async ({{ page }}) => {{\n"
@@ -113,7 +113,7 @@ SUITES = [
              "\t\t\tawait button.click();\n"
              "\t\t\texpect(isHidden.valueOf() === 'false');\n\t\t});\n\t});\n"),
         ],
-        "no_format": True,  # wrapper already fully formatted per-case; skip .format()
+        "no_format": True,
     },
     {
         "suite_id": "TRIANGLIFY-OPTS-SUITE-01",
@@ -213,9 +213,7 @@ SUITES = [
 ]
 
 
-
 def isolate_case_source(suite, title, body):
     if suite.get("no_format"):
         return suite["wrapper"].format(body=body)
     return suite["wrapper"].format(title=title, body=body)
-

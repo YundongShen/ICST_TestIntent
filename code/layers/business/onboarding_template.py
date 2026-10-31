@@ -1,8 +1,4 @@
-"""
-Prompt template for the suite-level onboarding document. Takes case-level
-Test Intent records that already belong to one suite and are already
-grouped, and just formats them — extraction still happens per test case.
-"""
+"Prompt for generating an onboarding document from case-level Test Intent."
 
 PROMPT = """You are a test onboarding document expert. Generate a structured onboarding document strictly following the format below. All content must be derived only from the suite information, groups, and per-test-case Test Intent records provided to you. Do not invent test cases, objects, goals, or activities that are not given.
 
@@ -57,4 +53,3 @@ PROMPT = """You are a test onboarding document expert. Generate a structured onb
 Fill in every section with concrete content derived only from the given suite info, groups, and per-test-case Test Intent data. Do not leave placeholder text.
 
 IMPORTANT: Output the final document directly. Do not include any thinking process, reasoning steps, analysis, or preamble. Start your response immediately with "## Test Suite Overview" and output every section in order."""
-

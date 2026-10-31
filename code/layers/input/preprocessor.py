@@ -7,7 +7,7 @@ class Preprocessor:
     def process(self, raw_code):
         if not isinstance(raw_code, str):
             raise TypeError("Test artifact content must be text")
-        # Whitespace and comment-like lines may be literal test data. Preserve them.
+
         return raw_code
 
     def process_file(self, file_path):
@@ -19,4 +19,3 @@ class Preprocessor:
     @staticmethod
     def validate(cleaned_data):
         return isinstance(cleaned_data, dict) and isinstance(cleaned_data.get("content"), str) and bool(cleaned_data["content"].strip())
-

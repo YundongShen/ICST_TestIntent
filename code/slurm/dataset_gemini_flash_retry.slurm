@@ -8,8 +8,6 @@
 #SBATCH --output=gemini_flash_retry_%A_%a.out
 #SBATCH --exclude=node061
 
-# Dataset jobs: submit with python slurm/submit_dataset_jobs.py dataset_gemini_flash_retry.slurm.
-# Arrays address source files; each source is split into case-level records.
 
 TASK_ROOT="${PROJECT_ROOT:-${SLURM_SUBMIT_DIR:-$PWD}}"
 if [[ -f "$TASK_ROOT/code/main.py" ]]; then
@@ -23,6 +21,5 @@ export INFERENCE_BACKEND=api
 export GEMINI_MODEL=gemini-2.5-flash
 export RUN_KIND="${RUN_KIND:-retry}"
 export RETRY_REASON="${RETRY_REASON:-}"
-# Reruns preserve first-run outputs and write into a separate run directory.
 source "$PROJECT_ROOT/slurm/dataset_job.sh"
 

@@ -7,7 +7,6 @@
 #SBATCH --job-name=download_qwen
 #SBATCH --output=download_qwen_%j.out
 
-# Download only; this job performs no test-intent extraction.
 TASK_ROOT="${PROJECT_ROOT:-${SLURM_SUBMIT_DIR:-$PWD}}"
 if [[ -f "$TASK_ROOT/code/main.py" ]]; then
     TASK_ROOT="$TASK_ROOT/code"

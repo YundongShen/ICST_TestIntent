@@ -23,7 +23,7 @@ def extract_case(raw_data, extract_layer, service=None, levels=None, requirement
 
 def run_pipeline(raw_data, extract_mode=None, service=None, output_dir="Result/onboarding_result",
                  levels=None, requirements="", adjust=True, max_reextract=2, merge_activities=False):
-    """Process one case. A failed semantic check never reaches report generation."""
+
     try:
         extraction = ExtractLayer(extract_mode or os.getenv("EXTRACT_MODE", "independent"), service=service)
         intent = extract_case(raw_data, extraction, service=service, levels=levels,
@@ -39,7 +39,7 @@ def run_pipeline(raw_data, extract_mode=None, service=None, output_dir="Result/o
 def run_suite(path, extract_mode="independent", service=None, output_dir="Result/onboarding_result",
               levels=None, requirements="", adjust=True, max_reextract=2, merge_activities=False,
               extract_only=False):
-    """Split an artifact into cases, then extract each case independently of other cases."""
+
     path = Path(path)
     raw_cases = InputPipeline.as_records(InputPipeline().run(str(path)))
     extraction = ExtractLayer(extract_mode=extract_mode, service=service)
@@ -103,4 +103,3 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
-

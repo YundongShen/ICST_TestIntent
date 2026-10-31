@@ -21,4 +21,3 @@ class InputPipeline:
     def as_records(cases: List[TestCase]):
         return [{"content": c.source, "test_case_id": c.case_id, "title": c.title,
                  "suite": c.suite, "context": c.context} for c in cases]
-

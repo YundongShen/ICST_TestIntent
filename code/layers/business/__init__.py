@@ -39,4 +39,3 @@ class BusinessLayer:
 
 
 __all__ = ["BusinessLayer", "PROMPT"]
-

@@ -17,7 +17,7 @@ def main(argv=None):
                         help="Path to ICST_TestIntent/Data/Groundtruth, or set GROUNDTRUTH_DIR")
     parser.add_argument("--output-dir", type=Path, default=TEST_OUTPUT)
     args = parser.parse_args(argv)
-    # Read every reviewed case before making any model calls.
+
     prepared = [(suite, load_groundtruth_cases(suite, args.groundtruth_dir)) for suite in SUITES]
     service = test_service()
     for suite, cases in prepared:

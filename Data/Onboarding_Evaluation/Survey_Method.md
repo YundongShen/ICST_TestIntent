@@ -16,7 +16,7 @@ The study uses a between-subjects design. Each participant reads one test suite,
 
 The code, question content, and response scales are shared across conditions. Instructions refer to code alone in A and to code with supporting material in B and C. B and C use the same side-by-side layout and document heading. A shows the code in a single centered panel.
 
-The exact material versions and their standalone HTML copies are linked in the [directory guide](README.md).
+The materials for conditions A, B, and C are included in [Survey_HTML](Survey_HTML/).
 
 ## Recruitment and allocation
 

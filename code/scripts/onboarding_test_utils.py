@@ -64,7 +64,7 @@ def extract_validate_adjust(source, service, extract_layer=None, max_reextract=2
     extraction = extract_layer if extract_layer is not None else ExtractLayer(extract_mode="independent")
 
     def extract_again(content, feedback=""):
-        # Keep the complete artifact, including comments and literal test data.
+
         return extraction.process({"content": content, "extraction_feedback": feedback})
 
     semantic = SemanticLayer(

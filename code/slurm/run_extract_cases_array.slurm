@@ -9,7 +9,6 @@
 #SBATCH --output=extract_case_onboarding_%A_%a.out
 #SBATCH --exclude=node061
 
-# Onboarding template or test-version job.
 TASK_ROOT="${PROJECT_ROOT:-${SLURM_SUBMIT_DIR:-$PWD}}"
 if [[ -f "$TASK_ROOT/code/main.py" ]]; then
     TASK_ROOT="$TASK_ROOT/code"

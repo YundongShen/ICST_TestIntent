@@ -122,4 +122,3 @@ def cli(argv=None, gateway: Optional[Gateway] = None):
 
 if __name__ == "__main__":
     sys.exit(cli())
-

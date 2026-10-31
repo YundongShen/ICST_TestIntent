@@ -1,9 +1,4 @@
-"""
-Prompt for the goal-grouping step: turns each case's Test Goal into a higher
-level "shared testing question" and clusters cases that answer the same one.
-Works on already-extracted case-level records (object + goal) only — it
-doesn't re-extract or merge anything.
-"""
+"Prompt for grouping cases by their verification goals."
 
 PROMPT = """You are analyzing a set of test cases that belong to one test suite. Each test case already has its own independently extracted Test Object and Test Goal.
 
@@ -23,10 +18,9 @@ IMPORTANT: Do not show your reasoning, analysis, or alternative options. Output 
 
 
 def build_prompt(suite_id, cases):
-    """Fill in the prompt with each case's id/object/goal."""
+
     lines = []
     for c in cases:
         lines.append(f"- {c['id']} | Object: {c['object']} | Goal: {c['goal']}")
     cases_block = "\n".join(lines)
     return PROMPT.format(suite_id=suite_id, cases_block=cases_block)
-

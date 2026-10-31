@@ -19,4 +19,3 @@ class ElementExtractor:
         response = self.service.infer(prompt, max_tokens=self.max_tokens)
         data = parse_json(response, self.fields) or {}
         return {field: string_list(data.get(field)) for field in self.fields}
-

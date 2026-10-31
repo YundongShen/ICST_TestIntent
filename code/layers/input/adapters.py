@@ -266,4 +266,3 @@ def adapter_for(path):
 
 def parse_suite(path):
     return adapter_for(path).parse(path)
-

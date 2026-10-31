@@ -13,4 +13,3 @@ class InputLayer:
 
 
 __all__ = ["InputLayer", "InputPipeline"]
-

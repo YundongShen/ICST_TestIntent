@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-Render a markdown onboarding document into a Word (.docx) file.
-
-Usage: python md_to_docx.py <input.md> [output.docx]
-"""
+"Convert a Markdown onboarding document to Word."
 import sys
 import os
 import markdown

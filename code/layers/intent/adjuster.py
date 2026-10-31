@@ -11,4 +11,3 @@ class Adjuster:
         return self.adjuster.adjust(
             {"objects": objects, "goals": goals, "activities": activities},
             levels=levels, requirements=requirements, merge_activities=merge_activities)
-

@@ -1,29 +1,4 @@
-"""
-Collect test case files from GitHub for ground truth dataset construction.
-
-Usage:
-    python collect_testcases.py
-    GITHUB_TOKEN="ghp_xxx" python collect_testcases.py
-
-Output:
-    dataset/raw/<framework>/<filename>   - downloaded test files
-    dataset/index.json                   - metadata for each file
-
-Framework quotas (target 210, trim to 200):
-    jest_test      30   (.test.js  - unit/integration)
-    jest_spec      20   (.spec.js  - unit/integration)
-    cypress        15   (E2E)
-    playwright     15   (E2E)
-    rtl            10   (React Testing Library - component)
-    supertest      10   (API integration)
-    pytest_unit    25   (Python unit)
-    pytest_api     15   (Python API integration)
-    locust         10   (Python performance)
-    junit_unit     20   (Java unit)
-    junit_spring   15   (Java Spring integration)
-    cucumber       15   (BDD/acceptance)
-    k6             10   (JS performance)
-"""
+"Collect candidate test source files from GitHub."
 
 import os
 import json
@@ -33,18 +8,16 @@ import requests
 from pathlib import Path
 from collections import Counter
 
-# ─── Configuration ─────────────────────────────────────────────────────────────
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 TARGET_DIR   = Path("dataset/raw")
 INDEX_FILE   = Path("dataset/index.json")
 MIN_LINES    = 20
 MAX_LINES    = 600
-SLEEP_SEARCH = 5    # seconds between search requests
-SLEEP_FILE   = 1    # seconds between file downloads
+SLEEP_SEARCH = 5
+SLEEP_FILE   = 1
 
-# Each entry: (framework_label, quota, search_query, quality_patterns, min_pattern_matches, test_count_pattern, max_tests)
-# test_count_pattern: regex to count individual test methods; max_tests enforces test-case (not suite) granularity
+
 FRAMEWORK_SPECS = [
     (
         "jest_test", 30,
@@ -126,7 +99,6 @@ FRAMEWORK_SPECS = [
     ),
 ]
 
-# ─── GitHub API helpers ─────────────────────────────────────────────────────────
 
 def make_headers():
     h = {"Accept": "application/vnd.github+json"}
@@ -161,8 +133,6 @@ def fetch_raw_content(item):
     return None
 
 
-# ─── Quality filter ─────────────────────────────────────────────────────────────
-
 def passes_quality(content, patterns, min_matches, test_count_pattern=None, max_tests=None):
     lines = content.splitlines()
     n = len(lines)
@@ -178,14 +148,12 @@ def passes_quality(content, patterns, min_matches, test_count_pattern=None, max_
     return True
 
 
-# ─── Main collection loop ───────────────────────────────────────────────────────
-
 def collect():
     TARGET_DIR.mkdir(parents=True, exist_ok=True)
     INDEX_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     index = []
-    seen  = set()   # "repo/path" dedup
+    seen  = set()
     total = 0
     counts = {}
 

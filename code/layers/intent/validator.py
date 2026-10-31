@@ -11,4 +11,3 @@ class Validator:
         report = self.validator.validate(
             {"objects": objects, "goals": goals, "activities": activities}, source)
         return {"matched": report.passed, "reasoning": "; ".join(report.issues), **report.as_dict()}
-

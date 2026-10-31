@@ -24,4 +24,3 @@ class IntentLayer:
 
 
 __all__ = ["IntentLayer", "SemanticLayer", "SemanticValidator", "GranularityAdjuster", "SemanticValidationError"]
-

@@ -5,7 +5,7 @@ import re
 
 
 def json_objects(text):
-    """Read JSON objects without treating braces inside strings as delimiters."""
+
     if not isinstance(text, str):
         return []
     text = re.sub(r"<think>[\s\S]*?</think>", "", text, flags=re.IGNORECASE)
@@ -40,4 +40,3 @@ def string_list(value):
     if isinstance(value, list) and all(isinstance(item, str) and item.strip() for item in value):
         return list(value)
     return []
-

@@ -8,8 +8,6 @@
 #SBATCH --output=dataset_deepseek_%A_%a.out
 #SBATCH --array=0-97%15
 
-# Dataset jobs: submit with python slurm/submit_dataset_jobs.py dataset_deepseek.slurm.
-# Arrays address source files; each source is split into case-level records.
 
 TASK_ROOT="${PROJECT_ROOT:-${SLURM_SUBMIT_DIR:-$PWD}}"
 if [[ -f "$TASK_ROOT/code/main.py" ]]; then

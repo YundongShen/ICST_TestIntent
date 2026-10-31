@@ -68,4 +68,3 @@ def build_prompt(fields, source, objects=None, goals=None, feedback=""):
         "Do not output placeholders, reasoning, or markdown fences. Use an empty array if an element has no support.",
     ]
     return "\n\n".join(sections)
-

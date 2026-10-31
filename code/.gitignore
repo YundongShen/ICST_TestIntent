@@ -1,4 +1,3 @@
-# Python and build files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -9,7 +8,6 @@ dist/
 *.egg-info/
 *.egg
 
-# Environments and editors
 .venv
 .venv*/
 venv/
@@ -22,7 +20,6 @@ gpu_env*/
 *.swo
 *~
 
-# Local operating system files
 .DS_Store
 .DS_Store?
 ._*
@@ -30,14 +27,12 @@ gpu_env*/
 .Trashes
 Thumbs.db
 
-# Models, generated results, and local corpus copies
 model/models/
 Result/
 logs/
 dataset/
 TI_GT_DS/
 
-# Job output and temporary configuration
 *.out
 *.err
 *.tmp

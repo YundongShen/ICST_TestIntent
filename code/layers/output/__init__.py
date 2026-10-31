@@ -19,4 +19,3 @@ class OutputLayer:
 
 
 __all__ = ["OutputLayer"]
-

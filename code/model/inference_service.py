@@ -1,19 +1,14 @@
-"""
-Inference service - routes prompts to a local model or an API backend.
-
-Local model loading lives in _load_local_model(); API calls go through
-_infer_api(). Everything else (the extractors) just calls infer().
-"""
+"Local model inference."
 
 import os
 from typing import Tuple
 
 
 class InferenceService:
-    """Wraps local and API inference behind one infer() call."""
+
 
     def __init__(self, mode: str = "local", model_config: dict = None):
-        """mode is "local" or "api"; model_config comes from set_model_config()."""
+
         self.mode = mode
         self.model = None
         self.tokenizer = None
@@ -25,7 +20,7 @@ class InferenceService:
             print(f"[InferenceService] Using model: {self.model_config.get('model_name', 'unknown')}")
 
     def infer(self, prompt: str, max_tokens: int = 200) -> str:
-        """Main entry point used by all extractors."""
+
         if self.mode == "local":
             return self._infer_local(prompt, max_tokens)
         elif self.mode == "api":
@@ -34,34 +29,33 @@ class InferenceService:
             raise ValueError(f"Unknown mode: {self.mode}")
 
     def infer_no_thinking(self, prompt: str, max_tokens: int = 200) -> str:
-        """Same as infer(), but turns off Qwen3.x's extended thinking so it
-        answers directly instead of burning tokens on visible reasoning.
-        API backend just falls back to infer()."""
+
+
         if self.mode == "local":
             return self._infer_local(prompt, max_tokens, enable_thinking=False)
         return self.infer(prompt, max_tokens)
 
     def _load_local_model(self) -> Tuple:
-        """Load the model from MODEL_CONFIG, downloading it first if missing."""
+
         if self.model is not None:
             return self.model, self.tokenizer, self.device
-        
+
         if not self.model_config:
             raise RuntimeError("[InferenceService] No model config set. Call set_model_config() first.")
-        
-        # Use the configured model path and loader
+
+
         model_name = self.model_config.get('model_name', 'unknown')
         model_id = self.model_config.get('model_id', '')
         local_path = self.model_config.get('local_path', None)
-        
+
         print(f"[InferenceService] Loading model: {model_name}")
-        
+
         try:
             from model.model_config import get_device
-            
+
             self.device = get_device()
-            
-            # Dynamically load the appropriate loader function based on model type
+
+
             if 'Qwen' in model_id or 'qwen' in model_id.lower():
                 from model.model_config_qwen import load_qwen_model
                 self.model, self.tokenizer = load_qwen_model(device=self.device, quantize_8bit=False)
@@ -72,36 +66,36 @@ class InferenceService:
                 print("[InferenceService] DeepSeek model loaded successfully")
             else:
                 raise ValueError(f"Unknown model type: {model_id}")
-            
+
             return self.model, self.tokenizer, self.device
         except Exception as e:
             print(f"[InferenceService] Failed to load local model: {e}")
             raise
-    
+
     def _auto_download_model(self):
-        """Auto-download model if missing (using HuggingFace CLI or API)"""
+
         import subprocess
         from pathlib import Path
-        
+
         if not self.model_config:
             raise RuntimeError("[InferenceService] No model config set for download.")
-        
+
         model_id = self.model_config.get("model_id", "")
         local_dir = self.model_config.get("local_path")
-        
+
         if not local_dir:
             raise ValueError("[InferenceService] No local_path in model config")
         local_dir.parent.mkdir(parents=True, exist_ok=True)
-        
+
         print(f"\n{'='*80}")
         print("[Auto-Download] Model not found - attempting to download...")
         print(f"{'='*80}\n")
-        
+
         methods = [
             ("huggingface-cli", self._download_with_cli),
             ("huggingface_hub snapshot_download", self._download_with_python),
         ]
-        
+
         for method_name, method_func in methods:
             try:
                 print(f"[Download] Trying method: {method_name}")
@@ -109,8 +103,8 @@ class InferenceService:
                     return
             except Exception as e:
                 print(f"[Download] {method_name} failed: {e}")
-        
-        # All methods failed
+
+
         print(f"\n{'='*80}")
         print("[Download] Failed - model download unsuccessful")
         print(f"{'='*80}\n")
@@ -119,9 +113,9 @@ class InferenceService:
         print(f"  Or: python model/download_model.py")
         print(f"\nAlternatively in future, set API key for cloud inference")
         raise RuntimeError("Model download failed. See solutions above.")
-    
+
     def _download_with_cli(self, model_id, local_dir):
-        """Try download using huggingface-cli"""
+
         import subprocess
         cmd = [
             "huggingface-cli",
@@ -133,9 +127,9 @@ class InferenceService:
         ]
         result = subprocess.run(cmd, capture_output=True)
         return result.returncode == 0
-    
+
     def _download_with_python(self, model_id, local_dir):
-        """Try download using huggingface_hub Python API"""
+
         try:
             from huggingface_hub import snapshot_download
             snapshot_download(
@@ -148,20 +142,19 @@ class InferenceService:
         except Exception as e:
             print(f"[Download] Python method error: {e}")
             return False
-    
+
     def _infer_local(self, prompt: str, max_tokens: int = 200, enable_thinking: bool = True) -> str:
-        """Tokenize, generate, decode. enable_thinking only matters for
-        models whose chat template supports it (Qwen3.x); defaults to True
-        so infer() keeps its old behavior."""
+
+
         import torch
 
         model, tokenizer, device = self._load_local_model()
 
-        # CRITICAL: Ensure model is in eval mode for inference
+
         model.eval()
 
         try:
-            # Use chat template for better instruction following
+
             model_id = self.model_config.get('model_id', '')
             if hasattr(tokenizer, 'apply_chat_template'):
                 messages = [{"role": "user", "content": prompt}]
@@ -171,17 +164,17 @@ class InferenceService:
                 try:
                     formatted_prompt = tokenizer.apply_chat_template(messages, **template_kwargs)
                 except TypeError:
-                    # Tokenizer's template doesn't accept enable_thinking; fall back
+
                     template_kwargs.pop("enable_thinking", None)
                     formatted_prompt = tokenizer.apply_chat_template(messages, **template_kwargs)
             else:
-                # For Qwen and others, use raw prompt directly
+
                 formatted_prompt = prompt
-            
-            # Tokenize input with attention mask
+
+
             inputs = tokenizer(
-                formatted_prompt, 
-                return_tensors="pt", 
+                formatted_prompt,
+                return_tensors="pt",
                 truncation=False,
                 add_special_tokens=not hasattr(tokenizer, "apply_chat_template")
             )
@@ -193,10 +186,10 @@ class InferenceService:
                                  "use a larger context or split the input explicitly")
             max_tokens = min(max_tokens, available)
             inputs = inputs.to(device)
-            
+
             is_qwen = 'Qwen' in model_id or 'qwen' in model_id.lower()
 
-            # Generate response
+
             with torch.no_grad():
                 generate_kwargs = {
                     'input_ids': inputs['input_ids'],
@@ -206,7 +199,7 @@ class InferenceService:
                 }
 
                 if is_qwen:
-                    # Qwen uses sampling mode to generate complete JSON with thinking process
+
                     generate_kwargs['do_sample'] = True
                     generate_kwargs['temperature'] = 0.5
                     generate_kwargs['top_p'] = 0.95
@@ -217,18 +210,17 @@ class InferenceService:
                     generate_kwargs['top_p'] = 0.95
                     generate_kwargs['top_k'] = 50
                     generate_kwargs['eos_token_id'] = tokenizer.eos_token_id
-                
+
                 outputs = model.generate(**generate_kwargs)
-            
-            # Decode response - only the newly generated tokens
+
+
             generated_token_ids = outputs[0][input_length:]
             response = tokenizer.decode(
                 generated_token_ids,
                 skip_special_tokens=True
             ).strip()
-            
-            # Strip <think>...</think> blocks (Qwen3.5 extended thinking)
-            # so parsers downstream only see the actual JSON answer
+
+
             import re as _re
             response = _re.sub(r'<think>[\s\S]*?</think>', '', response, flags=_re.DOTALL).strip()
 
@@ -236,22 +228,21 @@ class InferenceService:
         except Exception as e:
             print(f"[InferenceService] Local inference failed: {e}")
             raise
-    
+
     def _infer_api(self, prompt: str, max_tokens: int = 200) -> str:
-        """Not used — API calls go through api_inference_service.py instead.
-        Left as a stub in case a local-mode API provider is ever needed here."""
+
+
         raise NotImplementedError(
             "API mode not implemented. Edit _infer_api() method to add your API provider."
         )
 
 
-# Global singleton instance and model configuration
 _inference_service = None
 _model_config = None
 
 
 def set_model_config(model_config: dict):
-    """Set the config InferenceService will use. Call before creating it."""
+
     global _model_config, _inference_service
     _model_config = model_config
     _inference_service = None
@@ -259,7 +250,7 @@ def set_model_config(model_config: dict):
 
 
 def get_inference_service(mode: str = "local") -> InferenceService:
-    """Get the shared InferenceService, creating it on first call."""
+
     global _inference_service
     if _inference_service is None:
         _inference_service = InferenceService(mode=mode, model_config=_model_config)
@@ -267,11 +258,10 @@ def get_inference_service(mode: str = "local") -> InferenceService:
 
 
 def set_inference_mode(mode: str):
-    """Rebuild the shared service in "local" or "api" mode."""
+
     global _inference_service
     _inference_service = InferenceService(mode=mode)
     print(f"[InferenceService] Mode switched to '{mode}'")
 
 
 __all__ = ['InferenceService', 'get_inference_service', 'set_inference_mode', 'set_model_config']
-

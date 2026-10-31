@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-Same grouped-suite template, tried on the 5 cases in SilderMenu.test.js
-(getMeunMatcheys path matching). Cases come from the reviewed Groundtruth.
-"""
+"Template demonstration using predefined Ground Truth records for menu path matching."
 import os
 import sys
 
