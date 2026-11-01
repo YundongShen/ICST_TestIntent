@@ -48,7 +48,7 @@ class Normalizer:
 
     def _kept(self, doc):
         return [n for n, (a, b) in enumerate(doc.cases)
-                if self.keep_empty or not _empty_body(doc.lines, a, b)]
+                if self.keep_empty or doc.format != "code/javascript" or not _empty_body(doc.lines, a, b)]
 
     def _case_lines(self, doc, keep):
         drop = set()
@@ -76,7 +76,7 @@ class Normalizer:
         stem = os.path.basename(doc.path).rsplit(".", 1)[0]
         kept = self._kept(doc)
         if not kept or (len(kept) == 1 and len(doc.cases) == 1):
-            with open(doc.path, encoding="utf-8") as f:
+            with open(doc.path, encoding="utf-8", newline="") as f:
                 whole = f.read()
         if not kept:
             return [TestCase(case_id=stem, suite=doc.path, title=stem, source=whole,
@@ -104,9 +104,14 @@ class Normalizer:
         n = next((i for i, c in enumerate(doc.cases) if c[0] + 1 == case.start_line and c[1] + 1 == case.end_line), None)
         span = doc.cases[n] if n is not None else (case.start_line - 1, case.end_line - 1)
         enclosing = [g for g in doc.groups if _within(span, g)]
-        setup = [s for s in doc.setup
-                 if not any(_within(s, c) for c in doc.cases)
-                 and (not any(_within(s, g) for g in doc.groups) or any(_within(s, g) for g in enclosing))]
+        setup = []
+        for block in doc.setup:
+            if any(_within(block, c) for c in doc.cases):
+                continue
+            owners = [g for g in doc.groups if _within(block, g)]
+            owner = min(owners, key=lambda g: g[1] - g[0]) if owners else None
+            if owner is None or owner in enclosing:
+                setup.append(block)
         imports = [l.strip() for l in doc.lines
                    if re.match(r"\s*(import\s|from\s+\S+\s+import\s|const\s+.*=\s*require\(|package\s)", l)]
         return {
