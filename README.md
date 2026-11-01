@@ -10,7 +10,7 @@ The dataset contains **210 test cases from 98 source files**, covering unit, int
 |---|---|
 | [Data/Test_Suite/](Data/Test_Suite/) | Test suite sources, organized by framework |
 | [Data/Groundtruth/](Data/Groundtruth/) | Reference Test Objects, Test Goal, and Test Activities, stored per test case |
-| [Data/LLM_Extraction/](Data/LLM_Extraction/) | Saved model outputs in `Original_Extraction/` and derived case-level files in `Split_by_Test_Case/`, organized by model and prompting workflow |
+| [Data/LLM_Extraction/](Data/LLM_Extraction/) | Case-level Test Intent results, organized by model and prompting workflow |
 | [Data/Comparison_Results/](Data/Comparison_Results/) | Case-level alignment judgments and summary statistics in `manual_review.xlsx` |
 | [Data/Peer_Review/](Data/Peer_Review/) | Researcher review records, labels, and revision information in `peer_review.xlsx` |
 | [Data/RQ2_Samples/](Data/RQ2_Samples/) | Samples organized by workflow, model, and testing category, with pattern judgments in `Case_Judgments.xlsx` |
