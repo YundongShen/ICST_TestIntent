@@ -30,11 +30,13 @@ def _within(inner, outer):
 
 
 class Normalizer:
-    def __init__(self, clean=True, link_context=True, keep_empty=False, cleaner=None):
+    def __init__(self, clean=True, link_context=True, keep_empty=False, cleaner=None,
+                 step_definition_paths=None):
         self.do_clean = clean
         self.do_link = link_context
         self.keep_empty = keep_empty
         self.cleaner = cleaner
+        self.step_definition_paths = step_definition_paths
 
     def run(self, doc):
         cases = []
@@ -44,6 +46,9 @@ class Normalizer:
             if self.do_link:
                 case.context = self.link_context(case, doc)
             cases.append(case)
+        if self.do_link and doc.format == "gherkin":
+            from layers.input.step_definitions import StepDefinitionLinker
+            StepDefinitionLinker(self.step_definition_paths).link(cases, doc.path)
         return cases
 
     def _kept(self, doc):

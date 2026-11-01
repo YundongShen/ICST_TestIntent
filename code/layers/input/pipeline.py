@@ -19,5 +19,16 @@ class InputPipeline:
 
     @staticmethod
     def as_records(cases: List[TestCase]):
-        return [{"content": c.source, "test_case_id": c.case_id, "title": c.title,
-                 "suite": c.suite, "context": c.context} for c in cases]
+        records = []
+        for case in cases:
+            content = case.source
+            if case.format == "gherkin":
+                definitions = {}
+                for definition in case.context.get("step_definitions", []):
+                    key = (definition["path"], tuple(definition["line_range"]), definition["source"])
+                    definitions[key] = definition["source"]
+                if definitions:
+                    content += ("\n" if content.endswith(("\n", "\r")) else "\n\n") + "\n\n".join(definitions.values()) + "\n"
+            records.append({"content": content, "test_case_id": case.case_id, "title": case.title,
+                            "suite": case.suite, "context": case.context})
+        return records
