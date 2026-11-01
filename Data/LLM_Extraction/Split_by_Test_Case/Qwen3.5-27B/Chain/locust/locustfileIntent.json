@@ -9,8 +9,7 @@
     {
       "test_case": "locustfile",
       "objects": [
-        "...",
-        "..."
+        "core business workflows (registration, groups, splitting)"
       ],
       "goals": [
         "Verify system performance and stability under simulated concurrent user load",

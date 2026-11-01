@@ -9,8 +9,7 @@
     {
       "test_case": "Frames.cy_1",
       "objects": [
-        "...",
-        "..."
+        "elements inside an iframe"
       ],
       "goals": [
         "Verify interaction with elements inside an iframe including text input and button clicks",
@@ -26,8 +25,7 @@
     {
       "test_case": "Frames.cy_2",
       "objects": [
-        "...",
-        "..."
+        "elements inside an iframe"
       ],
       "goals": [
         "Verify interaction with elements inside an iframe including text input and button clicks",
@@ -43,8 +41,7 @@
     {
       "test_case": "Frames.cy_3",
       "objects": [
-        "...",
-        "..."
+        "elements inside an iframe"
       ],
       "goals": [
         "Verify interaction with elements inside an iframe including text input and button clicks",

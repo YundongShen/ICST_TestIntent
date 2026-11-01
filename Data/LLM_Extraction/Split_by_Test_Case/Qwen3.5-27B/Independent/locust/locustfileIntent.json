@@ -9,7 +9,7 @@
     {
       "test_case": "locustfile",
       "objects": [
-        "..."
+        "profile, group, and split API endpoints"
       ],
       "goals": [
         "Verify the performance and stability of the profile, group, and split API endpoints under simulated concurrent user load"
