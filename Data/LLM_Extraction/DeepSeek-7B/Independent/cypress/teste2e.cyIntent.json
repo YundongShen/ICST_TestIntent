@@ -14,7 +14,13 @@
       "goals": [
         "verifythattheuserinterfaceisfunctional"
       ],
-      "activities": []
+      "activities": [
+        "Visit http://localhost:3000",
+        "Locate the login entry using ".ml-auto.items-center > .flex" and click it",
+        "Assert that the #user input exists",
+        "Assert that the #password input exists",
+        "Assert that the .z-0 login button is visible"
+      ]
     },
     {
       "test_case": "teste2e.cy_2",
