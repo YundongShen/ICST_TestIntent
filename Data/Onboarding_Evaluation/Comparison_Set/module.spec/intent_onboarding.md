@@ -4,7 +4,7 @@
 
 **Test cases:** 6
 
-This suite verifies that a page using Bootstrap 4 correctly hides content initially, displays it after loading, applies alert styles, and manages a single modal dialog. All tests share a setup that navigates to the root URL before each execution. Be aware that the modal launch test reads the modal's `aria-hidden` value before clicking the button, so it never looks at the post-click state. Several checks (the alert color comparison, the modal count and hidden state, and the modal launch check) pass a boolean to `expect()` without a matcher, so they assert nothing and always pass. Additionally, the alert style test explicitly waits for a specific external CSS response, so changes to the CDN URL or loading strategy will cause it to fail even if styling works correctly.
+This suite contains tests for initial page visibility, alert styling, and modal behavior on a page using Bootstrap 4. All tests share a setup that navigates to the root URL before each execution. Be aware that the modal launch test reads the modal's `aria-hidden` value before clicking the button, so it never looks at the post-click state. Several checks (the alert color comparison, the modal count and hidden state, and the modal launch check) pass a boolean to `expect()` without a matcher, so these comparisons do not enforce their conditions. Additionally, the alert style test explicitly waits for a specific external CSS response, so changes to the CDN URL or loading strategy will cause it to fail even if styling works correctly.
 
 - **Page Loading and Modal Tests**
   - **Unique Dependencies:** `@playwright/test`
@@ -68,7 +68,7 @@ The style of the `.alert-primary` element
 
 **Test Goals**
 
-Verify that the alert style is applied after Bootstrap CSS loads.
+Attempt to verify that the alert style is applied after Bootstrap CSS loads; the color comparison is not enforced.
 
 **Test Activities**
 
@@ -76,7 +76,7 @@ Verify that the alert style is applied after Bootstrap CSS loads.
 - Step 2: Get the initial background color of the first `.alert-primary` element.
 - Step 3: Wait for the Bootstrap CSS request to complete.
 - Step 4: Get the background color of the same element again.
-- Step 5: Assert that the two colors are different.
+- Step 5: Compare the two colors using `expect()` without a matcher.
 
 ---
 
@@ -93,15 +93,15 @@ Modal element `[role="dialog"]`
 
 **Test Goals**
 
-Confirm that there is only one modal on the page, and its initial state is hidden.
+Attempt to confirm that there is only one modal on the page and its initial state is hidden; neither comparison is enforced.
 
 **Test Activities**
 
 - Step 1: Visit the homepage `/`.
 - Step 2: Locate the `[role="dialog"]` element.
-- Step 3: Assert that its quantity is 1.
-- Step 4: Get the `aria-hidden` attribute of this element.
-- Step 5: Assert that the attribute value is `"true"`.
+- Step 3: Get the `aria-hidden` attribute of this element.
+- Step 4: Compare its quantity with 1 using `expect()` without a matcher.
+- Step 5: Compare the saved attribute value with `"true"` using `expect()` without a matcher.
 
 ---
 
@@ -118,13 +118,13 @@ Confirm that there is only one modal on the page, and its initial state is hidde
 
 **Test Goals**
 
-Confirm that a button for opening a modal exists on the page.
+Check that the modal launch button's Locator is defined; this does not verify that a matching DOM element exists.
 
 **Test Activities**
 
 - Step 1: Visit the homepage `/`.
-- Step 2: Find the button element with the text `"Launch demo modal"`.
-- Step 3: Assert that the element is defined (exists).
+- Step 2: Create a Locator for the text `"Launch demo modal"`.
+- Step 3: Assert that the Locator object is defined.
 
 ### Modal Opens on Click
 <sub>[module.spec.ts:41-47](module.spec.ts#L41-L47)</sub>
@@ -135,11 +135,11 @@ Modal `[role="dialog"]` and its launch button
 
 **Test Goals**
 
-Verify that the modal opens after clicking the button.
+Attempt to verify that the modal opens after clicking the button; the comparison uses a pre-click value and has no matcher.
 
 **Test Activities**
 
 - Step 1: Access the homepage `/`.
-- Step 2: Locate the modal and obtain its `aria-hidden` attribute.
+- Step 2: Locate the modal and save its `aria-hidden` attribute before clicking.
 - Step 3: Find the `"Launch demo modal"` button and click it.
-- Step 4: Check if the modal's `aria-hidden` attribute value is `"false"`.
+- Step 4: Compare the saved pre-click value with `"false"` using `expect()` without a matcher.
