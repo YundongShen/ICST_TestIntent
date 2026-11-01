@@ -27,7 +27,12 @@
       "goals": [
         "Verify presence of QA metrics, results, and coverage elements"
       ],
-      "activities": []
+      "activities": [
+        "Mock the API routes, navigate to /qa, and wait for the application"
+        "Locate elements whose classes contain qa, metric, card, or quality"
+        "Count the selected elements"
+        "Assert that the count is greater than or equal to 0; an empty selection also passes"
+      ]
     },
     {
       "test_case": "qa.spec_3",
@@ -37,7 +42,12 @@
       "goals": [
         "Verify presence of QA metrics, results, and coverage elements"
       ],
-      "activities": []
+      "activities": [
+        "Mock the API routes, navigate to /qa, and wait for the application"
+        "Locate elements whose classes contain test, result, status, or gate"
+        "Count the selected elements"
+        "Assert that the count is greater than or equal to 0; an empty selection also passes"
+      ]
     },
     {
       "test_case": "qa.spec_4",
@@ -47,7 +57,12 @@
       "goals": [
         "Verify presence of QA metrics, results, and coverage elements"
       ],
-      "activities": []
+      "activities": [
+        "Mock the API routes, navigate to /qa, and wait for the application"
+        "Locate svg or canvas elements and elements whose classes contain chart, coverage, or progress"
+        "Count the selected elements"
+        "Assert that the count is greater than or equal to 0; an empty selection also passes"
+      ]
     }
   ]
 }
