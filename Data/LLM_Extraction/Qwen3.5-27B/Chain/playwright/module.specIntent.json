@@ -34,7 +34,13 @@
       "goals": [
         "Verify Bootstrap component styling and modal interaction functionality"
       ],
-      "activities": []
+      "activities": [
+        "Navigate to / using the shared setup",
+        "Locate the first .alert-primary element and read its initial background color",
+        "Wait for the Bootstrap CSS response",
+        "Read the element's background color again",
+        "Compare the two colors and pass the Boolean result to expect without calling a matcher; the comparison is not enforced"
+      ]
     },
     {
       "test_case": "module.spec_4",
@@ -44,7 +50,13 @@
       "goals": [
         "Verify Bootstrap component styling and modal interaction functionality"
       ],
-      "activities": []
+      "activities": [
+        "Navigate to / using the shared setup",
+        "Locate the element with role="dialog"",
+        "Read and save its aria-hidden attribute",
+        "Compare the modal count with 1 and pass the Boolean result to expect without calling a matcher",
+        "Compare the saved attribute with "true" and pass the Boolean result to expect without calling a matcher; neither condition is enforced"
+      ]
     },
     {
       "test_case": "module.spec_5",
@@ -55,7 +67,11 @@
       "goals": [
         "Verify Bootstrap component styling and modal interaction functionality"
       ],
-      "activities": []
+      "activities": [
+        "Navigate to / using the shared setup",
+        "Create a Locator for the text "Launch demo modal",
+        "Assert that the Locator object is defined using toBeDefined; this does not verify that a matching DOM element exists"
+      ]
     },
     {
       "test_case": "module.spec_6",
@@ -66,7 +82,12 @@
       "goals": [
         "Verify Bootstrap component styling and modal interaction functionality"
       ],
-      "activities": []
+      "activities": [
+        "Navigate to / using the shared setup",
+        "Locate the dialog and save its aria-hidden attribute before clicking",
+        "Locate the "Launch demo modal" button and click it",
+        "Compare the saved pre-click attribute with "false" and pass the Boolean result to expect without calling a matcher; the post-click attribute is not read"
+      ]
     }
   ]
 }
