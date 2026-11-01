@@ -186,7 +186,8 @@ class DispatchTests(unittest.TestCase):
 
     def test_all_scheduler_and_shell_files_parse(self):
         paths = list((CODE_ROOT / "slurm").glob("*.slurm")) + list((CODE_ROOT / "slurm").glob("*.sh"))
-        self.assertEqual(len(paths), 19)
+        expected_jobs = set(submit_dataset_jobs.JOBS) | {"download_qwen.slurm"}
+        self.assertEqual({path.name for path in paths if path.suffix == ".slurm"}, expected_jobs)
         for path in paths:
             subprocess.run(["bash", "-n", str(path)], check=True, capture_output=True)
 

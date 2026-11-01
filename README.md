@@ -34,7 +34,7 @@ The extraction framework uses five layers. Model backends, supporting scripts, b
 | [code/layers/business/](code/layers/business/) | Group test cases and generate onboarding documents from Test Intent |
 | [code/layers/output/](code/layers/output/) | Render and save output documents |
 | [code/model/](code/model/) | Local model loading and Gemini API inference |
-| [code/scripts/](code/scripts/) | Candidate data collection, onboarding test versions, template demonstrations, and document conversion |
+| [code/scripts/](code/scripts/) | Candidate test-file collection and Markdown-to-Word conversion |
 | [code/slurm/](code/slurm/) | SLURM submission scripts, the source manifest, and batch-run configuration |
 | [code/tests/](code/tests/) | Regression checks for extraction, semantic processing, and batch jobs |
 
@@ -63,4 +63,5 @@ The evaluated models are DeepSeek 7B, Qwen 3.5-27B, Gemini 2.5 Flash, and Gemini
 ## Examples
 
 [Examples.md](Examples.md) presents five worked examples covering unit, integration, performance, manual, and BDD test artifacts.
+
 
