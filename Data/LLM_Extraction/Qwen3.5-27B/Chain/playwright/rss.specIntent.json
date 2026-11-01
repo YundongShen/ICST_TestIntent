@@ -14,7 +14,11 @@
       "goals": [
         "Verify the RSS feed link exists and navigates to the correct URL in a new tab"
       ],
-      "activities": []
+      "activities": [
+        "Navigate to /",
+        "Create a Locator for the link whose accessible name is "RSS"",
+        "Assert that the Locator object is truthy using toBeTruthy; this does not verify that the link exists in the DOM"
+      ]
     },
     {
       "test_case": "rss.spec_2",
