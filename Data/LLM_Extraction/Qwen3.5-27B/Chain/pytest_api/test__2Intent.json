@@ -16,8 +16,8 @@
         "Verify that the launched web service returns correct responses and maintains state across requests"
       ],
       "activities": [
-        "Verify that the Docker Compose command successfully launches the configured web service",
-        "Verify that the launched web service returns correct responses and maintains state across requests"
+        "Launch the web service using Docker Compose.",
+        "Send requests and check the returned responses and state across requests."
       ]
     }
   ]

@@ -20,7 +20,10 @@
       "goals": [
         "testQAView"
       ],
-      "activities": []
+      "activities": [
+        "mockApiRoutes",
+        "waitForApp"
+      ]
     },
     {
       "test_case": "qa.spec_2",
@@ -32,10 +35,10 @@
         "fixture"
       ],
       "goals": [
-        "verifyQAmetricsandcards"
+        "Verify QA metrics and cards."
       ],
       "activities": [
-        "verifyQAmetricsandcards"
+        "Inspect QA metrics and cards."
       ]
     },
     {
@@ -48,10 +51,10 @@
         "fixture"
       ],
       "goals": [
-        "verifytestresultsandstatus"
+        "Verify test results and status."
       ],
       "activities": [
-        "verifytestresultsandstatus"
+        "Inspect test results and status elements."
       ]
     },
     {
@@ -64,10 +67,10 @@
         "fixture"
       ],
       "goals": [
-        "verifycoverageandchartelements"
+        "Verify coverage and chart elements."
       ],
       "activities": [
-        "verifycoverageandchartelements"
+        "Inspect coverage and chart elements."
       ]
     }
   ]

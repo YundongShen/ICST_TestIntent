@@ -15,7 +15,7 @@
         "Verify the correct ranking order of added games in the Estadistiques class"
       ],
       "activities": [
-        "Verify the correct ranking order of added games in the Estadistiques class"
+        "Add games to Estadistiques and check their ranking order."
       ]
     }
   ]

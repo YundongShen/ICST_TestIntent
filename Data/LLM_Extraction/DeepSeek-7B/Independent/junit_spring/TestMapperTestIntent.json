@@ -13,10 +13,10 @@
         "Test"
       ],
       "goals": [
-        "test whether the version method in the TestMapper class returns the correct version string '5.7.21'"
+        "Verify that TestMapper.version returns the expected version string 5.7.21."
       ],
       "activities": [
-        "test whether the version method in the TestMapper class returns the correct version string '5.7.21'"
+        "Call TestMapper.version and check that the returned version is 5.7.21."
       ]
     }
   ]

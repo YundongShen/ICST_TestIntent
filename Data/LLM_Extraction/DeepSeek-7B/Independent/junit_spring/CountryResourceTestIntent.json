@@ -14,10 +14,10 @@
         "CountryResource"
       ],
       "goals": [
-        "testthattheCountryResourcereturnsthecorrectcountries,including'Brasil'andincluding'Brazil'"
+        "Verify that CountryResource returns the expected countries, including Brasil and Brazil."
       ],
       "activities": [
-        "testthattheCountryResourcereturnsthecorrectcountries,including'Brasil'andincluding'Brazil'"
+        "Request the country data and check that the response contains Brasil and Brazil."
       ]
     }
   ]

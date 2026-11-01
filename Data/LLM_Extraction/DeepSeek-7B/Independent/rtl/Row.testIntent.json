@@ -8,8 +8,12 @@
   "test_cases": [
     {
       "test_case": "Row.test_1",
-      "objects": [],
-      "goals": [],
+      "objects": [
+        "conversion calculator"
+      ],
+      "goals": [
+        "assert that the result is not null"
+      ],
       "activities": [
         "import all necessary libraries",
         "render the component",
@@ -22,7 +26,9 @@
     },
     {
       "test_case": "Row.test_2",
-      "objects": [],
+      "objects": [
+        "conversion calculator"
+      ],
       "goals": [
         "Test that the conversion calculator correctly calculates the result when the input unit is changed"
       ],

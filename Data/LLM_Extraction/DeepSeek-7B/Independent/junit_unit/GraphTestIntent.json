@@ -13,10 +13,10 @@
         "NumberOfIslands"
       ],
       "goals": [
-        "verifythatthemethodnumIslandsreturnsthecorrectnumberofislands"
+        "Verify that numIslands returns the correct number of islands."
       ],
       "activities": [
-        "verifythatthemethodnumIslandsreturnsthecorrectnumberofislands"
+        "Call numIslands and check the returned island count."
       ]
     }
   ]

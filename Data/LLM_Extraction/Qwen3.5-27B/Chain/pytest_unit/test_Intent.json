@@ -8,11 +8,15 @@
   "test_cases": [
     {
       "test_case": "test__1",
-      "objects": [],
+      "objects": [
+        "response content"
+      ],
       "goals": [
         "Verify the client correctly retrieves and returns response content and headers from the backend service"
       ],
-      "activities": []
+      "activities": [
+        "retrieves and returns response content"
+      ]
     },
     {
       "test_case": "test__2",

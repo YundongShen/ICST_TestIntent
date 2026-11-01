@@ -13,10 +13,10 @@
         "link"
       ],
       "goals": [
-        "testobjectshouldrenderalinkwithcorrecthtmlcontent"
+        "Verify that the link renders with the expected HTML content."
       ],
       "activities": [
-        "testobjectshouldrenderalinkwithcorrecthtmlcontent"
+        "Render the link and check its HTML content."
       ]
     },
     {

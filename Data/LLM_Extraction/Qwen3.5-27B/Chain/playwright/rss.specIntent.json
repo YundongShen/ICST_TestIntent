@@ -12,11 +12,11 @@
         "rss"
       ],
       "goals": [
-        "Verify the RSS feed link exists and navigates to the correct URL in a new tab"
+        "Check that the RSS link Locator object is truthy; this does not establish that the link exists in the DOM or verify navigation to a new tab."
       ],
       "activities": [
         "Navigate to /",
-        "Create a Locator for the link whose accessible name is "RSS"",
+        "Create a Locator for the link whose accessible name is \"RSS\"",
         "Assert that the Locator object is truthy using toBeTruthy; this does not verify that the link exists in the DOM"
       ]
     },
@@ -29,7 +29,7 @@
         "Verify the RSS feed link navigates to the correct URL in a new tab"
       ],
       "activities": [
-        "Verify the RSS feed link navigates to the correct URL in a new tab"
+        "Follow the RSS feed link and check the URL of the new tab."
       ]
     },
     {
@@ -41,7 +41,7 @@
         "Verify the RSS feed content is valid XML"
       ],
       "activities": [
-        "Verify the RSS feed content is valid XML"
+        "Retrieve the RSS feed and check that its content is valid XML."
       ]
     }
   ]

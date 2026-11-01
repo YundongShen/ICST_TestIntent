@@ -16,8 +16,8 @@
         "Verify the Game component correctly detects and displays the win condition after completing the puzzle"
       ],
       "activities": [
-        "Verify the Game component initializes with the correct initial puzzle state",
-        "Verify the Game component correctly detects and displays the win condition after completing the puzzle"
+        "Check the Game component's initial puzzle state.",
+        "Complete the puzzle and check that the win condition is displayed."
       ]
     }
   ]

@@ -16,7 +16,9 @@
     },
     {
       "test_case": "test__2",
-      "objects": [],
+      "objects": [
+        "path"
+      ],
       "goals": [
         "test_path"
       ],
@@ -26,7 +28,9 @@
     },
     {
       "test_case": "test__3",
-      "objects": [],
+      "objects": [
+        "headers"
+      ],
       "goals": [
         "test_headers"
       ],

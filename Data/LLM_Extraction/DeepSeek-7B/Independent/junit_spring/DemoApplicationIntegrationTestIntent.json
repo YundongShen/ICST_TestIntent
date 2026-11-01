@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "DemoApplicationIntegrationTest",
-      "objects": [],
+      "objects": [
+        "Response"
+      ],
       "goals": [
         "verifythatthemethodwillsuccessfullyreturnthestring\"HelloWorld\""
       ],

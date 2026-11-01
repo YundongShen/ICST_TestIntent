@@ -14,7 +14,9 @@
       "goals": [
         "Verify page content visibility transitions during initialization"
       ],
-      "activities": []
+      "activities": [
+        "Verify page content visibility"
+      ]
     },
     {
       "test_case": "module.spec_2",
@@ -24,7 +26,9 @@
       "goals": [
         "Verify page content visibility transitions during initialization"
       ],
-      "activities": []
+      "activities": [
+        "Verify page content visibility"
+      ]
     },
     {
       "test_case": "module.spec_3",
@@ -52,10 +56,10 @@
       ],
       "activities": [
         "Navigate to / using the shared setup",
-        "Locate the element with role="dialog"",
+        "Locate the element with role=\"dialog\"",
         "Read and save its aria-hidden attribute",
         "Compare the modal count with 1 and pass the Boolean result to expect without calling a matcher",
-        "Compare the saved attribute with "true" and pass the Boolean result to expect without calling a matcher; neither condition is enforced"
+        "Compare the saved attribute with \"true\" and pass the Boolean result to expect without calling a matcher; neither condition is enforced"
       ]
     },
     {
@@ -69,7 +73,7 @@
       ],
       "activities": [
         "Navigate to / using the shared setup",
-        "Create a Locator for the text "Launch demo modal",
+        "Create a Locator for the text \"Launch demo modal\"",
         "Assert that the Locator object is defined using toBeDefined; this does not verify that a matching DOM element exists"
       ]
     },
@@ -85,8 +89,8 @@
       "activities": [
         "Navigate to / using the shared setup",
         "Locate the dialog and save its aria-hidden attribute before clicking",
-        "Locate the "Launch demo modal" button and click it",
-        "Compare the saved pre-click attribute with "false" and pass the Boolean result to expect without calling a matcher; the post-click attribute is not read"
+        "Locate the \"Launch demo modal\" button and click it",
+        "Compare the saved pre-click attribute with \"false\" and pass the Boolean result to expect without calling a matcher; the post-click attribute is not read"
       ]
     }
   ]

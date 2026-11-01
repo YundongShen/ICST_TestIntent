@@ -36,7 +36,9 @@
     },
     {
       "test_case": "csp.spec_3",
-      "objects": [],
+      "objects": [
+        "server"
+      ],
       "goals": [
         "verify server security headers and content compliance"
       ],

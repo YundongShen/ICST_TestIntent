@@ -16,7 +16,7 @@
         "Verificar la correcta asociacin de gastos individuales a un cultivo y la actualizacin del total invertido"
       ],
       "activities": [
-        "Verificar la correcta asociacin de gastos individuales a un cultivo y la actualizacin del total invertido"
+        "Associate an individual expense with a crop and check the updated total investment."
       ]
     },
     {
@@ -30,7 +30,7 @@
         "Verificar la visualizacin correcta del reporte de gastos acumulados y totales por cultivo"
       ],
       "activities": [
-        "Verificar la visualizacin correcta del reporte de gastos acumulados y totales por cultivo"
+        "View the accumulated expense report for a crop and check its totals."
       ]
     }
   ]

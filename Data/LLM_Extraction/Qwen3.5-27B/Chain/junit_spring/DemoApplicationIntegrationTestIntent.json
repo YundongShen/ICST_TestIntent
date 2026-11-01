@@ -15,7 +15,8 @@
         "Verify the DemoApplication context loads and the root endpoint returns the expected response"
       ],
       "activities": [
-        "Verify the DemoApplication context loads and the root endpoint returns the expected response"
+        "Check that the DemoApplication context loads.",
+        "Request the root endpoint and check its response."
       ]
     }
   ]

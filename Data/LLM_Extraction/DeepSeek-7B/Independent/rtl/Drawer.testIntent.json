@@ -15,10 +15,10 @@
         "userEvent"
       ],
       "goals": [
-        "testthetogglefunctionalityoftheexternaltogglebuttonontheDrawercomponent"
+        "Verify the external toggle button's functionality on the Drawer component."
       ],
       "activities": [
-        "testthetogglefunctionalityoftheexternaltogglebuttonontheDrawercomponent"
+        "Use the external toggle button and check the Drawer component's behavior."
       ]
     }
   ]

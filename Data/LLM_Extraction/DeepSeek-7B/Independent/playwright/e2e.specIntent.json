@@ -8,7 +8,11 @@
   "test_cases": [
     {
       "test_case": "e2e.spec_1",
-      "objects": [],
+      "objects": [
+        "homepage",
+        "postdetails",
+        "blog_link"
+      ],
       "goals": [
         "test–Verifythatusercannavigateandviewpostdetails"
       ],

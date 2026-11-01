@@ -15,7 +15,7 @@
         "Verify component A renders content correctly"
       ],
       "activities": [
-        "Verify component A renders content correctly"
+        "Render component A and check the rendered content."
       ]
     },
     {
@@ -27,7 +27,7 @@
         "Verify component A handles missing href warnings"
       ],
       "activities": [
-        "Verify component A handles missing href warnings"
+        "Inspect component A's missing-href warnings."
       ]
     },
     {

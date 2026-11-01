@@ -16,7 +16,9 @@
       "goals": [
         "testobjectshouldreturncorrectvalueforthefirstparseCozyURLtestcase"
       ],
-      "activities": []
+      "activities": [
+        "parseCozyURL"
+      ]
     },
     {
       "test_case": "cli.spec_2",
@@ -28,7 +30,9 @@
       "goals": [
         "testobjectshouldreturncorrectvalueforthesecondparseCozyURLtestcasenotincludingtrailingslash"
       ],
-      "activities": []
+      "activities": [
+        "parseCozyURL"
+      ]
     },
     {
       "test_case": "cli.spec_3",

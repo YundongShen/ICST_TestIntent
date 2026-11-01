@@ -16,8 +16,8 @@
         "Verify the response time is within the acceptable threshold of 0.5 seconds"
       ],
       "activities": [
-        "Verify the response content matches the expected 'Hello, World!' string",
-        "Verify the response time is within the acceptable threshold of 0.5 seconds"
+        "Check the response content against the expected Hello, World! string.",
+        "Check that the response time is within 0.5 seconds."
       ]
     }
   ]

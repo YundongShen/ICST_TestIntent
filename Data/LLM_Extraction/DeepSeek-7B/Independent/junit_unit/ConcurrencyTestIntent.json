@@ -14,10 +14,10 @@
         "mockRunnable"
       ],
       "goals": [
-        "test/whether/Concurrency.newDaemonThreadsetsdaemonpropertytoupdate"
+        "Check whether Concurrency.newDaemonThread sets the daemon property."
       ],
       "activities": [
-        "test/whether/Concurrency.newDaemonThreadsetsdaemonpropertytoupdate"
+        "Check the daemon property of the thread created by Concurrency.newDaemonThread."
       ]
     },
     {

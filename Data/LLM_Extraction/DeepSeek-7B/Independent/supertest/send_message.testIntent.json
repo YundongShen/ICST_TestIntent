@@ -17,7 +17,9 @@
       "goals": [
         "verifythattheserverrespondswith400whenasendmessagewithnametohjohnisforced"
       ],
-      "activities": []
+      "activities": [
+        "verifythattheserverrespondswith400whenasendmessagewithnametohjohnisforced"
+      ]
     },
     {
       "test_case": "send_message.test_2",

@@ -13,12 +13,12 @@
         "expected"
       ],
       "goals": [
-        "verifythattheadditionof2and3resultsin5"
+        "Verify that adding 2 and 3 results in 5."
       ],
       "activities": [
-        "initialize_calculator_mode",
-        "check_service_health",
-        "perform_addition"
+        "Initialize calculator mode.",
+        "Check service health.",
+        "Perform addition with 2 and 3 and check that the result is 5."
       ]
     },
     {

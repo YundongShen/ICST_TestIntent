@@ -21,7 +21,9 @@
         "verifythattheclientcangettherightresponsewhengettingthehomepage",
         "verifythattherequesttoremoveaddoesnotexceed0.5seconds"
       ],
-      "activities": []
+      "activities": [
+        "verifythattheclientcangettherightresponsewhengettingthehomepage"
+      ]
     }
   ]
 }

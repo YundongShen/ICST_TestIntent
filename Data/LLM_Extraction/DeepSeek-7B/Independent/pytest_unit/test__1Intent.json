@@ -29,11 +29,11 @@
         "myCode.get_meaning_of_life"
       ],
       "goals": [
-        "verifythattheget_meaning_of_lifemethodcallsthecorrectfunctiontocalculate_meaning_of_life"
+        "Verify that get_meaning_of_life calls calculate_meaning_of_life."
       ],
       "activities": [
-        "mockdemo.myCode.calculate_meaning_of_life.return_value",
-        "myCode.get_meaning_of_life"
+        "Set the mocked return value of calculate_meaning_of_life.",
+        "Call myCode.get_meaning_of_life."
       ]
     },
     {
@@ -44,11 +44,11 @@
         "myCode.get_product"
       ],
       "goals": [
-        "verifythattheget_productmethodloadsaproductwiththecorrectwibbleattribute"
+        "Verify that get_product loads a product with the expected wibble attribute."
       ],
       "activities": [
-        "mockdemo.myCode.DataLoader.load_product.return_value",
-        "myCode.get_product"
+        "Set the mocked return value of DataLoader.load_product.",
+        "Call myCode.get_product."
       ]
     }
   ]

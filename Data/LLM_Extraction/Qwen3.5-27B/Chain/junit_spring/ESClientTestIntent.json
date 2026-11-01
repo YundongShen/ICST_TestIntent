@@ -15,7 +15,7 @@
         "Verify QueryDAO document indexing"
       ],
       "activities": [
-        "Verify QueryDAO document indexing"
+        "Index a document using QueryDAO and check the result."
       ]
     },
     {
@@ -27,7 +27,7 @@
         "Verify QueryDAO retrieval functionality"
       ],
       "activities": [
-        "Verify QueryDAO retrieval functionality"
+        "Retrieve documents using QueryDAO and check the result."
       ]
     },
     {
@@ -39,7 +39,7 @@
         "Verify QueryDAO search query operations"
       ],
       "activities": [
-        "Verify QueryDAO search query operations"
+        "Run a QueryDAO search query and check the result."
       ]
     },
     {
@@ -50,7 +50,9 @@
       "goals": [
         "Verify QueryDAO search query and document deletion operations"
       ],
-      "activities": []
+      "activities": [
+        "Verify QueryDAO search query and document deletion operations"
+      ]
     }
   ]
 }

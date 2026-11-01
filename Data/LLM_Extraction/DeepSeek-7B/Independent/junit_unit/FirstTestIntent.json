@@ -12,10 +12,10 @@
         "mockDao"
       ],
       "goals": [
-        "test_create_key_returns_correct_value"
+        "Verify that create returns the expected key."
       ],
       "activities": [
-        "test_create_key_returns_correct_value"
+        "Call create and check the returned key."
       ]
     },
     {
@@ -25,10 +25,10 @@
         "task"
       ],
       "goals": [
-        "test_get_returns_correct_task"
+        "Verify that get returns the expected Task object."
       ],
       "activities": [
-        "test_get_returns_correct_task"
+        "Call get and check the returned Task object."
       ]
     }
   ]

@@ -15,7 +15,7 @@
         "Verify that find_data correctly retrieves a record when the search value exists in the data"
       ],
       "activities": [
-        "Verify that find_data correctly retrieves a record when the search value exists in the data"
+        "Search the data with an existing value and check that find_data returns the matching record."
       ]
     },
     {
@@ -27,7 +27,7 @@
         "Verify that find_data returns None when the search value is not found in the data"
       ],
       "activities": [
-        "Verify that find_data returns None when the search value is not found in the data"
+        "Search the data with a value that is absent and check that find_data returns None."
       ]
     }
   ]

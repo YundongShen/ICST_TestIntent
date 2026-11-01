@@ -26,7 +26,10 @@
         "test the functionality of loading the homepage",
         "test the functionality of loading a specific wallet dashboard and updating data"
       ],
-      "activities": []
+      "activities": [
+        "load_homepage",
+        "load_specific_wallet_dashboard"
+      ]
     }
   ]
 }

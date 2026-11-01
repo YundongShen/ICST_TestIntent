@@ -16,10 +16,12 @@
         "toBeDefined"
       ],
       "goals": [
-        "testthatrenderscorrectly"
+        "Verify that App renders correctly."
       ],
       "activities": [
-        "testthatrenderscorrectly"
+        "Render App.",
+        "Locate text using getByText.",
+        "Check that the located element is defined using toBeDefined."
       ]
     },
     {
@@ -33,10 +35,14 @@
         "toEqual"
       ],
       "goals": [
-        "testthatcountincrementscorrectly"
+        "Verify that the count increments correctly."
       ],
       "activities": [
-        "testthatcountincrementscorrectly"
+        "Render App.",
+        "Select an element using at.",
+        "Check that the selected element is defined using toBeDefined.",
+        "Trigger an interaction using fireEvent.",
+        "Check the count using toEqual."
       ]
     }
   ]

@@ -16,7 +16,8 @@
         "Evaluate response times and availability of key web endpoints including home, login, and profile pages"
       ],
       "activities": [
-        "Evaluate response times and availability of key web endpoints including home, login, and profile pages"
+        "Exercise the home, login, and profile endpoints under simulated concurrent user load.",
+        "Evaluate their response times and availability."
       ]
     }
   ]

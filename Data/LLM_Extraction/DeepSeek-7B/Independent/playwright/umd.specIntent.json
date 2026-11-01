@@ -36,7 +36,14 @@
         "verifythattheusercanaccesstheauthorizationmanagerandclickonsigninbutton",
         "verifythatthepageredirectsalsototheglobusorgauthorizationendpointafterclickingonsigninbutton"
       ],
-      "activities": []
+      "activities": [
+        "toHaveTitle",
+        "getByRole",
+        "click",
+        "waitForURL",
+        "url",
+        "toContain"
+      ]
     }
   ]
 }

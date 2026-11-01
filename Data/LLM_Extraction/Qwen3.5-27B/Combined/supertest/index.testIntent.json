@@ -23,7 +23,9 @@
     },
     {
       "test_case": "index.test_2",
-      "objects": [],
+      "objects": [
+        "index route"
+      ],
       "goals": [
         "verify HTTP response status, content type, and body data for routes"
       ],

@@ -15,7 +15,7 @@
         "Verify that REMOTE_FILE.REMOTE_FILE correctly returns expected output types for valid remote file URLs"
       ],
       "activities": [
-        "Verify that REMOTE_FILE.REMOTE_FILE correctly returns expected output types for valid remote file URLs"
+        "Call REMOTE_FILE.REMOTE_FILE with valid remote file URLs and check the output types."
       ]
     },
     {
@@ -27,7 +27,7 @@
         "Verify that REMOTE_FILE.REMOTE_FILE raises appropriate exceptions for invalid remote file URLs"
       ],
       "activities": [
-        "Verify that REMOTE_FILE.REMOTE_FILE raises appropriate exceptions for invalid remote file URLs"
+        "Call REMOTE_FILE.REMOTE_FILE with invalid remote file URLs and check the raised exceptions."
       ]
     },
     {
@@ -39,7 +39,7 @@
         "Verify that REMOTE_FILE.REMOTE_FILE raises appropriate exceptions for unsupported remote file URLs"
       ],
       "activities": [
-        "Verify that REMOTE_FILE.REMOTE_FILE raises appropriate exceptions for unsupported remote file URLs"
+        "Call REMOTE_FILE.REMOTE_FILE with unsupported remote file URLs and check the raised exceptions."
       ]
     }
   ]

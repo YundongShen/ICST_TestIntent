@@ -17,8 +17,8 @@
         "Validate concurrent execution of book lookup and deletion workflow"
       ],
       "activities": [
-        "Validate concurrent execution of book lookup and deletion workflow",
-        "Verify book deletion endpoint returns valid status codes (200 or 404)"
+        "Run the book lookup and deletion workflow concurrently.",
+        "Check that the deletion response status is 200 or 404."
       ]
     }
   ]

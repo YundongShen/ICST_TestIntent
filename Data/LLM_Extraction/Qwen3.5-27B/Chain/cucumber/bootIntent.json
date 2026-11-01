@@ -20,8 +20,8 @@
         "Ensure the login prompt is displayed within the expected timeframe"
       ],
       "activities": [
-        "Verify the Virtual Machine boots successfully through bootloader, kernel, and systemd stages",
-        "Ensure the login prompt is displayed within the expected timeframe"
+        "Check the bootloader, kernel, and systemd stages during virtual-machine startup.",
+        "Check that the login prompt appears within the expected time."
       ]
     }
   ]

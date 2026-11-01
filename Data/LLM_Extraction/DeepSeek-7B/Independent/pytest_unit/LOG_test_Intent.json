@@ -13,11 +13,11 @@
         "Vector"
       ],
       "goals": [
-        "verify_log_function_with_vector"
+        "Verify LOG with two Vector inputs."
       ],
       "activities": [
-        "verify_log_function_with_vector",
-        "np.testing.assert_allclose"
+        "Call LOG with two Vector inputs.",
+        "Compare the result using np.testing.assert_allclose."
       ]
     },
     {
@@ -28,11 +28,11 @@
         "Scalar"
       ],
       "goals": [
-        "verify_log_function_with_scalars"
+        "Verify LOG with a Vector and a Scalar."
       ],
       "activities": [
-        "verify_log_function_with_scalars",
-        "np.testing.assert_allclose"
+        "Call LOG with a Vector and a Scalar.",
+        "Compare the result using np.testing.assert_allclose."
       ]
     },
     {
@@ -43,11 +43,11 @@
         "OrderedPair"
       ],
       "goals": [
-        "verify_log_function_with_ordered_pair"
+        "Verify LOG with an OrderedPair and a Vector."
       ],
       "activities": [
-        "verify_log_function_with_ordered_pair",
-        "np.testing.assert_allclose"
+        "Call LOG with an OrderedPair and a Vector.",
+        "Compare the result using np.testing.assert_allclose."
       ]
     }
   ]

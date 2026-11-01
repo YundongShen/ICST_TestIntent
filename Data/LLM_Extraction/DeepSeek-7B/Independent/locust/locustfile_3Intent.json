@@ -38,7 +38,10 @@
         "test object is able to perform the index page load correctly",
         "test object is able to perform the predict page post request with valid data"
       ],
-      "activities": []
+      "activities": [
+        "test object is able to perform the index page load correctly",
+        "test object is able to perform the predict page post request with valid data"
+      ]
     }
   ]
 }

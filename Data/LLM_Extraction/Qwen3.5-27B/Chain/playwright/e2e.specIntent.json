@@ -16,8 +16,8 @@
         "Verify users can access the blog list page"
       ],
       "activities": [
-        "Verify users can navigate to a post page and view its content",
-        "Verify users can access the blog list page"
+        "Navigate to a post page and view its content.",
+        "Navigate to the blog list page."
       ]
     },
     {
@@ -29,7 +29,7 @@
         "Verify users can access the blog list page and see all posts"
       ],
       "activities": [
-        "Verify users can access the blog list page and see all posts"
+        "Open the blog list page and check that all posts are shown."
       ]
     }
   ]

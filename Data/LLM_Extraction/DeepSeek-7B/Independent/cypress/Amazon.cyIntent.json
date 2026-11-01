@@ -53,14 +53,15 @@
         "#add-to-cart-button"
       ],
       "goals": [
-        "verifyabilitytosearchandaddproducttothecartbeforecheckout"
+        "Verify product search and adding a product to the cart before checkout."
       ],
       "activities": [
-        "visit_amazon_url",
-        "type_search_query",
-        "click_result_link",
-        "click_add_to_cart_button",
-        "click_proceed_to_checkout_button"
+        "Open the Amazon URL.",
+        "Enter the search query.",
+        "Click #nav-search-submit-button.",
+        "Remove an attribute from the result link using removeAttr and follow the link.",
+        "Click the add-to-cart button.",
+        "Click the proceed-to-checkout button."
       ]
     }
   ]

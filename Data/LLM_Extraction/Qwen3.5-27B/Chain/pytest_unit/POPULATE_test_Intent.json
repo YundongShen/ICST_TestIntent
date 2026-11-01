@@ -15,7 +15,9 @@
         "Verify POPULATE.POPULATE preserves input vector values in the output x-axis",
         "Verify POPULATE.POPULATE generates output y-values statistically consistent with the specified distribution parameters"
       ],
-      "activities": []
+      "activities": [
+        "Verify POPULATE.POPULATE preserves input vector values in the output x-axis"
+      ]
     },
     {
       "test_case": "POPULATE_test__2",
@@ -26,7 +28,9 @@
         "Verify POPULATE.POPULATE preserves input vector values in the output x-axis",
         "Verify POPULATE.POPULATE generates output y-values statistically consistent with the specified distribution parameters"
       ],
-      "activities": []
+      "activities": [
+        "Verify POPULATE.POPULATE preserves input vector values in the output x-axis"
+      ]
     },
     {
       "test_case": "POPULATE_test__3",
@@ -37,7 +41,9 @@
         "Verify POPULATE.POPULATE preserves input vector values in the output x-axis",
         "Verify POPULATE.POPULATE generates output y-values statistically consistent with the specified distribution parameters"
       ],
-      "activities": []
+      "activities": [
+        "Verify POPULATE.POPULATE preserves input vector values in the output x-axis"
+      ]
     }
   ]
 }

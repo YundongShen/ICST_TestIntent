@@ -14,7 +14,9 @@
       "goals": [
         "testthattreeviewStringreturnsastring"
       ],
-      "activities": []
+      "activities": [
+        "treeviewString"
+      ]
     },
     {
       "test_case": "paths.test_2",
@@ -24,7 +26,9 @@
       "goals": [
         "testthatfileviewStringreturnsastring"
       ],
-      "activities": []
+      "activities": [
+        "fileviewString"
+      ]
     },
     {
       "test_case": "paths.test_3",
@@ -34,7 +38,9 @@
       "goals": [
         "testthatpullTreeviewStringreturnsastring"
       ],
-      "activities": []
+      "activities": [
+        "pullTreeviewString"
+      ]
     },
     {
       "test_case": "paths.test_4",
@@ -44,7 +50,9 @@
       "goals": [
         "testthatpullFileviewStringreturnsastring"
       ],
-      "activities": []
+      "activities": [
+        "pullFileviewString"
+      ]
     }
   ]
 }

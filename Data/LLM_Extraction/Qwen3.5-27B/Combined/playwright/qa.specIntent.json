@@ -24,8 +24,12 @@
     },
     {
       "test_case": "qa.spec_2",
-      "objects": [],
-      "goals": [],
+      "objects": [
+        "QA View"
+      ],
+      "goals": [
+        "Verify QA View rendering and content visibility"
+      ],
       "activities": [
         "locate QA metrics or cards elements",
         "count metrics elements",
@@ -34,8 +38,12 @@
     },
     {
       "test_case": "qa.spec_3",
-      "objects": [],
-      "goals": [],
+      "objects": [
+        "QA View"
+      ],
+      "goals": [
+        "Verify QA View rendering and content visibility"
+      ],
       "activities": [
         "locate test results or status elements",
         "count results elements",
@@ -44,8 +52,12 @@
     },
     {
       "test_case": "qa.spec_4",
-      "objects": [],
-      "goals": [],
+      "objects": [
+        "QA View"
+      ],
+      "goals": [
+        "Verify QA View rendering and content visibility"
+      ],
       "activities": [
         "locate coverage or chart elements",
         "count chart elements",

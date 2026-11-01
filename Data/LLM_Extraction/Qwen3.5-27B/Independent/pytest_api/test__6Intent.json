@@ -8,7 +8,9 @@
   "test_cases": [
     {
       "test_case": "test__6",
-      "objects": [],
+      "objects": [
+        "Delete Workshop API"
+      ],
       "goals": [
         "Verify the Delete Workshop API returns the expected success response (HTTP 200, JSON body)",
         "Verify the workshop record is removed from the system after deletion"

@@ -16,7 +16,7 @@
         "Verify QA View page navigation and rendering"
       ],
       "activities": [
-        "Verify QA View page navigation and rendering"
+        "Navigate to the QA View page and check its rendering."
       ]
     },
     {
@@ -25,7 +25,7 @@
         "metrics"
       ],
       "goals": [
-        "Verify presence of QA metrics, results, and coverage elements"
+        "Check that the count of QA metric or card elements is greater than or equal to zero; this allows an empty result and does not establish their presence."
       ],
       "activities": [
         "Mock the API routes, navigate to /qa, and wait for the application",
@@ -40,7 +40,7 @@
         "results"
       ],
       "goals": [
-        "Verify presence of QA metrics, results, and coverage elements"
+        "Check that the count of test-result or status elements is greater than or equal to zero; this allows an empty result and does not establish their presence."
       ],
       "activities": [
         "Mock the API routes, navigate to /qa, and wait for the application",
@@ -55,7 +55,7 @@
         "charts"
       ],
       "goals": [
-        "Verify presence of QA metrics, results, and coverage elements"
+        "Check that the count of coverage or chart elements is greater than or equal to zero; this allows an empty result and does not establish their presence."
       ],
       "activities": [
         "Mock the API routes, navigate to /qa, and wait for the application",

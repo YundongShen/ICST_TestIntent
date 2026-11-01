@@ -15,7 +15,7 @@
         "Verify the correctness of addition operations in the Calculator"
       ],
       "activities": [
-        "Verify the correctness of addition operations in the Calculator"
+        "Perform addition using the Calculator and check the result."
       ]
     },
     {
@@ -27,7 +27,7 @@
         "Verify the correctness of subtraction operations in the Calculator"
       ],
       "activities": [
-        "Verify the correctness of subtraction operations in the Calculator"
+        "Perform subtraction using the Calculator and check the result."
       ]
     }
   ]

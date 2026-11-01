@@ -16,7 +16,7 @@
         "Verify correct calculation results for basic arithmetic operations (addition) on the output display"
       ],
       "activities": [
-        "Verify correct calculation results for basic arithmetic operations (addition) on the output display"
+        "Perform addition with the calculator buttons and check the output display."
       ]
     },
     {
@@ -29,7 +29,7 @@
         "Verify correct calculation results for basic arithmetic operations (multiplication) on the output display"
       ],
       "activities": [
-        "Verify correct calculation results for basic arithmetic operations (multiplication) on the output display"
+        "Perform multiplication with the calculator buttons and check the output display."
       ]
     },
     {
@@ -43,7 +43,7 @@
         "Verify the clear function resets both input and output displays to empty state"
       ],
       "activities": [
-        "Verify the clear function resets both input and output displays to empty state"
+        "Use the calculator's clear function and check that the input and output displays are empty."
       ]
     }
   ]

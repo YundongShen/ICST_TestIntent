@@ -17,7 +17,9 @@
         "verifythatthegameisfirstplayedwiththecorrectinitialvalues",
         "verifythatthegameissolvethenarrowdownthegrid"
       ],
-      "activities": []
+      "activities": [
+        "verifythatthegameisfirstplayedwiththecorrectinitialvalues"
+      ]
     }
   ]
 }

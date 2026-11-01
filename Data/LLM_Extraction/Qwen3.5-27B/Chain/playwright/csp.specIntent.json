@@ -16,7 +16,7 @@
         "Verify the server response contains strict Content Security Policy"
       ],
       "activities": [
-        "Verify the server response contains strict Content Security Policy"
+        "Inspect the server response's Content Security Policy and check its strictness."
       ]
     },
     {
@@ -29,7 +29,7 @@
         "Verify the server response contains related security headers"
       ],
       "activities": [
-        "Verify the server response contains related security headers"
+        "Inspect the server response for the related security headers."
       ]
     },
     {
@@ -41,7 +41,7 @@
         "Verify the page loads without CSP violations"
       ],
       "activities": [
-        "Verify the page loads without CSP violations"
+        "Load the page and check for CSP violations."
       ]
     },
     {
@@ -54,7 +54,7 @@
         "Verify the page excludes insecure inline styles"
       ],
       "activities": [
-        "Verify the page excludes insecure inline styles"
+        "Inspect the page for insecure inline styles."
       ]
     }
   ]
