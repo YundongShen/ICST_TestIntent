@@ -28,15 +28,19 @@ the Pro configuration uses the preview model ID.
 Qwen 3.5-27B:
 
 ```bash
-INFERENCE_BACKEND=local MODEL_TYPE=qwen python main.py \
-  --test-file ../Data/Test_Suite/playwright/module.spec.ts --mode independent
+python extract_for_comparison.py \
+  --test-file ../Data/Test_Suite/playwright/module.spec.ts \
+  --mode independent --backend local --model qwen \
+  --output Result/comparison/Qwen3.5-27B/Independent/playwright/module.specIntent.json
 ```
 
 DeepSeek 7B:
 
 ```bash
-INFERENCE_BACKEND=local MODEL_TYPE=7b python main.py \
-  --test-file ../Data/Test_Suite/playwright/module.spec.ts --mode independent
+python extract_for_comparison.py \
+  --test-file ../Data/Test_Suite/playwright/module.spec.ts \
+  --mode independent --backend local --model deepseek \
+  --output Result/comparison/DeepSeek-7B/Independent/playwright/module.specIntent.json
 ```
 
 Local models are loaded on the first inference request. Their configuration files
@@ -51,16 +55,19 @@ command. The service uses the Vertex client when `VERTEX_API_KEY` is set.
 Gemini 2.5 Flash:
 
 ```bash
-INFERENCE_BACKEND=api GEMINI_MODEL=gemini-2.5-flash python main.py \
-  --test-file ../Data/Test_Suite/playwright/module.spec.ts --mode independent
+python extract_for_comparison.py \
+  --test-file ../Data/Test_Suite/playwright/module.spec.ts \
+  --mode independent --backend api --model gemini-2.5-flash \
+  --output Result/comparison/Gemini-2.5-Flash/Independent/playwright/module.specIntent.json
 ```
 
 Gemini 3.1 Pro:
 
 ```bash
-GOOGLE_CLOUD_LOCATION=global INFERENCE_BACKEND=api \
-GEMINI_MODEL=gemini-3.1-pro-preview python main.py \
-  --test-file ../Data/Test_Suite/playwright/module.spec.ts --mode independent
+GOOGLE_CLOUD_LOCATION=global python extract_for_comparison.py \
+  --test-file ../Data/Test_Suite/playwright/module.spec.ts \
+  --mode independent --backend api --model gemini-3.1-pro-preview \
+  --output Result/comparison/Gemini-3.1-Pro/Independent/playwright/module.specIntent.json
 ```
 
 ## Prompting workflows
@@ -78,6 +85,16 @@ The model comparison uses Independent Extraction.
 
 ## Entry points and processing stages
 
+`extract_for_comparison.py` is the entry point for the workflow and model
+comparisons. It splits each source into cases and runs only Input and Extract.
+Each case is extracted separately, and one JSON file collects the cases from the
+same source file. This workflow excludes semantic validation, re-extraction,
+granularity adjustment, and onboarding generation.
+
+The published files in `Data/LLM_Extraction/` contain suite metadata and per-case
+`objects`, `goals`, and `activities`. New comparison runs also record each case's
+`raw_responses` and the generation `max_tokens` limit.
+
 `main.py` splits the source into cases, extracts Test Intent, performs semantic
 validation and granularity adjustment, and generates an onboarding report.
 A failed semantic check triggers re-extraction up to the configured limit.
@@ -94,6 +111,8 @@ The main command also supports:
 - `--merge-activities`: permit adjacent related activities to be grouped during adjustment.
 - `--max-reextract`: set the semantic validation retry limit; the default is 2.
 
+## Optional manifest-based batch runs
+
 `run_dataset.py` processes one source entry from the versioned dataset manifest.
 `extract_for_dataset.py` provides the same command as an alternate entry point:
 
@@ -105,10 +124,12 @@ INFERENCE_BACKEND=local MODEL_TYPE=qwen python extract_for_dataset.py \
 The dataset runner always retains the initial raw extraction.
 With `--stage validated`, it also saves the semantic processing result and records
 each extraction attempt. With `--stage raw`, it saves the initial extraction only.
-These stages are identified in the output metadata. The raw and validated results
-must be interpreted according to their recorded stage.
+These stages are identified in the batch runner's output metadata. By default,
+this runner writes its results and metadata under `Result/dataset/`.
 
-## SLURM jobs
+## Optional SLURM batch runs
+
+The SLURM helpers invoke the manifest-based batch runner described above.
 
 The source manifest contains 98 test files that split into 210 test cases.
 The submission helper derives array bounds from the selected source files:
@@ -132,7 +153,7 @@ Reruns use new output directories. Empty-output reruns are recorded as diagnosti
 | `VERTEX_API_KEY` | Credential for the Vertex API client. |
 | `GOOGLE_CLOUD_LOCATION` | Location configuration supplied to the API environment. |
 | `MODEL_PATH` | Override Qwen's local model directory. |
-| `EXTRACT_MODE` | Default workflow for `main.py`; `--mode` sets it explicitly. |
+| `EXTRACT_MODE` | Default workflow for `main.py` and `extract_for_comparison.py`; `--mode` sets it explicitly. |
 | `PROJECT_ROOT` | Path to `code/` when submitting SLURM jobs. |
 | `VENV_PATH` | Optional virtual environment used by SLURM jobs. |
 
