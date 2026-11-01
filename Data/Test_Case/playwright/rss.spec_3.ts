@@ -1,0 +1,10 @@
+import { expect, test } from "@playwright/test";
+import { XMLValidator } from 'fast-xml-parser';
+
+test("should have a valid feed xml", async ({ page }) => {
+  await page.goto("/rss.xml");
+
+  const feed = await page.content();
+  const result = XMLValidator.validate(feed);
+  expect(result).toBe(true);
+});
