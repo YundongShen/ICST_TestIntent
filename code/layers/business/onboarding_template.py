@@ -26,6 +26,8 @@ PROMPT = """You are a test onboarding document expert. Generate a structured onb
 
 ### `(test case id)` - (short 2-5 word title for the case)
 
+(Copy the provided source reference for this case here; omit this line when none is provided.)
+
 **Test Objects**
 
 (the object(s) for this test case)
@@ -48,6 +50,8 @@ PROMPT = """You are a test onboarding document expert. Generate a structured onb
 - The suite's short name, per-case labels, and per-case titles must be concise and derived from the actual objects/goals given, not generic placeholders.
 - Do not renumber, merge, or drop any test case. Every test case given to you must appear exactly once, in exactly the group it was assigned to.
 - Do not re-decide the grouping: use the groups and shared testing questions exactly as given.
+- Copy source references exactly as provided. Do not infer file names, paths, links, or line numbers.
+- Use only the supplied dependencies for each case and the suite. If none are provided, write "None provided".
 
 【Generation Requirements】
 Fill in every section with concrete content derived only from the given suite info, groups, and per-test-case Test Intent data. Do not leave placeholder text.

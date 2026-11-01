@@ -3,6 +3,8 @@ import re
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 
+from layers.input.metadata import declared_dependencies
+
 
 @dataclass
 class TestCase:
@@ -45,6 +47,7 @@ class Normalizer:
                 case.source = self.clean(case.source)
             if self.do_link:
                 case.context = self.link_context(case, doc)
+                case.context["dependencies"] = declared_dependencies(case.source, doc.format)
             cases.append(case)
         if self.do_link and doc.format == "gherkin":
             from layers.input.step_definitions import StepDefinitionLinker

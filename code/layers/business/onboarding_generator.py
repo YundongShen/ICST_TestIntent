@@ -68,7 +68,9 @@ class OnboardingGenerator:
         cases_desc = []
         for c in cases:
             deps = ", ".join(f"`{d}`" for d in c.get("dependencies", []))
-            cases_desc.append(f"- {c['id']} (dependencies: {deps})")
+            cases_desc.append(f"- {c['id']} (dependencies: {deps or 'None provided'})")
+            if c.get("source_reference"):
+                cases_desc.append(f"  Source reference: {c['source_reference']}")
         cases_block = "\n".join(cases_desc)
 
         groups_desc = []
@@ -97,7 +99,7 @@ class OnboardingGenerator:
 Suite ID: {suite_info['suite_id']}
 Test cases: {len(cases)}
 Suite description: {suite_info.get('description', '')}
-Unique Dependencies: {deps_str}
+Unique Dependencies: {deps_str or 'None provided'}
 
 【Test Cases (in order)】
 {cases_block}

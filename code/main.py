@@ -10,6 +10,7 @@ import sys
 from layers import BusinessLayer, ExtractLayer, InputLayer, IntentLayer, OutputLayer
 from layers.business.onboarding_generator import OnboardingGenerator
 from layers.input.pipeline import InputPipeline
+from layers.input.metadata import unique_strings
 
 
 def extract_case(raw_data, extract_layer, service=None, levels=None, requirements="", adjust=True,
@@ -29,7 +30,7 @@ def run_pipeline(raw_data, extract_mode=None, service=None, output_dir="Result/o
         intent = extract_case(raw_data, extraction, service=service, levels=levels,
                               requirements=requirements, adjust=adjust, max_reextract=max_reextract,
                               merge_activities=merge_activities)
-        business = BusinessLayer(OnboardingGenerator(service=service)).process(intent)
+        business = BusinessLayer(OnboardingGenerator(service=service)).process(intent, output_dir=output_dir)
         output = OutputLayer(output_dir=output_dir).process(business)
         return {"success": output["success"], "output": output, "data": business}
     except (ValueError, RuntimeError) as error:
@@ -51,10 +52,12 @@ def run_suite(path, extract_mode="independent", service=None, output_dir="Result
             cases.append(extract_case(
                 raw, extraction, service=service, levels=levels, requirements=requirements,
                 adjust=adjust, max_reextract=max_reextract, merge_activities=merge_activities))
-    result = {"suite_info": {"suite_id": path.name, "dependencies": []},
+    dependencies = unique_strings(*(case.get("context", {}).get("dependencies", []) for case in cases))
+    result = {"suite_info": {"suite_id": path.name, "source_file": str(path), "dependencies": dependencies},
               "extract_mode": extract_mode, "cases": cases}
     if not extract_only:
-        business = BusinessLayer(OnboardingGenerator(service=service)).process(result)
+        business = BusinessLayer(OnboardingGenerator(service=service)).process(result, output_dir=output_dir)
+        result["suite_info"] = business["suite_info"]
         result["output"] = OutputLayer(output_dir=output_dir).process(business)
         if not result["output"]["success"]:
             raise RuntimeError(result["output"].get("error", "Could not save onboarding report"))
