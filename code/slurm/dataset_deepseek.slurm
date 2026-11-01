@@ -1,5 +1,4 @@
 #!/bin/bash
-#SBATCH --partition=berzelius
 #SBATCH --gres=gpu:A100-SXM4-80GB:1
 #SBATCH --time=01:30:00
 #SBATCH --mem=128GB

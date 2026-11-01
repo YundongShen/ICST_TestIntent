@@ -1,12 +1,10 @@
 #!/bin/bash
-#SBATCH --partition=berzelius
 #SBATCH --gres=gpu:A100-SXM4-80GB:1
 #SBATCH --time=01:30:00
 #SBATCH --mem=128GB
 #SBATCH --cpus-per-task=32
 #SBATCH --job-name=combined_missing
 #SBATCH --output=combined_missing_%A_%a.out
-#SBATCH --exclude=node061
 
 
 TASK_ROOT="${PROJECT_ROOT:-${SLURM_SUBMIT_DIR:-$PWD}}"

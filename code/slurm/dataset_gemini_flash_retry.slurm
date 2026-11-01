@@ -1,12 +1,10 @@
 #!/bin/bash
-#SBATCH --partition=berzelius
 #SBATCH --gres=gpu:A100-SXM4-80GB:1
 #SBATCH --time=02:00:00
 #SBATCH --mem=32GB
 #SBATCH --cpus-per-task=8
 #SBATCH --job-name=gemini_flash_retry
 #SBATCH --output=gemini_flash_retry_%A_%a.out
-#SBATCH --exclude=node061
 
 
 TASK_ROOT="${PROJECT_ROOT:-${SLURM_SUBMIT_DIR:-$PWD}}"
