@@ -1,13 +1,13 @@
 {
-  "test_case_id": "tc_App_test",
-  "source_file": "dataset/raw/supertest/App.test.js",
+  "test_case_id": "tc_send_message_test",
+  "source_file": "dataset/raw/supertest/send_message.test.js",
   "framework": "supertest",
   "extraction_timestamp": "2026-08-11T08:06:49.847784",
   "extract_mode": "independent",
   "model": "gemini-3.1-pro-preview",
   "test_cases": [
     {
-      "test_case": "App.test_1",
+      "test_case": "send_message.test_1",
       "objects": [
         "app"
       ],
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "test_case": "App.test_2",
+      "test_case": "send_message.test_2",
       "objects": [
         "app"
       ],

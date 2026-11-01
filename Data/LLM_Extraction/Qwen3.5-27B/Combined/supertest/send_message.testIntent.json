@@ -1,13 +1,13 @@
 {
-  "test_case_id": "tc_App_test",
-  "source_file": "dataset/raw/supertest/App.test.js",
+  "test_case_id": "tc_send_message_test",
+  "source_file": "dataset/raw/supertest/send_message.test.js",
   "framework": "supertest",
   "extraction_timestamp": "2026-08-13T04:54:19.770887",
   "extract_mode": "combined",
   "model": "Qwen-3.5-27B",
   "test_cases": [
     {
-      "test_case": "App.test_1",
+      "test_case": "send_message.test_1",
       "objects": [
         "POST /send-message endpoint"
       ],
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "test_case": "App.test_2",
+      "test_case": "send_message.test_2",
       "objects": [
         "POST /send-message endpoint"
       ],

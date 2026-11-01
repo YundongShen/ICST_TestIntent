@@ -1,5 +1,5 @@
 {
-  "test_case": "App.test_2",
+  "test_case": "send_message.test_2",
   "objects": [
     "app"
   ],
