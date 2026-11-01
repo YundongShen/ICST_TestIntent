@@ -19,24 +19,16 @@
       "objects": [
         "server"
       ],
-      "goals": [
-        "string"
-      ],
-      "activities": [
-        "..."
-      ]
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "server.spec_1_3",
       "objects": [
         "server"
       ],
-      "goals": [
-        "string"
-      ],
-      "activities": [
-        "..."
-      ]
+      "goals": [],
+      "activities": []
     }
   ]
 }

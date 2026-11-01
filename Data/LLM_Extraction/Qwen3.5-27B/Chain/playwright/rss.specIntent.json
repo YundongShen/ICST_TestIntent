@@ -14,9 +14,7 @@
       "goals": [
         "Verify the RSS feed link exists and navigates to the correct URL in a new tab"
       ],
-      "activities": [
-        "string1"
-      ]
+      "activities": []
     },
     {
       "test_case": "rss.spec_2",

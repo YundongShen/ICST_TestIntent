@@ -11,9 +11,7 @@
       "objects": [
         "t"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Create daemon thread t",
         "Assert t is daemon"
@@ -24,9 +22,7 @@
       "objects": [
         "t1"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Create thread t1 with name format",
         "Assert t1 name equals test-0"

@@ -12,9 +12,7 @@
         "navegador de cultivos",
         "lista de plantas"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Acceder al navegador de cultivos",
         "Ingresar el nombre de la planta para buscar",
@@ -27,9 +25,7 @@
         "planta",
         "pgina detallada"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Seleccionar la planta deseada de la lista",
         "Verificar la apertura de la pgina detallada con informacin de la planta"

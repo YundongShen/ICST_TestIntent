@@ -30,7 +30,7 @@
       ],
       "activities": [
         "Send GET request to /watermelon",
-        "Verify response body contains watermelon ",
+        "Verify response body contains watermelon",
         "Verify HTTP status code is 200"
       ]
     },
@@ -45,7 +45,7 @@
       "activities": [
         "Send GET request to /watermelon",
         "Verify HTTP status code is 200",
-        "Verify response body contains watermelon "
+        "Verify response body contains watermelon"
       ]
     }
   ]

@@ -11,10 +11,7 @@
       "objects": [
         "player"
       ],
-      "goals": [
-        "goal1",
-        "goal2"
-      ],
+      "goals": [],
       "activities": [
         "Initialize mock response object to capture output",
         "Execute player.bet_request method with state and mock",

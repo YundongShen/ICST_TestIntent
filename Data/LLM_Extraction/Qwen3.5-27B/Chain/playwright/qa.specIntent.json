@@ -11,24 +11,16 @@
       "objects": [
         "page"
       ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "string"
-      ]
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "qa.spec_2",
       "objects": [
         "metrics"
       ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "string"
-      ]
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "qa.spec_3",

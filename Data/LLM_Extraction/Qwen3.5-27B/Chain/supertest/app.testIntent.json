@@ -11,9 +11,7 @@
       "objects": [
         "app"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Send GET request to endpoint '/'",
         "Verify response status code is 200 and body is 'Helllooooo'"
@@ -24,9 +22,7 @@
       "objects": [
         "app"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Send GET request to endpoint '/watermelon'",
         "Verify response status code is 200 and body is 'watermelon '"
@@ -37,9 +33,7 @@
       "objects": [
         "app"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Send GET request to endpoint '/watermelon'",
         "Verify response status code is 200 and body is 'watermelon '"

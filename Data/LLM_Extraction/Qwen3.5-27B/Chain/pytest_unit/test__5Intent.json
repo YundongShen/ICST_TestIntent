@@ -11,9 +11,7 @@
       "objects": [
         "CustomerManager"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Initialize CustomerManager instance",
         "Add customer with specified name, email, age, and country",

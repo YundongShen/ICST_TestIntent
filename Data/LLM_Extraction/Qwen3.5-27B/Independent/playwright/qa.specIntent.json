@@ -27,9 +27,7 @@
       "goals": [
         "Verify presence of QA metrics, results, and coverage elements"
       ],
-      "activities": [
-        "..."
-      ]
+      "activities": []
     },
     {
       "test_case": "qa.spec_3",
@@ -39,9 +37,7 @@
       "goals": [
         "Verify presence of QA metrics, results, and coverage elements"
       ],
-      "activities": [
-        "..."
-      ]
+      "activities": []
     },
     {
       "test_case": "qa.spec_4",
@@ -51,9 +47,7 @@
       "goals": [
         "Verify presence of QA metrics, results, and coverage elements"
       ],
-      "activities": [
-        "..."
-      ]
+      "activities": []
     }
   ]
 }

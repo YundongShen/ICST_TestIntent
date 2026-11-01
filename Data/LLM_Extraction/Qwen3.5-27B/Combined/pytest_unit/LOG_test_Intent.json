@@ -8,48 +8,21 @@
   "test_cases": [
     {
       "test_case": "LOG_test__1",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "...",
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "LOG_test__2",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "...",
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "LOG_test__3",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "...",
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     }
   ]
 }

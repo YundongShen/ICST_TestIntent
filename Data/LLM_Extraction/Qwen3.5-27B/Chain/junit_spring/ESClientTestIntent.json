@@ -50,9 +50,7 @@
       "goals": [
         "Verify QueryDAO search query and document deletion operations"
       ],
-      "activities": [
-        "..."
-      ]
+      "activities": []
     }
   ]
 }

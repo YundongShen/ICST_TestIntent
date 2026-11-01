@@ -11,13 +11,8 @@
       "objects": [
         "cssCode"
       ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "string1",
-        "string2"
-      ]
+      "goals": [],
+      "activities": []
     }
   ]
 }

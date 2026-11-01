@@ -8,94 +8,45 @@
   "test_cases": [
     {
       "test_case": "opts.spec_1",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "opts.spec_2",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "opts.spec_3",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "opts.spec_4",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "opts.spec_5",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "opts.spec_6",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "opts.spec_7",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     }
   ]
 }

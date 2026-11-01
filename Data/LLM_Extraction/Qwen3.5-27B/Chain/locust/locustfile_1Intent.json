@@ -9,10 +9,7 @@
     {
       "test_case": "locustfile_1",
       "objects": [],
-      "goals": [
-        "string1",
-        "string2"
-      ],
+      "goals": [],
       "activities": [
         "Retrieve content from the website homepage",
         "Post translation request with randomized target language"

@@ -14,9 +14,7 @@
         "#password",
         ".z-0"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Navigate to login page",
         "Verify login form fields exist",
@@ -32,9 +30,7 @@
         ".z-0",
         "[data-content=\"\"] > div"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Navigate to login page",
         "Enter invalid login credentials",

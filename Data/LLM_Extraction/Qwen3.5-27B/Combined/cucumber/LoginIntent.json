@@ -8,42 +8,21 @@
   "test_cases": [
     {
       "test_case": "Login_1",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "Login_2",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "Login_3",
-      "objects": [
-        "..."
-      ],
-      "goals": [
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "objects": [],
+      "goals": [],
+      "activities": []
     }
   ]
 }

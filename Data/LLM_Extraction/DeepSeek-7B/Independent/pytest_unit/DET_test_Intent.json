@@ -25,8 +25,7 @@
         "assertinstance(res,Scalar|OrderedPair|Matrix)",
         "exceptnp.linalg.LinAlgError:",
         "try:element_a=Matrix(m=array2)",
-        "assertinstance(res,Scalar|OrderedPair|Matrix)",
-        ""
+        "assertinstance(res,Scalar|OrderedPair|Matrix)"
       ]
     }
   ]

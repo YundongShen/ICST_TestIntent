@@ -11,10 +11,7 @@
       "objects": [
         "app"
       ],
-      "goals": [
-        "string1",
-        "string2"
-      ],
+      "goals": [],
       "activities": [
         "Initialize test database environment",
         "Create test user with hashed password",
@@ -28,10 +25,7 @@
       "objects": [
         "app"
       ],
-      "goals": [
-        "string1",
-        "string2"
-      ],
+      "goals": [],
       "activities": [
         "Initialize test database environment",
         "Create test user with hashed password",
@@ -45,10 +39,7 @@
       "objects": [
         "app"
       ],
-      "goals": [
-        "string1",
-        "string2"
-      ],
+      "goals": [],
       "activities": [
         "Initialize test database environment",
         "Create test user with hashed password",
@@ -62,10 +53,7 @@
       "objects": [
         "app"
       ],
-      "goals": [
-        "string1",
-        "string2"
-      ],
+      "goals": [],
       "activities": [
         "Initialize test database environment",
         "Create test user with hashed password",

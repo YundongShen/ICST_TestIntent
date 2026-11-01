@@ -11,14 +11,8 @@
       "objects": [
         "r"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
-      "activities": [
-        "string",
-        "string"
-      ]
+      "goals": [],
+      "activities": []
     }
   ]
 }

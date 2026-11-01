@@ -22,9 +22,7 @@
       "objects": [
         "config"
       ],
-      "goals": [
-        "string1"
-      ],
+      "goals": [],
       "activities": [
         "Validate credentials sanitization against GUID pattern"
       ]
@@ -34,9 +32,7 @@
       "objects": [
         "config"
       ],
-      "goals": [
-        "string2"
-      ],
+      "goals": [],
       "activities": [
         "Validate credentials sanitization against GUID pattern"
       ]

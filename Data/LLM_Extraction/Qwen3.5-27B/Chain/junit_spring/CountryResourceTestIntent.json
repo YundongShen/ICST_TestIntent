@@ -11,9 +11,7 @@
       "objects": [
         "response"
       ],
-      "goals": [
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Send HTTP GET request to /countries endpoint",
         "Verify response contains 'Brasil' and 'Brazil'"

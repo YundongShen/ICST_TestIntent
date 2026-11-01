@@ -9,10 +9,7 @@
     {
       "test_case": "test__3",
       "objects": [],
-      "goals": [
-        "...",
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Clean test environment data",
         "Insert test workshop records",

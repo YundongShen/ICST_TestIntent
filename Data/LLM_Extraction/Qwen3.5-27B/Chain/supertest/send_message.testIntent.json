@@ -9,22 +9,14 @@
     {
       "test_case": "send_message.test_1",
       "objects": [],
-      "goals": [
-        "string1"
-      ],
-      "activities": [
-        "..."
-      ]
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "send_message.test_2",
       "objects": [],
-      "goals": [
-        "string2"
-      ],
-      "activities": [
-        "..."
-      ]
+      "goals": [],
+      "activities": []
     }
   ]
 }

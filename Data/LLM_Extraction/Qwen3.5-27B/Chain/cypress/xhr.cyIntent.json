@@ -11,42 +11,24 @@
       "objects": [
         "response"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "xhr.cy_2",
       "objects": [
         "response"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "goals": [],
+      "activities": []
     },
     {
       "test_case": "xhr.cy_3",
       "objects": [
         "response"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
-      "activities": [
-        "...",
-        "..."
-      ]
+      "goals": [],
+      "activities": []
     }
   ]
 }

@@ -11,10 +11,7 @@
       "objects": [
         "LOG"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Prepare Vector inputs for LOG Vector-Vector test",
         "Execute LOG function with Vector inputs",
@@ -26,10 +23,7 @@
       "objects": [
         "LOG"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Prepare Vector and Scalar inputs for LOG Vector-Scalar test",
         "Execute LOG function with Vector and Scalar inputs",
@@ -41,10 +35,7 @@
       "objects": [
         "LOG"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Prepare OrderedPair and Vector inputs for LOG OrderedPair-Vector test",
         "Execute LOG function with OrderedPair and Vector inputs",

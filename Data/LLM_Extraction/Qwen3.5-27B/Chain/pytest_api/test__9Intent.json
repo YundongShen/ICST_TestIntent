@@ -12,10 +12,7 @@
         "WorkshopTest",
         "File"
       ],
-      "goals": [
-        "...",
-        "..."
-      ],
+      "goals": [],
       "activities": [
         "Clean workshop environment",
         "Create workshop instance",
