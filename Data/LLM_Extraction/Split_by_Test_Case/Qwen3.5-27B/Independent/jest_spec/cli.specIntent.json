@@ -60,7 +60,7 @@
         "cli.parseCozyURL"
       ],
       "goals": [
-        "Verify parseCozyURL throws an error if the URL does not start with http"
+        "Assert error message matches expected pattern"
       ],
       "activities": [
         "Import cli module",

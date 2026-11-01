@@ -10,16 +10,14 @@
       "test_case": "CountryResourceTest",
       "objects": [
         "TestRestTemplate",
-        "LocalServerPort"
+        "LocalServerPort",
+        "CountryResource"
       ],
       "goals": [
         "testthattheCountryResourcereturnsthecorrectcountries,including'Brasil'andincluding'Brazil'"
       ],
       "activities": [
-        "extract_test_code",
-        "simplify_implementation_statements",
-        "extract_actions",
-        "describe_activities"
+        "testthattheCountryResourcereturnsthecorrectcountries,including'Brasil'andincluding'Brazil'"
       ]
     }
   ]

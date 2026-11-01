@@ -12,10 +12,12 @@
         "page"
       ],
       "goals": [
-        "Verify users can navigate to a post page and view its content"
+        "Verify users can navigate to a post page and view its content",
+        "Verify users can access the blog list page"
       ],
       "activities": [
-        "string"
+        "Verify users can navigate to a post page and view its content",
+        "Verify users can access the blog list page"
       ]
     },
     {
@@ -27,7 +29,7 @@
         "Verify users can access the blog list page and see all posts"
       ],
       "activities": [
-        "string"
+        "Verify users can access the blog list page and see all posts"
       ]
     }
   ]

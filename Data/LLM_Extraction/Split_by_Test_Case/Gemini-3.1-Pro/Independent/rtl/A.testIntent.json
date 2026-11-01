@@ -25,7 +25,7 @@
         "A"
       ],
       "goals": [
-        "Verify that the component logs a warning when the href attribute is missing"
+        "Mock console.warn to assert it receives the 'missing href' message"
       ],
       "activities": [
         "Mock console.warn to assert it receives the 'missing href' message",
@@ -38,7 +38,7 @@
         "A"
       ],
       "goals": [
-        "Verify that the component correctly triggers the onClick event handler when clicked"
+        "Check that the value updated inside the onClick handler is truthy"
       ],
       "activities": [
         "Define an onClick handler that updates a variable and asserts it is truthy",

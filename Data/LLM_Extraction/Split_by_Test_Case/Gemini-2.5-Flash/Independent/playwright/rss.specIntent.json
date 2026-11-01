@@ -12,12 +12,11 @@
         "RSS link element"
       ],
       "goals": [
-        "Verify the RSS feed link is present on the homepage and correctly opens the RSS feed in a new tab."
+        "Locate the RSS link by role and name"
       ],
       "activities": [
         "Navigate to the base URL",
-        "Locate the RSS link by role and name",
-        "Assert that the RSS link is present"
+        "Locate the RSS link by role and name"
       ]
     },
     {

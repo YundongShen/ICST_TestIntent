@@ -13,11 +13,10 @@
         "Calculator Output Display"
       ],
       "goals": [
-        "Verify correct calculation results for basic arithmetic operations (addition and multiplication) on the output display"
+        "Verify correct calculation results for basic arithmetic operations (addition) on the output display"
       ],
       "activities": [
-        "string1",
-        "string2"
+        "Verify correct calculation results for basic arithmetic operations (addition) on the output display"
       ]
     },
     {
@@ -27,11 +26,10 @@
         "Calculator Output Display"
       ],
       "goals": [
-        "Verify correct calculation results for basic arithmetic operations (addition and multiplication) on the output display"
+        "Verify correct calculation results for basic arithmetic operations (multiplication) on the output display"
       ],
       "activities": [
-        "string1",
-        "string2"
+        "Verify correct calculation results for basic arithmetic operations (multiplication) on the output display"
       ]
     },
     {
@@ -45,8 +43,7 @@
         "Verify the clear function resets both input and output displays to empty state"
       ],
       "activities": [
-        "string1",
-        "string2"
+        "Verify the clear function resets both input and output displays to empty state"
       ]
     }
   ]

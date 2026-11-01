@@ -15,8 +15,7 @@
         "Verify the DemoApplication context loads and the root endpoint returns the expected response"
       ],
       "activities": [
-        "...",
-        "..."
+        "Verify the DemoApplication context loads and the root endpoint returns the expected response"
       ]
     }
   ]

@@ -15,7 +15,7 @@
         "Verify Grid creation validates input seed length and throws error on invalid input"
       ],
       "activities": [
-        "string1"
+        "Verify Grid creation validates input seed length and throws error on invalid input"
       ]
     },
     {
@@ -27,7 +27,7 @@
         "Verify Grid neighbors method returns correct array of adjacent cells for given indices"
       ],
       "activities": [
-        "string2"
+        "Verify Grid neighbors method returns correct array of adjacent cells for given indices"
       ]
     }
   ]

@@ -51,7 +51,7 @@
         "cli.parseCozyURL"
       ],
       "goals": [
-        "Verify that parseCozyURL throws an error if the provided URL does not start with the 'http' protocol"
+        "Assert that the error message matches 'Cozy url must start with `http`'"
       ],
       "activities": [
         "Set URL input to 'toto.mycozy.cloud'",

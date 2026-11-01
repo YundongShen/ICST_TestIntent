@@ -26,7 +26,7 @@
         "A"
       ],
       "goals": [
-        "Verify component A issues a warning for missing required props (e.g., href)."
+        "Render the A component with content 'click link' (without an 'href')."
       ],
       "activities": [
         "Define a mock function for 'console.warn'.",
@@ -40,7 +40,7 @@
         "A"
       ],
       "goals": [
-        "Verify component A correctly triggers click events."
+        "Check the value updated inside the onClick handler"
       ],
       "activities": [
         "Initialize a variable 'io' to 0.",

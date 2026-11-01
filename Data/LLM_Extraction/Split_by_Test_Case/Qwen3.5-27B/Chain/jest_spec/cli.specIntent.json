@@ -48,10 +48,10 @@
         "cli.parseCozyURL"
       ],
       "goals": [
-        "Verify parseCozyURL validates URL protocol and throws error for non-http inputs"
+        "Exercise parseCozyURL with a URL that does not start with http"
       ],
       "activities": [
-        "Verify parseCozyURL throws error when input URL does not start with http"
+        "Call parseCozyURL with a URL that does not start with http"
       ]
     }
   ]

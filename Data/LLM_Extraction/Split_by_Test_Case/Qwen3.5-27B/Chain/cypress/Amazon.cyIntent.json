@@ -16,10 +16,10 @@
         "#signInSubmit"
       ],
       "goals": [
-        "Verify user login functionality"
+        "Exercise user login functionality"
       ],
       "activities": [
-        "string"
+        "user login functionality"
       ]
     },
     {
@@ -32,10 +32,10 @@
         "//span[@class='a-button-inner']//input[@value='Proceed to checkout']"
       ],
       "goals": [
-        "Verify product search and checkout flow"
+        "Exercise product search and checkout flow"
       ],
       "activities": [
-        "string"
+        "product search and checkout flow"
       ]
     }
   ]

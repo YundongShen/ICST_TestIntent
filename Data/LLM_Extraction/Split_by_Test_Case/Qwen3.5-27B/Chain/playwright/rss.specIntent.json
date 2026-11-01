@@ -24,10 +24,10 @@
         "pages[1]"
       ],
       "goals": [
-        "Verify the RSS feed link exists and navigates to the correct URL in a new tab"
+        "Verify the RSS feed link navigates to the correct URL in a new tab"
       ],
       "activities": [
-        "string2"
+        "Verify the RSS feed link navigates to the correct URL in a new tab"
       ]
     },
     {
@@ -39,7 +39,7 @@
         "Verify the RSS feed content is valid XML"
       ],
       "activities": [
-        "string3"
+        "Verify the RSS feed content is valid XML"
       ]
     }
   ]

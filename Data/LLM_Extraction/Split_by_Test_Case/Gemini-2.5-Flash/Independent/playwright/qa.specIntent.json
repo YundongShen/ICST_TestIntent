@@ -29,7 +29,7 @@
         "UI elements representing QA metrics or cards"
       ],
       "goals": [
-        "Verify the QA view contains expected content sections for QA metrics, test results, and coverage information."
+        "Verify that at least zero QA metrics or cards are displayed."
       ],
       "activities": [
         "Mock API routes.",
@@ -45,7 +45,7 @@
         "UI elements representing test results or status"
       ],
       "goals": [
-        "Verify the QA view contains expected content sections for QA metrics, test results, and coverage information."
+        "Verify that at least zero test results or status elements are displayed."
       ],
       "activities": [
         "Mock API routes.",
@@ -61,7 +61,7 @@
         "UI elements representing coverage or charts"
       ],
       "goals": [
-        "Verify the QA view contains expected content sections for QA metrics, test results, and coverage information."
+        "Verify that at least zero coverage or chart elements are displayed."
       ],
       "activities": [
         "Mock API routes.",

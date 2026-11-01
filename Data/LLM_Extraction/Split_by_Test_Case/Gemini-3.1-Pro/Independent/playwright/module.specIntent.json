@@ -38,14 +38,14 @@
         "alert"
       ],
       "goals": [
-        "Verify the application of Bootstrap 4 CSS styles to page content and alert messages"
+        "Compare the initial and styled background colors of the primary alert"
       ],
       "activities": [
         "Navigate to the root URL",
         "Get the initial background color of the primary alert",
         "Wait for the Bootstrap CSS file to load",
         "Get the styled background color of the primary alert",
-        "Verify that the styled background color is different from the initial color"
+        "Compare the styled background color with the initial color"
       ]
     },
     {
@@ -83,13 +83,13 @@
         "button"
       ],
       "goals": [
-        "Verify the functionality and state transitions of the Bootstrap 4 modal component"
+        "Exercise the modal launch button and compare the retrieved 'aria-hidden' value"
       ],
       "activities": [
         "Navigate to the root URL",
         "Get the 'aria-hidden' attribute of the modal",
         "Click the 'Launch demo modal' button",
-        "Verify that the modal's 'aria-hidden' attribute is false"
+        "Compare the retrieved 'aria-hidden' value with 'false'"
       ]
     }
   ]

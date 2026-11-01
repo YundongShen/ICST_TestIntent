@@ -12,10 +12,10 @@
         "QueryDAO"
       ],
       "goals": [
-        "Verify QueryDAO document indexing and retrieval functionality"
+        "Verify QueryDAO document indexing"
       ],
       "activities": [
-        "..."
+        "Verify QueryDAO document indexing"
       ]
     },
     {
@@ -24,10 +24,10 @@
         "QueryDAO"
       ],
       "goals": [
-        "Verify QueryDAO document indexing and retrieval functionality"
+        "Verify QueryDAO retrieval functionality"
       ],
       "activities": [
-        "..."
+        "Verify QueryDAO retrieval functionality"
       ]
     },
     {
@@ -36,10 +36,10 @@
         "QueryDAO"
       ],
       "goals": [
-        "Verify QueryDAO search query and document deletion operations"
+        "Verify QueryDAO search query operations"
       ],
       "activities": [
-        "..."
+        "Verify QueryDAO search query operations"
       ]
     },
     {

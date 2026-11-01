@@ -13,10 +13,10 @@
         "res"
       ],
       "goals": [
-        "Verify the server response contains strict Content Security Policy and related security headers"
+        "Verify the server response contains strict Content Security Policy"
       ],
       "activities": [
-        "string1"
+        "Verify the server response contains strict Content Security Policy"
       ]
     },
     {
@@ -26,10 +26,10 @@
         "res"
       ],
       "goals": [
-        "Verify the server response contains strict Content Security Policy and related security headers"
+        "Verify the server response contains related security headers"
       ],
       "activities": [
-        "string1"
+        "Verify the server response contains related security headers"
       ]
     },
     {
@@ -38,10 +38,10 @@
         "page"
       ],
       "goals": [
-        "Verify the page loads without CSP violations and excludes insecure inline styles"
+        "Verify the page loads without CSP violations"
       ],
       "activities": [
-        "string2"
+        "Verify the page loads without CSP violations"
       ]
     },
     {
@@ -51,10 +51,10 @@
         "res"
       ],
       "goals": [
-        "Verify the page loads without CSP violations and excludes insecure inline styles"
+        "Verify the page excludes insecure inline styles"
       ],
       "activities": [
-        "string2"
+        "Verify the page excludes insecure inline styles"
       ]
     }
   ]

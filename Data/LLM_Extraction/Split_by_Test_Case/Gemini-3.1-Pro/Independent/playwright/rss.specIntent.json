@@ -12,12 +12,11 @@
         "rss"
       ],
       "goals": [
-        "Verify the RSS feed link is present on the homepage and correctly opens the feed in a new tab"
+        "Locate the RSS link"
       ],
       "activities": [
         "Navigate to the home page",
-        "Locate the RSS link",
-        "Verify that the RSS link exists"
+        "Locate the RSS link"
       ]
     },
     {

@@ -17,7 +17,7 @@
       "activities": [
         "Initialize mock Google Sheets client and sheet",
         "Configure mock sheet to return predefined certificate records",
-        "Set search value to '  '",
+        "Use an existing search value",
         "Execute find_data function with mock sheet and search value",
         "Verify result is not None",
         "Verify result name matches search value"

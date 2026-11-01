@@ -29,7 +29,7 @@
         "metrics"
       ],
       "goals": [
-        "Verify that the QA View page renders correctly and displays essential components such as metrics, test results, and coverage charts."
+        "Verify the count of QA metrics or card elements is greater than or equal to 0"
       ],
       "activities": [
         "Locate and count the QA metrics or card elements",
@@ -42,7 +42,7 @@
         "results"
       ],
       "goals": [
-        "Verify that the QA View page renders correctly and displays essential components such as metrics, test results, and coverage charts."
+        "Verify the count of test results or status elements is greater than or equal to 0"
       ],
       "activities": [
         "Locate and count the test results or status elements",
@@ -55,7 +55,7 @@
         "charts"
       ],
       "goals": [
-        "Verify that the QA View page renders correctly and displays essential components such as metrics, test results, and coverage charts."
+        "Verify the count of coverage or chart elements is greater than or equal to 0"
       ],
       "activities": [
         "Locate and count the coverage or chart elements",

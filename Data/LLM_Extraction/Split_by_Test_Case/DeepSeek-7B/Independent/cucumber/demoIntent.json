@@ -28,7 +28,7 @@
         "expected"
       ],
       "goals": [
-        "verifythatthesubtractionof10from9resultsin8"
+        "Verify subtraction results across multiple cases"
       ],
       "activities": [
         "initialize_calculator_mode",

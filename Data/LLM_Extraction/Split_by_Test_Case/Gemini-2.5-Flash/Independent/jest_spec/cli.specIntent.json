@@ -54,7 +54,7 @@
         "parseCozyURL"
       ],
       "goals": [
-        "Verify that `cli.parseCozyURL` throws an error for invalid URL formats (e.g., not starting with 'http')."
+        "Assert that the error message matches the expected text."
       ],
       "activities": [
         "Define a URL string that does not start with 'http'.",

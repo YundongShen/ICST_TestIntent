@@ -15,7 +15,7 @@
         "Verify TaskDaoImpl.create() returns expected key"
       ],
       "activities": [
-        "string1"
+        "Verify TaskDaoImpl.create() returns expected key"
       ]
     },
     {
@@ -27,7 +27,7 @@
         "Verify TaskDaoImpl.get() returns expected Task object"
       ],
       "activities": [
-        "string2"
+        "Verify TaskDaoImpl.get() returns expected Task object"
       ]
     }
   ]

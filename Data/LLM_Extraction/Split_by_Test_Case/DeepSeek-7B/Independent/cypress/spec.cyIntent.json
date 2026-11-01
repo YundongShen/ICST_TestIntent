@@ -14,7 +14,9 @@
         "cy.get",
         "cy.type",
         "cy.click",
-        "cy.should"
+        "cy.should",
+        "https://the-internet.herokuapp.com/login",
+        ".flash.success"
       ],
       "goals": [
         "testtheloginfunctionalitywithvalidusernamandpassword"
@@ -24,7 +26,7 @@
         "typeusername'tomsmith'into#usernamefield",
         "typepassword'SuperSecretPassword!'into#passwordfield",
         "clickbutton[type='submit']",
-        "type'Youloggedintoasecurearea!'into.flash.success"
+        "Check .flash.success for the successful-login message"
       ]
     },
     {
@@ -35,14 +37,18 @@
         "cy.get",
         "cy.type",
         "cy.click",
-        "cy.should"
+        "cy.should",
+        "https://the-internet.herokuapp.com/login",
+        ".flash.error"
       ],
       "goals": [
         "testtheloginfunctionalitywithinvalidusernamandpassword"
       ],
       "activities": [
         "visithttps://the-internet.herokuapp.com/login",
-        "type'Yourusernameisinvalid!'into.flash.error"
+        "Enter an invalid username and password",
+        "clickbutton[type='submit']",
+        "Check .flash.error for the invalid-username message"
       ]
     },
     {

@@ -21,19 +21,20 @@
     {
       "test_case": "grid.spec_2",
       "objects": [
-        "Grid"
+        "Grid",
+        "neighbors"
       ],
       "goals": [
-        "Test that Grid.create returns the correct number of neighbors for each cell"
+        "Test the number of neighbors for each cell"
       ],
       "activities": [
-        "Grid.create(3,3,\"100110\").neighbors(7)",
-        "Grid.create(3,3,\"100110\").neighbors(-1)",
-        "Grid.create(3,3,\"100110\").neighbors(4)",
-        "Grid.create(3,3,\"100110\").neighbors(0)",
-        "Grid.create(3,3,\"100110\").neighbors(2)",
-        "Grid.create(3,3,\"100110\").neighbors(6)",
-        "Grid.create(3,3,\"100110\").neighbors(8)"
+        "neighbors(7)",
+        "neighbors(-1)",
+        "neighbors(4)",
+        "neighbors(0)",
+        "neighbors(2)",
+        "neighbors(6)",
+        "neighbors(8)"
       ]
     }
   ]
