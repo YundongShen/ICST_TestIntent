@@ -24,7 +24,13 @@
       "goals": [
         "test 'shouldstylealertmessages' passes when alert color changes from initial to modified state"
       ],
-      "activities": []
+      "activities": [
+        "Navigate to / using the shared setup"
+        "Locate the first .alert-primary element"
+        "Wait for the Bootstrap CSS response"
+        "Read the element's background color again"
+        "Compare the two colors and pass the Boolean result to expect without calling a matcher"
+      ]
     },
     {
       "test_case": "module.spec_4",
