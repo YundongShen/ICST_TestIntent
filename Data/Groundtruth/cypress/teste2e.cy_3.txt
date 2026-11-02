@@ -2,7 +2,7 @@
 Login and Role Management Functionality
 
 **Test Goal**
-Exercise login, navigation to role management, entry of a new role, and clicking Save; the code does not explicitly check that the role was created.
+Exercise login, navigation to role management, entry of a new role, and clicking Save.
 
 
 **Test Activities**

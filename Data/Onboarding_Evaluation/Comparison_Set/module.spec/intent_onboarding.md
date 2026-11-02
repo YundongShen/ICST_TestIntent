@@ -68,7 +68,7 @@ The style of the `.alert-primary` element
 
 **Test Goals**
 
-Attempt to verify that the alert style is applied after Bootstrap CSS loads; the color comparison is not enforced.
+Attempt to verify that the alert style is applied after Bootstrap CSS loads.
 
 **Test Activities**
 
@@ -93,7 +93,7 @@ Modal element `[role="dialog"]`
 
 **Test Goals**
 
-Attempt to confirm that there is only one modal on the page and its initial state is hidden; neither comparison is enforced.
+Attempt to confirm that there is only one modal on the page and its initial state is hidden.
 
 **Test Activities**
 
@@ -118,7 +118,7 @@ Attempt to confirm that there is only one modal on the page and its initial stat
 
 **Test Goals**
 
-Check that the modal launch button's Locator is defined; this does not verify that a matching DOM element exists.
+Check that the modal launch button's Locator is defined.
 
 **Test Activities**
 
@@ -135,7 +135,7 @@ Modal `[role="dialog"]` and its launch button
 
 **Test Goals**
 
-Attempt to verify that the modal opens after clicking the button; the comparison uses a pre-click value and has no matcher.
+Attempt to verify that the modal opens after clicking the button.
 
 **Test Activities**
 

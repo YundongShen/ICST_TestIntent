@@ -2,7 +2,7 @@
 Homepage RSS Link
 
 **Test Goal**
-Locate the homepage RSS link and check that its Locator object is truthy; this does not verify that the link exists in the DOM.
+Locate the homepage RSS link and check that its Locator object is truthy.
 
 **Test Activities**
 1. Open the homepage `/`.

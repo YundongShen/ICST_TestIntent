@@ -25,7 +25,7 @@
         "metrics"
       ],
       "goals": [
-        "Check that the count of QA metric or card elements is greater than or equal to zero; this allows an empty result and does not establish their presence."
+        "Check that the count of QA metric or card elements is greater than or equal to zero."
       ],
       "activities": [
         "Mock the API routes, navigate to /qa, and wait for the application",
@@ -40,7 +40,7 @@
         "results"
       ],
       "goals": [
-        "Check that the count of test-result or status elements is greater than or equal to zero; this allows an empty result and does not establish their presence."
+        "Check that the count of test-result or status elements is greater than or equal to zero."
       ],
       "activities": [
         "Mock the API routes, navigate to /qa, and wait for the application",
@@ -55,7 +55,7 @@
         "charts"
       ],
       "goals": [
-        "Check that the count of coverage or chart elements is greater than or equal to zero; this allows an empty result and does not establish their presence."
+        "Check that the count of coverage or chart elements is greater than or equal to zero."
       ],
       "activities": [
         "Mock the API routes, navigate to /qa, and wait for the application",

@@ -2,7 +2,7 @@
 `<A>` Component
 
 **Test Goal**
-Exercise the component's click callback; the assertion is inside the callback and does not independently establish that the callback runs.
+Exercise the component's click callback.
 
 **Test Activities**
 1. Prepare a flag variable `io`, initialized to 0, and an `onClick` callback.

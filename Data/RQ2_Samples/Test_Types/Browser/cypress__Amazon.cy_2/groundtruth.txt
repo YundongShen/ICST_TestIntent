@@ -2,7 +2,7 @@
 Amazon India Product Search, Add-to-Cart, and Checkout Process
 
 **Test Goal**
-Exercise product search, product selection, adding to the cart, and clicking the checkout button; the code does not explicitly check the final checkout page or URL.
+Exercise product search, product selection, adding to the cart, and clicking the checkout button.
 
 **Test Activities**
 1. Open the Amazon India homepage.

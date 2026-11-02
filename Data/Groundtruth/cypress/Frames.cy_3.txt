@@ -2,7 +2,7 @@
 A rich text editor within an iframe
 
 **Test Goal**
-Exercise iframe loading through the plugin, text entry, selection, and the bold button; the code does not inspect the final bold formatting.
+Exercise iframe loading through the plugin, text entry, selection, and the bold button.
 
 **Test Activities**
 1. Open the page containing the iframe.

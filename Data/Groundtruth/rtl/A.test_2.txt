@@ -2,7 +2,7 @@
 `<A>` Component
 
 **Test Goal**
-Check the warning text if rendering the component without `href` calls `console.warn`; the test does not require that a warning actually occurs.
+Check the warning text if rendering the component without `href` calls `console.warn`.
 
 **Test Activities**
 1. Simulate the `console.warn` function.

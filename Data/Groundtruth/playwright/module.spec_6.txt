@@ -2,7 +2,7 @@
 Modal `[role="dialog"]` and its launch button
 
 **Test Goal**
-Attempt to verify that the modal opens after clicking the button; the code uses a value read before the click and does not assert the result.
+Attempt to verify that the modal opens after clicking the button.
 
 **Test Activities**
 1. Access the homepage `/`.

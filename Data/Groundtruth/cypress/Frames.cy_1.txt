@@ -2,7 +2,7 @@
 A rich text editor within an iframe
 
 **Test Goal**
-Exercise text entry, selection, and the bold button in the iframe editor; the code checks that the iframe body is visible but does not inspect the final bold formatting.
+Exercise text entry, selection, and the bold button in the iframe editor.
 
 **Test Activities**
 1. Open the page containing the iframe.

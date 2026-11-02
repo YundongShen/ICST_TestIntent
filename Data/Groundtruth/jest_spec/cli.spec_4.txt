@@ -2,7 +2,7 @@
 `cli.parseCozyURL` function
 
 **Test Goal**
-Check the error message if a URL without an `http` prefix causes an exception; the test does not require that an exception is thrown.
+Check the error message if a URL without an `http` prefix causes an exception.
 
 **Test Activities**
 1. Prepare a URL that does not start with `http`: `'toto.mycozy.cloud'`.

@@ -2,7 +2,7 @@
 Coverage/chart elements on the QA page
 
 **Test Goal**
-Check that the count of elements related to coverage or charts is greater than or equal to zero; this permits an empty result and does not establish that these elements are present.
+Check that the count of elements related to coverage or charts is greater than or equal to zero.
 
 **Test Activities**
 1. Locate all SVG, canvas, or class elements containing `chart`, `coverage`, or `progress`.

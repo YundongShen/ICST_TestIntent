@@ -2,7 +2,7 @@
 Amazon India Login Functionality
 
 **Test Goal**
-Exercise login using an email address and password; the code enters credentials and clicks the login button but does not explicitly check that login succeeds.
+Exercise login using an email address and password.
 
 **Test Activities**
 1. Open the Amazon India homepage.

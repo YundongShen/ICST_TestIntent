@@ -2,7 +2,7 @@
 “Launch demo modal” button
 
 **Test Goal**
-Locate the modal launch button and check that its Locator object is defined; this does not verify that a matching DOM element exists.
+Locate the modal launch button and check that its Locator object is defined.
 
 **Test Activities**
 1. Visit the homepage `/`.

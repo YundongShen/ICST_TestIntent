@@ -2,7 +2,7 @@
 Modal element `[role="dialog"]`
 
 **Test Goal**
-Attempt to confirm that there is only one modal on the page and its initial state is hidden; neither condition is enforced by the current code.
+Attempt to confirm that there is only one modal on the page and its initial state is hidden.
 
 **Test Activities**
 1. Visit the homepage `/`.
