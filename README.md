@@ -12,6 +12,7 @@ The dataset contains **210 test cases from 98 source files**, covering unit, int
 | [Data/Test_Case/](Data/Test_Case/) | Individual test cases with their source context, organized by framework |
 | [Data/Groundtruth/](Data/Groundtruth/) | Reference Test Objects, Test Goal, and Test Activities, stored per test case |
 | [Data/LLM_Extraction/](Data/LLM_Extraction/) | Case-level Test Intent results for workflow and model comparisons, organized by model and prompting workflow |
+| [Data/Gemini-2.5-Flash_Refinement/](Data/Gemini-2.5-Flash_Refinement/) | Separate Refinement Layer process test using Gemini 2.5 Flash; not part of the paper's experiments or evaluation. |
 | [Data/Comparison_Results/](Data/Comparison_Results/) | Case-level alignment judgments and summary statistics in `manual_review.xlsx` |
 | [Data/Peer_Review/](Data/Peer_Review/) | Researcher review records, labels, and revision information in `peer_review.xlsx` |
 | [Data/RQ2_Samples/](Data/RQ2_Samples/) | Samples organized by workflow, model, and testing category, with pattern judgments in `Case_Judgments.xlsx` |
