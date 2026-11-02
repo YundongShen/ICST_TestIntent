@@ -1,0 +1,13 @@
+{
+  "test_case": "playwright/module.spec_2",
+  "objects": [
+    "the web page's body element"
+  ],
+  "goals": [
+    "Verify that the page content is displayed"
+  ],
+  "activities": [
+    "Navigate to the root URL",
+    "Assert that the page body is visible"
+  ]
+}

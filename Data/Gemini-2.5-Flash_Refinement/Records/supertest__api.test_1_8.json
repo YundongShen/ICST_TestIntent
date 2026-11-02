@@ -1,0 +1,195 @@
+{
+  "fw": "supertest",
+  "suite": "api.test_1",
+  "name": "api.test_1_8",
+  "category": "API",
+  "deepseek_label": "Misaligned",
+  "original_label": "Partially Aligned",
+  "source_file": "Test_Case/supertest/api.test_1_8.js",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the CRUD (Create, Read, Update, Delete) functionalities of the Books API.",
+          "Ensure the Books API correctly handles requests for existing and non-existing book resources."
+        ],
+        "activities": [
+          "Send a DELETE request to the /api/books/999 endpoint.",
+          "Assert the response status code is 404."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify that the DELETE /api/books/:id endpoint returns a 404 status code when attempting to delete a book with a non-existent ID."
+        ],
+        "activities": [
+          "Send a DELETE request to the '/api/books/999' endpoint.",
+          "Assert that the response status code is 404."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 60.6
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify that deleting a book with a non-existent ID returns a 404 Not Found status."
+        ],
+        "activities": [
+          "Send a DELETE request to /api/books/999",
+          "Assert that the response status code is 404"
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 57.9
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the Books API DELETE endpoint returns a 404 status code when attempting to delete a book with a non-existent ID."
+        ],
+        "activities": [
+          "Make a DELETE request to the '/api/books/999' endpoint",
+          "Verify that the response status code is 404"
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 42.8
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify that deleting a non-existent book via the API returns a 404 status code."
+        ],
+        "activities": [
+          "Send a DELETE request to the '/api/books/999' endpoint.",
+          "Assert that the response status code is 404."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 34.4
+    },
+    {
+      "intent": {
+        "objects": [
+          "Books API"
+        ],
+        "goals": [
+          "Verify the DELETE /api/books/:id endpoint returns a 404 status for non-existent book IDs."
+        ],
+        "activities": [
+          "Send a DELETE request to the '/api/books/999' endpoint.",
+          "Verify that the response status code is 404."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      },
+      "extract_seconds": 45.8
+    }
+  ],
+  "reextract_count": 5,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "Books API"
+    ],
+    "goals": [
+      "Confirm that deleting a non-existent book results in a not found response."
+    ],
+    "activities": [
+      "Send a DELETE request to '/api/books/999'.",
+      "Confirm the response status code is 404."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\"Books API\"],\n  \"goals\": [\"Confirm that deleting a non-existent book results in a not found response.\"],\n  \"activities\": [\n    \"Send a DELETE request to '/api/books/999'.\",\n    \"Confirm the response status code is 404.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 271.9
+}

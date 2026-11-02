@@ -1,0 +1,14 @@
+{
+  "test_case": "jest_spec/server.spec_1_3",
+  "objects": [
+    "server"
+  ],
+  "goals": [
+    "Verify the server's root endpoint (`/`) returns a 200 status code and the expected 'Hello City' content in text/html format."
+  ],
+  "activities": [
+    "Define the expected response content as 'Hello City'.",
+    "Send a GET request to the server's root path.",
+    "Verify the response body text matches 'Hello City'."
+  ]
+}

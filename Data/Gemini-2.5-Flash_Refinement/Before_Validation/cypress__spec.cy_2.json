@@ -1,0 +1,18 @@
+{
+  "test_case": "cypress/spec.cy_2",
+  "objects": [
+    "#username",
+    "#password",
+    "button[type=\"submit\"]"
+  ],
+  "goals": [
+    "Verify login failure and error message display with incorrect credentials."
+  ],
+  "activities": [
+    "Visit the login page.",
+    "Type 'invalidUser' into the username field.",
+    "Type 'invalidPassword' into the password field.",
+    "Click the submit button.",
+    "Verify an error message indicating invalid username is displayed."
+  ]
+}

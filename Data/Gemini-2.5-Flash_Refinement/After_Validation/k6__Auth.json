@@ -1,0 +1,18 @@
+{
+  "test_case": "k6/Auth",
+  "objects": [
+    "https://dummyjson.com/auth/login"
+  ],
+  "goals": [
+    "Verify the login endpoint returns a successful status code for a valid login."
+  ],
+  "activities": [
+    "Define the target URL for the login request.",
+    "Prepare the JSON payload for the login request with username and password.",
+    "Set request headers, including Content-Type: application/json.",
+    "Send an HTTP POST request to the login URL with the payload and headers.",
+    "Log the body of the HTTP response.",
+    "Verify the HTTP response status code is 200.",
+    "Pause execution for 1 second."
+  ]
+}

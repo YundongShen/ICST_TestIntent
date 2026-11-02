@@ -1,0 +1,18 @@
+{
+  "test_case": "pytest_unit/POPULATE_test__1",
+  "objects": [
+    "POPULATE",
+    "res"
+  ],
+  "goals": [
+    "Verify the POPULATE function correctly generates various statistical distributions (uniform, normal, Poisson) based on input parameters, while preserving the input 'x' values and output shape."
+  ],
+  "activities": [
+    "Import the POPULATE module.",
+    "Create an input vector 'x' containing an array of even numbers from 0 to 98.",
+    "Call the POPULATE function with 'x', specifying a uniform distribution between 0 and 1.",
+    "Verify that the x-values of the result match the input vector's values.",
+    "Verify that all y-values of the result are less than 1.",
+    "Verify that all y-values of the result are greater than 0."
+  ]
+}

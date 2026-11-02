@@ -1,0 +1,234 @@
+{
+  "fw": "supertest",
+  "suite": "App.test",
+  "name": "App.test_1",
+  "category": "API",
+  "deepseek_label": "Partially Aligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/supertest/App.test_1.js",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "app",
+          "/send-message"
+        ],
+        "goals": [
+          "Verify the POST /send-message endpoint returns a 400 status for invalid or incomplete request bodies."
+        ],
+        "activities": [
+          "Initialize an HTTP request to the application.",
+          "Set the request method to POST and the path to '/send-message'.",
+          "Send a JSON payload `{\"name\": \"john\"}` in the request body.",
+          "Set the 'Accept' header to 'application/json'.",
+          "Expect the response 'Content-Type' header to be JSON.",
+          "Expect the HTTP status code to be 400."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the /send-message endpoint returns a 400 status code and JSON content type for an invalid POST request."
+        ],
+        "activities": [
+          "Initialize an HTTP request to the application.",
+          "Send a POST request to the '/send-message' endpoint.",
+          "Attach a JSON payload `{\"name\": \"john\"}` to the request body.",
+          "Set the 'Accept' header of the request to 'application/json'.",
+          "Expect the response 'Content-Type' header to be JSON.",
+          "Expect the response status code to be 400."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 93.4
+    },
+    {
+      "intent": {
+        "objects": [
+          "/send-message"
+        ],
+        "goals": [
+          "Verify POST /send-message endpoint returns a 400 Bad Request status and JSON content type when provided with an invalid request body."
+        ],
+        "activities": [
+          "Initiate a POST request to the '/send-message' endpoint.",
+          "Send a JSON body `{'name': 'john'}` with the request.",
+          "Set the 'Accept' header of the request to 'application/json'.",
+          "Verify that the response 'Content-Type' header is JSON.",
+          "Verify that the HTTP status code of the response is 400."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": true,
+        "supported": false,
+        "consistent": true,
+        "issues": [
+          "not supported by the code: Goals - The code verifies that a 400 status code is returned when a specific body is sent, but it does not clearly show or explicitly state that the provided request body is 'invalid' or that its invalidity is the specific cause of the 400 status. The code demonstrates an input and an expected output, but not the explicit reason for the output related to the input's validity."
+        ]
+      },
+      "extract_seconds": 63.5
+    },
+    {
+      "intent": {
+        "objects": [
+          "app",
+          "/send-message"
+        ],
+        "goals": [
+          "Verify that POST /send-message responds with a 400 status code and JSON content type when sent a request containing a 'name' field."
+        ],
+        "activities": [
+          "Initialize a Supertest request with the application.",
+          "Send a POST request to the '/send-message' endpoint.",
+          "Attach a JSON payload `{\"name\": \"john\"}` to the request.",
+          "Set the 'Accept' header of the request to 'application/json'.",
+          "Assert that the response 'Content-Type' header is JSON.",
+          "Assert that the response status code is 400."
+        ]
+      },
+      "feedback": "- not supported by the code: Goals - The code verifies that a 400 status code is returned when a specific body is sent, but it does not clearly show or explicitly state that the provided request body is 'invalid' or that its invalidity is the specific cause of the 400 status. The code demonstrates an input and an expected output, but not the explicit reason for the output related to the input's validity.",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 43.2
+    },
+    {
+      "intent": {
+        "objects": [
+          "app",
+          "/send-message"
+        ],
+        "goals": [
+          "Verify the POST /send-message endpoint returns a 400 status code and JSON content type for an invalid request body."
+        ],
+        "activities": [
+          "Initialize an HTTP request to the application.",
+          "Send a POST request to the '/send-message' endpoint.",
+          "Include a JSON payload `{\"name\": \"john\"}` in the request body.",
+          "Set the 'Accept' header of the request to 'application/json'.",
+          "Assert that the response 'Content-Type' header is JSON.",
+          "Assert that the HTTP response status code is 400."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 33.7
+    },
+    {
+      "intent": {
+        "objects": [
+          "/send-message"
+        ],
+        "goals": [
+          "Verify that the POST /send-message endpoint returns a 400 Bad Request status and JSON content type for an invalid or incomplete request payload."
+        ],
+        "activities": [
+          "Initialize an HTTP request to the application.",
+          "Set the request method to POST and the path to '/send-message'.",
+          "Send a JSON payload {\"name\": \"john\"} with the request.",
+          "Set the 'Accept' header to 'application/json'.",
+          "Expect the response 'Content-Type' header to be JSON.",
+          "Expect the HTTP response status code to be 400."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      },
+      "extract_seconds": 46.2
+    }
+  ],
+  "reextract_count": 5,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "/send-message"
+    ],
+    "goals": [
+      "Verify that an endpoint returns an error status and content type for an invalid request payload."
+    ],
+    "activities": [
+      "Initialize an HTTP request to the application.",
+      "Set the request method to POST and the path to '/send-message'.",
+      "Send a JSON payload {\"name\": \"john\"} with the request.",
+      "Set the 'Accept' header to 'application/json'.",
+      "Expect the response 'Content-Type' header to be JSON.",
+      "Expect the HTTP response status code to be 400."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": false,\n  \"unsupported\": [\n    \"Goals - The code verifies that a 400 status code is returned when a specific body is sent, but it does not clearly show or explicitly state that the provided request body is 'invalid' or that its invalidity is the specific cause of the 400 status. The code demonstrates an input and an expected output, but not the explicit reason for the output related to the input's validity.\"\n  ]\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\"/send-message\"],\n  \"goals\": [\"Verify that an endpoint returns an error status and content type for an invalid request payload.\"],\n  \"activities\": [\n    \"Initialize an HTTP request to the application.\",\n    \"Set the request method to POST and the path to '/send-message'.\",\n    \"Send a JSON payload {\\\"name\\\": \\\"john\\\"} with the request.\",\n    \"Set the 'Accept' header to 'application/json'.\",\n    \"Expect the response 'Content-Type' header to be JSON.\",\n    \"Expect the HTTP response status code to be 400.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 353.1
+}

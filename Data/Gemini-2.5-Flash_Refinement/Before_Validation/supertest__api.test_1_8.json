@@ -1,0 +1,14 @@
+{
+  "test_case": "supertest/api.test_1_8",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify the CRUD (Create, Read, Update, Delete) functionalities of the Books API.",
+    "Ensure the Books API correctly handles requests for existing and non-existing book resources."
+  ],
+  "activities": [
+    "Send a DELETE request to the /api/books/999 endpoint.",
+    "Assert the response status code is 404."
+  ]
+}

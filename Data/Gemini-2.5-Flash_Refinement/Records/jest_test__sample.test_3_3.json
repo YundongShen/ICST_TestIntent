@@ -1,0 +1,110 @@
+{
+  "fw": "jest_test",
+  "suite": "sample.test_3",
+  "name": "sample.test_3_3",
+  "category": "Unit",
+  "deepseek_label": "Partially Aligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/jest_test/sample.test_3_3.js",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "config"
+        ],
+        "goals": [
+          "Verify the sanitization of the application's configuration object."
+        ],
+        "activities": [
+          "Define a GUID regular expression.",
+          "Verify the tenant ID in the configuration does not match a GUID pattern."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": true,
+        "supported": true,
+        "consistent": false,
+        "issues": [
+          "inconsistent: The activities are too narrow in scope to adequately serve the broad goal. The goal is to 'Verify the sanitization of the application's configuration object' (implying a comprehensive check), while the activities only address a very specific aspect (checking if a 'tenant ID' field does not match a GUID pattern)."
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "config"
+        ],
+        "goals": [
+          "Verify that the `tenantId` in the configuration object does not match a GUID pattern."
+        ],
+        "activities": [
+          "Load the authentication configuration into a global variable.",
+          "Define a regular expression to match a GUID format.",
+          "Test if the 'tenantId' property within the configuration's credentials matches the defined GUID regular expression.",
+          "Assert that the 'tenantId' does not match the GUID regular expression."
+        ]
+      },
+      "feedback": "- inconsistent: The activities are too narrow in scope to adequately serve the broad goal. The goal is to 'Verify the sanitization of the application's configuration object' (implying a comprehensive check), while the activities only address a very specific aspect (checking if a 'tenant ID' field does not match a GUID pattern).",
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      },
+      "extract_seconds": 59.3
+    }
+  ],
+  "reextract_count": 1,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "authenticationConfiguration",
+      "authenticationConfiguration.credentials.tenantId",
+      "guidRegex"
+    ],
+    "goals": [
+      "Verify that the tenant ID in the configuration does not match a GUID pattern."
+    ],
+    "activities": [
+      "Load authenticationConfiguration.",
+      "Define guidRegex for GUID pattern matching.",
+      "Test if authenticationConfiguration.credentials.tenantId matches guidRegex.",
+      "Assert authenticationConfiguration.credentials.tenantId does not match guidRegex."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": false,\n  \"issues\": [\n    \"The activities are too narrow in scope to adequately serve the broad goal. The goal is to 'Verify the sanitization of the application's configuration object' (implying a comprehensive check), while the activities only address a very specific aspect (checking if a 'tenant ID' field does not match a GUID pattern).\"\n  ]\n}\n```"
+    },
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n    \"supported\": true,\n    \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"authenticationConfiguration\",\n    \"authenticationConfiguration.credentials.tenantId\",\n    \"guidRegex\"\n  ],\n  \"goals\": [\n    \"Verify that the tenant ID in the configuration does not match a GUID pattern.\"\n  ],\n  \"activities\": [\n    \"Load authenticationConfiguration.\",\n    \"Define guidRegex for GUID pattern matching.\",\n    \"Test if authenticationConfiguration.credentials.tenantId matches guidRegex.\",\n    \"Assert authenticationConfiguration.credentials.tenantId does not match guidRegex.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 149.8
+}

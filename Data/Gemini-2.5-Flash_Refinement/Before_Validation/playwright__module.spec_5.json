@@ -1,0 +1,15 @@
+{
+  "test_case": "playwright/module.spec_5",
+  "objects": [
+    "page",
+    "text=Launch demo modal"
+  ],
+  "goals": [
+    "Verify Bootstrap 4 Modal component functionality."
+  ],
+  "activities": [
+    "Navigate to the base URL.",
+    "Locate the 'Launch demo modal' button.",
+    "Assert that the 'Launch demo modal' button exists."
+  ]
+}

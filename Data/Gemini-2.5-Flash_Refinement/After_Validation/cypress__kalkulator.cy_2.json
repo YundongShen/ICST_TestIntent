@@ -1,0 +1,22 @@
+{
+  "test_case": "cypress/kalkulator.cy_2",
+  "objects": [
+    "calculator application",
+    "button 6",
+    "button *",
+    "button 7",
+    "button =",
+    "calculator display"
+  ],
+  "goals": [
+    "Verify that the calculator correctly performs a multiplication operation and displays the correct result."
+  ],
+  "activities": [
+    "Visit the calculator application.",
+    "Click the '6' button.",
+    "Click the 'multiply' button.",
+    "Click the '7' button.",
+    "Click the 'equals' button.",
+    "Verify the display shows '42'."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "test_case": "supertest/api.test_1_4",
+  "objects": [
+    "/api/books"
+  ],
+  "goals": [
+    "Verify that a new book can be created."
+  ],
+  "activities": [
+    "Define the data for a new book.",
+    "Send a POST request to the `/api/books` endpoint with the new book data.",
+    "Verify that the response status code is 201.",
+    "Verify that the title in the response body is 'Dune'."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "fw": "cypress",
+  "suite": "kalkulator.cy",
+  "name": "kalkulator.cy_2",
+  "category": "Browser Automation",
+  "deepseek_label": "Fully Aligned",
+  "original_label": "Misaligned",
+  "source_file": "Test_Case/cypress/kalkulator.cy_2.js",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "[data-key=\"=\"]",
+          ".display .output",
+          "[data-key=\"6\"]",
+          "[data-key=\"*\"]",
+          "[data-key=\"7\"]"
+        ],
+        "goals": [],
+        "activities": [
+          "Visit the calculator application at http://127.0.0.1:8080",
+          "Click the '6' button",
+          "Click the '*' (multiply) button",
+          "Click the '7' button",
+          "Click the '=' button",
+          "Verify the output display shows '42'"
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "goals is missing or empty"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "calculator application",
+          "button 6",
+          "button *",
+          "button 7",
+          "button =",
+          "calculator display"
+        ],
+        "goals": [
+          "Verify that the calculator correctly performs the multiplication operation 6 × 7 and displays the result 42."
+        ],
+        "activities": [
+          "Visit the calculator application at 'http://127.0.0.1:8080'.",
+          "Click the '6' button.",
+          "Click the 'multiply' button.",
+          "Click the '7' button.",
+          "Click the 'equals' button.",
+          "Verify the display shows '42'."
+        ]
+      },
+      "feedback": "- goals is missing or empty",
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      },
+      "extract_seconds": 63.2
+    }
+  ],
+  "reextract_count": 1,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "calculator application",
+      "button 6",
+      "button *",
+      "button 7",
+      "button =",
+      "calculator display"
+    ],
+    "goals": [
+      "Verify that the calculator correctly performs a multiplication operation and displays the correct result."
+    ],
+    "activities": [
+      "Visit the calculator application.",
+      "Click the '6' button.",
+      "Click the 'multiply' button.",
+      "Click the '7' button.",
+      "Click the 'equals' button.",
+      "Verify the display shows '42'."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"calculator application\",\n    \"button 6\",\n    \"button *\",\n    \"button 7\",\n    \"button =\",\n    \"calculator display\"\n  ],\n  \"goals\": [\n    \"Verify that the calculator correctly performs a multiplication operation and displays the correct result.\"\n  ],\n  \"activities\": [\n    \"Visit the calculator application.\",\n    \"Click the '6' button.\",\n    \"Click the 'multiply' button.\",\n    \"Click the '7' button.\",\n    \"Click the 'equals' button.\",\n    \"Verify the display shows '42'.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 126.5
+}

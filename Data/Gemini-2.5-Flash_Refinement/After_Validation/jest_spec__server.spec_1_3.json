@@ -1,0 +1,14 @@
+{
+  "test_case": "jest_spec/server.spec_1_3",
+  "objects": [
+    "server"
+  ],
+  "goals": [
+    "Verify that the root route returns the text 'Hello City'."
+  ],
+  "activities": [
+    "Set expected content to \"Hello City\".",
+    "Make HTTP GET request to \"/\".",
+    "Assert response body matches expected content."
+  ]
+}

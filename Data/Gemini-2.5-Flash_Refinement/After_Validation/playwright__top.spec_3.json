@@ -1,0 +1,22 @@
+{
+  "test_case": "playwright/top.spec_3",
+  "objects": [
+    "list items",
+    "search input"
+  ],
+  "goals": [
+    "Verify that the search functionality correctly filters the list of items to display only the matching result."
+  ],
+  "activities": [
+    "Navigate to the root page",
+    "Get initial count of list items",
+    "Assert initial count of items > 1",
+    "Assert first list item is visible",
+    "Get 'href' attribute of first item",
+    "Extract item ID from 'href'",
+    "Assert extracted item ID is not empty",
+    "Fill search input with extracted item ID",
+    "Assert list contains exactly one item",
+    "Assert remaining item has expected 'href' attribute"
+  ]
+}

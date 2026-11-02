@@ -1,0 +1,75 @@
+{
+  "fw": "pytest_api",
+  "suite": "REMOTE_FILE_test_",
+  "name": "REMOTE_FILE_test__2",
+  "category": "API",
+  "deepseek_label": "Misaligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/pytest_api/REMOTE_FILE_test__2.py",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "REMOTE_FILE.REMOTE_FILE"
+        ],
+        "goals": [
+          "Validate that the REMOTE_FILE function handles invalid or unsupported remote file URLs by raising appropriate exceptions."
+        ],
+        "activities": [
+          "Import the REMOTE_FILE module.",
+          "Attempt to call the REMOTE_FILE function with an invalid URL 'not_valid' and 'Image' type, expecting a ValueError.",
+          "Attempt to call the REMOTE_FILE function with an invalid URL '/not/a/valid/url' and 'Image' type, expecting a ValueError.",
+          "Attempt to call the REMOTE_FILE function with an invalid URL 'ftp://not_existing.url' and 'Image' type, expecting a ValueError.",
+          "Attempt to call the REMOTE_FILE function with an invalid URL 'htp://misstyped.url' and 'Image' type, expecting a ValueError."
+        ]
+      },
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      }
+    }
+  ],
+  "reextract_count": 0,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "REMOTE_FILE.REMOTE_FILE"
+    ],
+    "goals": [
+      "Validate that the REMOTE_FILE function handles invalid or unsupported remote file URLs by raising appropriate exceptions."
+    ],
+    "activities": [
+      "Import the REMOTE_FILE module.",
+      "Attempt to call the REMOTE_FILE function with an invalid URL 'not_valid' and 'Image' type, expecting a ValueError.",
+      "Attempt to call the REMOTE_FILE function with an invalid URL '/not/a/valid/url' and 'Image' type, expecting a ValueError.",
+      "Attempt to call the REMOTE_FILE function with an invalid URL 'ftp://not_existing.url' and 'Image' type, expecting a ValueError.",
+      "Attempt to call the REMOTE_FILE function with an invalid URL 'htp://misstyped.url' and 'Image' type, expecting a ValueError."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"REMOTE_FILE.REMOTE_FILE\"\n  ],\n  \"goals\": [\n    \"Validate that the REMOTE_FILE function handles invalid or unsupported remote file URLs by raising appropriate exceptions.\"\n  ],\n  \"activities\": [\n    \"Import the REMOTE_FILE module.\",\n    \"Attempt to call the REMOTE_FILE function with an invalid URL 'not_valid' and 'Image' type, expecting a ValueError.\",\n    \"Attempt to call the REMOTE_FILE function with an invalid URL '/not/a/valid/url' and 'Image' type, expecting a ValueError.\",\n    \"Attempt to call the REMOTE_FILE function with an invalid URL 'ftp://not_existing.url' and 'Image' type, expecting a ValueError.\",\n    \"Attempt to call the REMOTE_FILE function with an invalid URL 'htp://misstyped.url' and 'Image' type, expecting a ValueError.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 61.7
+}

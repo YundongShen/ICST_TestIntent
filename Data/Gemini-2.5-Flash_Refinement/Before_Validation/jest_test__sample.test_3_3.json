@@ -1,0 +1,13 @@
+{
+  "test_case": "jest_test/sample.test_3_3",
+  "objects": [
+    "config"
+  ],
+  "goals": [
+    "Verify the sanitization of the application's configuration object."
+  ],
+  "activities": [
+    "Define a GUID regular expression.",
+    "Verify the tenant ID in the configuration does not match a GUID pattern."
+  ]
+}

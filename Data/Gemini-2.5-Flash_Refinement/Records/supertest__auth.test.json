@@ -1,0 +1,104 @@
+{
+  "fw": "supertest",
+  "suite": "auth.test",
+  "name": "auth.test",
+  "category": "API",
+  "deepseek_label": "Partially Aligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/supertest/auth.test.js",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify that a new user can be successfully registered via the /api/auth/register endpoint.",
+          "Verify that a successful user registration returns an authentication token."
+        ],
+        "activities": [
+          "Connect to the database.",
+          "Send a POST request to '/api/auth/register' with user registration data (username, email, password).",
+          "Assert that the response status code is 201.",
+          "Assert that the response body contains a 'token' property.",
+          "Close the database connection."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "/api/auth/register"
+        ],
+        "goals": [
+          "Verify that a new user can be successfully registered via the authentication API."
+        ],
+        "activities": [
+          "Connect to the MongoDB database.",
+          "Send a POST request to the /api/auth/register endpoint with user registration details (username, email, password).",
+          "Assert that the response status code is 201.",
+          "Assert that the response body contains a 'token' property.",
+          "Close the MongoDB database connection."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      },
+      "extract_seconds": 69.9
+    }
+  ],
+  "reextract_count": 1,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "/api/auth/register"
+    ],
+    "goals": [
+      "Verify that a new user can be successfully registered via the authentication API."
+    ],
+    "activities": [
+      "Connect to the MongoDB database.",
+      "Send a POST request to the /api/auth/register endpoint with user registration details (username, email, password).",
+      "Assert that the response status code is 201.",
+      "Assert that the response body contains a 'token' property.",
+      "Close the MongoDB database connection."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"/api/auth/register\"\n  ],\n  \"goals\": [\n    \"Verify that a new user can be successfully registered via the authentication API.\"\n  ],\n  \"activities\": [\n    \"Connect to the MongoDB database.\",\n    \"Send a POST request to the /api/auth/register endpoint with user registration details (username, email, password).\",\n    \"Assert that the response status code is 201.\",\n    \"Assert that the response body contains a 'token' property.\",\n    \"Close the MongoDB database connection.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 121.8
+}

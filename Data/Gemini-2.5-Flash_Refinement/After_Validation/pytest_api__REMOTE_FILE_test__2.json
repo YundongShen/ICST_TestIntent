@@ -1,0 +1,16 @@
+{
+  "test_case": "pytest_api/REMOTE_FILE_test__2",
+  "objects": [
+    "REMOTE_FILE.REMOTE_FILE"
+  ],
+  "goals": [
+    "Validate that the REMOTE_FILE function handles invalid or unsupported remote file URLs by raising appropriate exceptions."
+  ],
+  "activities": [
+    "Import the REMOTE_FILE module.",
+    "Attempt to call the REMOTE_FILE function with an invalid URL 'not_valid' and 'Image' type, expecting a ValueError.",
+    "Attempt to call the REMOTE_FILE function with an invalid URL '/not/a/valid/url' and 'Image' type, expecting a ValueError.",
+    "Attempt to call the REMOTE_FILE function with an invalid URL 'ftp://not_existing.url' and 'Image' type, expecting a ValueError.",
+    "Attempt to call the REMOTE_FILE function with an invalid URL 'htp://misstyped.url' and 'Image' type, expecting a ValueError."
+  ]
+}

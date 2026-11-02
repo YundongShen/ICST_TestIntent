@@ -1,0 +1,202 @@
+{
+  "fw": "supertest",
+  "suite": "app.test",
+  "name": "app.test_1",
+  "category": "API",
+  "deepseek_label": "Misaligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/supertest/app.test_1.js",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the root endpoint ('/') returns status 200 and body 'Helllooooo'."
+        ],
+        "activities": [
+          "Initialize a Supertest request with the application.",
+          "Send a GET request to the \"/\" path.",
+          "Assert that the response body is \"Helllooooo\".",
+          "Assert that the response status code is 200."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the application's root endpoint returns a 200 status code and the body 'Helllooooo'."
+        ],
+        "activities": [
+          "Initialize an HTTP request to the application",
+          "Send a GET request to the root endpoint (\"/\")",
+          "Expect the response body to be \"Helllooooo\"",
+          "Expect the response status code to be 200"
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 67.8
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify that the GET / endpoint responds with HTTP 200 status and the body 'Helllooooo'."
+        ],
+        "activities": [
+          "Initialize an HTTP request to the application.",
+          "Send a GET request to the root path (\"/\").",
+          "Assert that the response body is \"Helllooooo\".",
+          "Assert that the response status code is 200."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 39.6
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the GET / endpoint returns HTTP 200 with the body 'Helllooooo'"
+        ],
+        "activities": [
+          "Initiate an HTTP request to the application.",
+          "Send a GET request to the root path (\"/\").",
+          "Verify that the response body is \"Helllooooo\".",
+          "Verify that the HTTP status code is 200."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 40.6
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the root endpoint responds with a 200 OK status and the body 'Helllooooo'"
+        ],
+        "activities": [
+          "Initialize an HTTP request for the application.",
+          "Send a GET request to the '/' endpoint.",
+          "Expect the response body to be 'Helllooooo'.",
+          "Expect the response status code to be 200."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 33.6
+    },
+    {
+      "intent": {
+        "objects": [
+          "app",
+          "/"
+        ],
+        "goals": [
+          "Verify the root endpoint ('/') responds with a 200 status code and the body 'Helllooooo'"
+        ],
+        "activities": [
+          "Initialize an HTTP request to the application.",
+          "Send a GET request to the \"/\" endpoint.",
+          "Assert the response body is \"Helllooooo\".",
+          "Assert the response status code is 200."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 40.3
+    }
+  ],
+  "reextract_count": 5,
+  "final_check_passed": false,
+  "refined": {
+    "objects": [
+      "app",
+      "/"
+    ],
+    "goals": [
+      "Verify the root endpoint responds with a successful status code and expected body content."
+    ],
+    "activities": [
+      "Initialize an HTTP request to the application.",
+      "Send a GET request to the \"/\" endpoint.",
+      "Assert the response body is \"Helllooooo\".",
+      "Assert the response status code is 200."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"app\",\n    \"/\"\n  ],\n  \"goals\": [\n    \"Verify the root endpoint responds with a successful status code and expected body content.\"\n  ],\n  \"activities\": [\n    \"Initialize an HTTP request to the application.\",\n    \"Send a GET request to the \\\"/\\\" endpoint.\",\n    \"Assert the response body is \\\"Helllooooo\\\".\",\n    \"Assert the response status code is 200.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 233.8
+}

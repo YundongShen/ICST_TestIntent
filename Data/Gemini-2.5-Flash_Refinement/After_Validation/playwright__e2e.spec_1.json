@@ -1,0 +1,33 @@
+{
+  "test_case": "playwright/e2e.spec_1",
+  "objects": [
+    "Post Title 'Acheronta altoque'",
+    "First 'Read more' link",
+    "Author's avatar",
+    "Post Date 'August 30, 2022'",
+    "Post Content 'Sine aequum praeferret mihi'",
+    "Post Content 'Lorem markdownum figuris arcum, vestes, traharis reperire quia.'",
+    "Post Content 'Magno adspexit Phorbas velles in qua terras, nec cuique plus tenet.'",
+    "'Blog' navigation link",
+    "'All posts' heading"
+  ],
+  "goals": [
+    "Verify user navigation to and content display on an individual blog post page.",
+    "Verify user navigation to and content display on the main blog listing page."
+  ],
+  "activities": [
+    "Navigate to the homepage.",
+    "Assert the page title is \"simple-remix-blog\".",
+    "Assert that the post title \"Acheronta altoque\" is visible.",
+    "Click the first \"Read more\" link.",
+    "Assert the URL is \"http://localhost:3000/posts/example-post-2\".",
+    "Assert the author's avatar is visible.",
+    "Assert the post date \"August 30, 2022\" is visible.",
+    "Assert the post content \"Sine aequum praeferret mihi\" is visible.",
+    "Assert the post content \"Lorem markdownum figuris arcum, vestes, traharis reperire quia.\" is visible.",
+    "Assert the post content \"Magno adspexit Phorbas velles in qua terras, nec cuique plus tenet.\" is visible.",
+    "Click the \"Blog\" link.",
+    "Assert the URL is \"http://localhost:3000/blog\".",
+    "Assert \"All posts\" heading is visible."
+  ]
+}

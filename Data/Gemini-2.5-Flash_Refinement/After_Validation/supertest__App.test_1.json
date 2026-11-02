@@ -1,0 +1,17 @@
+{
+  "test_case": "supertest/App.test_1",
+  "objects": [
+    "/send-message"
+  ],
+  "goals": [
+    "Verify that an endpoint returns an error status and content type for an invalid request payload."
+  ],
+  "activities": [
+    "Initialize an HTTP request to the application.",
+    "Set the request method to POST and the path to '/send-message'.",
+    "Send a JSON payload {\"name\": \"john\"} with the request.",
+    "Set the 'Accept' header to 'application/json'.",
+    "Expect the response 'Content-Type' header to be JSON.",
+    "Expect the HTTP response status code to be 400."
+  ]
+}

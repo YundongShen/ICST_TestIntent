@@ -1,0 +1,21 @@
+{
+  "test_case": "playwright/top.spec_3",
+  "objects": [
+    "page",
+    "page.locator(\".list-group a.list-group-item\")"
+  ],
+  "goals": [
+    "Verify that the search functionality accurately filters the displayed list items to show only the matching result."
+  ],
+  "activities": [
+    "Navigate to the root URL.",
+    "Get the initial count of list items.",
+    "Assert that the initial count of list items is greater than 1.",
+    "Assert that the first list item is visible.",
+    "Extract the ID from the first list item's href attribute.",
+    "Assert that the extracted ID is not empty.",
+    "Fill the search input field with the extracted ID.",
+    "Assert that only one list item is displayed.",
+    "Assert that the displayed list item has the correct href attribute."
+  ]
+}

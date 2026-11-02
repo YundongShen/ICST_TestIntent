@@ -1,0 +1,18 @@
+{
+  "test_case": "pytest_api/unit_test_",
+  "objects": [
+    "/obtainUserNameEmail endpoint"
+  ],
+  "goals": [
+    "Verify that the user's personal details are correctly retrieved and returned."
+  ],
+  "activities": [
+    "Define test user data: first name, last name, email, password.",
+    "Send POST request to '/login' with user email and password.",
+    "Extract session token from login response.",
+    "Prepare authorization headers with session token.",
+    "Send POST request to '/obtainUserNameEmail' with authorization headers.",
+    "Assert response status code is 200.",
+    "Assert response JSON body matches expected user details."
+  ]
+}

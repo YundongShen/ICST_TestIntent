@@ -1,0 +1,13 @@
+{
+  "test_case": "supertest/api.test_1_8",
+  "objects": [
+    "Books API"
+  ],
+  "goals": [
+    "Confirm that deleting a non-existent book results in a not found response."
+  ],
+  "activities": [
+    "Send a DELETE request to '/api/books/999'.",
+    "Confirm the response status code is 404."
+  ]
+}

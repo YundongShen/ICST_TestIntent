@@ -1,0 +1,177 @@
+{
+  "fw": "pytest_api",
+  "suite": "unit_test_",
+  "name": "unit_test_",
+  "category": "API",
+  "deepseek_label": "Misaligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/pytest_api/unit_test_.py",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "app",
+          "obtainUserNameEmail"
+        ],
+        "goals": [
+          "Verify that the /obtainUserNameEmail endpoint successfully returns the authenticated user's first name, last name, and email."
+        ],
+        "activities": [
+          "Define test user's first name, last name, email, and password.",
+          "Define the expected output for the user's name and email.",
+          "Send a POST request to the '/login' endpoint with the user's email and password to obtain an access token.",
+          "Extract the session token from the login response.",
+          "Prepare authorization headers using the obtained session token.",
+          "Send a POST request to the '/obtainUserNameEmail' endpoint with the authorization headers.",
+          "Assert that the response status code is 200 (OK).",
+          "Assert that the JSON response body matches the expected user name and email."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test",
+          "'obtainUserNameEmail' is not readable text (words are run together)"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "obtainUserNameEmail",
+          "User"
+        ],
+        "goals": [
+          "Verify that the obtainUserNameEmail endpoint correctly retrieves and returns the authenticated user's first name, last name, and email."
+        ],
+        "activities": [
+          "Define the test user's first name.",
+          "Define the test user's last name.",
+          "Define the test user's email.",
+          "Define the test user's password.",
+          "Define the expected output for user details.",
+          "Send a POST request to the /login endpoint with the user's email and password.",
+          "Extract the session token from the login response.",
+          "Prepare authorization headers using the session token.",
+          "Send a POST request to the /obtainUserNameEmail endpoint with authorization headers.",
+          "Assert that the response status code is 200.",
+          "Assert that the JSON response matches the expected user details."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test\n- 'obtainUserNameEmail' is not readable text (words are run together)",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "'obtainUserNameEmail' is not readable text (words are run together)"
+        ]
+      },
+      "extract_seconds": 74.7
+    },
+    {
+      "intent": {
+        "objects": [
+          "obtainUserNameEmail"
+        ],
+        "goals": [
+          "Verify that the obtainUserNameEmail endpoint successfully retrieves and returns the authenticated user's first name, last name, and email."
+        ],
+        "activities": [
+          "Define test input data, including user credentials and expected output.",
+          "Send a POST request to the '/login' endpoint using the defined email and password.",
+          "Extract the session token from the login response.",
+          "Prepare the authorization header with the extracted session token.",
+          "Send a POST request to the '/obtainUserNameEmail' endpoint with the authorization header.",
+          "Assert that the response status code is 200.",
+          "Assert that the response JSON body matches the expected user data."
+        ]
+      },
+      "feedback": "- 'obtainUserNameEmail' is not readable text (words are run together)",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "'obtainUserNameEmail' is not readable text (words are run together)"
+        ]
+      },
+      "extract_seconds": 64.4
+    },
+    {
+      "intent": {
+        "objects": [
+          "Obtain User Name Email backend function"
+        ],
+        "goals": [
+          "Verify that the obtainUserNameEmail endpoint successfully retrieves and returns the correct user's first name, last name, and email."
+        ],
+        "activities": [
+          "Define test user data including first name, last name, email, and password.",
+          "Send a POST request to the '/login' endpoint with the user's email and password.",
+          "Extract the session token from the login response.",
+          "Prepare authorization headers using the extracted session token.",
+          "Send a POST request to the '/obtainUserNameEmail' endpoint with the authorization headers.",
+          "Assert that the response status code is 200.",
+          "Assert that the response JSON body matches the expected user details."
+        ]
+      },
+      "feedback": "- 'obtainUserNameEmail' is not readable text (words are run together)",
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      },
+      "extract_seconds": 67.7
+    }
+  ],
+  "reextract_count": 3,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "/obtainUserNameEmail endpoint"
+    ],
+    "goals": [
+      "Verify that the user's personal details are correctly retrieved and returned."
+    ],
+    "activities": [
+      "Define test user data: first name, last name, email, password.",
+      "Send POST request to '/login' with user email and password.",
+      "Extract session token from login response.",
+      "Prepare authorization headers with session token.",
+      "Send POST request to '/obtainUserNameEmail' with authorization headers.",
+      "Assert response status code is 200.",
+      "Assert response JSON body matches expected user details."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"/obtainUserNameEmail endpoint\"\n  ],\n  \"goals\": [\n    \"Verify that the user's personal details are correctly retrieved and returned.\"\n  ],\n  \"activities\": [\n    \"Define test user data: first name, last name, email, password.\",\n    \"Send POST request to '/login' with user email and password.\",\n    \"Extract session token from login response.\",\n    \"Prepare authorization headers with session token.\",\n    \"Send POST request to '/obtainUserNameEmail' with authorization headers.\",\n    \"Assert response status code is 200.\",\n    \"Assert response JSON body matches expected user details.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 240.7
+}

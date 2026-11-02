@@ -1,0 +1,15 @@
+{
+  "test_case": "supertest/app.test_2",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify the '/watermelon' endpoint returns status 200 and body 'watermelon 🐓'."
+  ],
+  "activities": [
+    "Initialize a Supertest request with the application.",
+    "Send a GET request to the \"/watermelon\" path.",
+    "Assert that the response body is \"watermelon 🐓\".",
+    "Assert that the response status code is 200."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "fw": "playwright",
+  "suite": "top.spec",
+  "name": "top.spec_3",
+  "category": "Browser Automation",
+  "deepseek_label": "Misaligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/playwright/top.spec_3.ts",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "page",
+          "page.locator(\".list-group a.list-group-item\")"
+        ],
+        "goals": [
+          "Verify that the search functionality accurately filters the displayed list items to show only the matching result."
+        ],
+        "activities": [
+          "Navigate to the root URL.",
+          "Get the initial count of list items.",
+          "Assert that the initial count of list items is greater than 1.",
+          "Assert that the first list item is visible.",
+          "Extract the ID from the first list item's href attribute.",
+          "Assert that the extracted ID is not empty.",
+          "Fill the search input field with the extracted ID.",
+          "Assert that only one list item is displayed.",
+          "Assert that the displayed list item has the correct href attribute."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'page' is a test-framework construct or code, not a domain entity under test",
+          "object 'page.locator(\".list-group a.list-group-item\")' is a test-framework construct or code, not a domain entity under test"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "list items",
+          "search input"
+        ],
+        "goals": [
+          "Verify that the search functionality correctly filters the list of items to display only the matching result."
+        ],
+        "activities": [
+          "Navigate to the application's root page",
+          "Get the initial count of items displayed in the list",
+          "Assert that the initial count of items is greater than 1",
+          "Assert that the first item in the list is visible",
+          "Get the 'href' attribute of the first item",
+          "Extract the item ID from the first item's 'href'",
+          "Assert that the extracted item ID is not empty",
+          "Fill the search input field with the extracted item ID",
+          "Assert that the list of items now contains exactly one item",
+          "Assert that the remaining item has the expected 'href' attribute"
+        ]
+      },
+      "feedback": "- object 'page' is a test-framework construct or code, not a domain entity under test\n- object 'page.locator(\".list-group a.list-group-item\")' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": true,
+        "complete": true,
+        "supported": true,
+        "consistent": true,
+        "issues": []
+      },
+      "extract_seconds": 66.3
+    }
+  ],
+  "reextract_count": 1,
+  "final_check_passed": true,
+  "refined": {
+    "objects": [
+      "list items",
+      "search input"
+    ],
+    "goals": [
+      "Verify that the search functionality correctly filters the list of items to display only the matching result."
+    ],
+    "activities": [
+      "Navigate to the root page",
+      "Get initial count of list items",
+      "Assert initial count of items > 1",
+      "Assert first list item is visible",
+      "Get 'href' attribute of first item",
+      "Extract item ID from 'href'",
+      "Assert extracted item ID is not empty",
+      "Fill search input with extracted item ID",
+      "Assert list contains exactly one item",
+      "Assert remaining item has expected 'href' attribute"
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Check, element by element, whether the test intent below is supported by the test code. Be strict.\nAn element is support",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"supported\": true,\n  \"unsupported\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Check whether the three parts of the test intent below are consistent with each other:\nthe activities operate on the obj",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"consistent\": true,\n  \"issues\": []\n}\n```"
+    },
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"list items\",\n    \"search input\"\n  ],\n  \"goals\": [\n    \"Verify that the search functionality correctly filters the list of items to display only the matching result.\"\n  ],\n  \"activities\": [\n    \"Navigate to the root page\",\n    \"Get initial count of list items\",\n    \"Assert initial count of items > 1\",\n    \"Assert first list item is visible\",\n    \"Get 'href' attribute of first item\",\n    \"Extract item ID from 'href'\",\n    \"Assert extracted item ID is not empty\",\n    \"Fill search input with extracted item ID\",\n    \"Assert list contains exactly one item\",\n    \"Assert remaining item has expected 'href' attribute\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 118.5
+}

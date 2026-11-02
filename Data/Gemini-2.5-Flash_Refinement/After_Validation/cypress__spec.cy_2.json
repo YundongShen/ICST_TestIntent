@@ -1,0 +1,19 @@
+{
+  "test_case": "cypress/spec.cy_2",
+  "objects": [
+    "#username",
+    "#password",
+    "button[type=\"submit\"]",
+    ".flash.error"
+  ],
+  "goals": [
+    "Verify that an error message is displayed when attempting to log in with invalid credentials."
+  ],
+  "activities": [
+    "Visit the login page URL",
+    "Type 'invalidUser' into the username field",
+    "Type 'invalidPassword' into the password field",
+    "Click the submit button",
+    "Verify an error message containing 'Your username is invalid!' is displayed"
+  ]
+}

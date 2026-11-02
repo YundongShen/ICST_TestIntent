@@ -1,0 +1,19 @@
+{
+  "test_case": "cypress/kalkulator.cy_2",
+  "objects": [
+    "[data-key=\"=\"]",
+    ".display .output",
+    "[data-key=\"6\"]",
+    "[data-key=\"*\"]",
+    "[data-key=\"7\"]"
+  ],
+  "goals": [],
+  "activities": [
+    "Visit the calculator application at http://127.0.0.1:8080",
+    "Click the '6' button",
+    "Click the '*' (multiply) button",
+    "Click the '7' button",
+    "Click the '=' button",
+    "Verify the output display shows '42'"
+  ]
+}

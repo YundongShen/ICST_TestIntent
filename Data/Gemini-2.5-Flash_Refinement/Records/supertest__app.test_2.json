@@ -1,0 +1,202 @@
+{
+  "fw": "supertest",
+  "suite": "app.test",
+  "name": "app.test_2",
+  "category": "API",
+  "deepseek_label": "Misaligned",
+  "original_label": "Fully Aligned",
+  "source_file": "Test_Case/supertest/app.test_2.js",
+  "attempts": [
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the '/watermelon' endpoint returns status 200 and body 'watermelon 🐓'."
+        ],
+        "activities": [
+          "Initialize a Supertest request with the application.",
+          "Send a GET request to the \"/watermelon\" path.",
+          "Assert that the response body is \"watermelon 🐓\".",
+          "Assert that the response status code is 200."
+        ]
+      },
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      }
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify that the '/watermelon' endpoint returns a 200 status and the expected body content."
+        ],
+        "activities": [
+          "Send an HTTP GET request to the /watermelon endpoint of the application.",
+          "Verify that the response body is \"watermelon 🐓\".",
+          "Verify that the HTTP status code is 200."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 72.7
+    },
+    {
+      "intent": {
+        "objects": [
+          "app",
+          "/watermelon"
+        ],
+        "goals": [
+          "Verify the `/watermelon` endpoint returns 'watermelon 🐓' with a 200 HTTP status code."
+        ],
+        "activities": [
+          "Start an HTTP request",
+          "Send a GET request to the \"/watermelon\" endpoint",
+          "Verify the response body is \"watermelon 🐓\"",
+          "Verify the HTTP status code is 200"
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 42.8
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the /watermelon API endpoint returns the expected content and a 200 status code."
+        ],
+        "activities": [
+          "Initialize an HTTP request builder for the application.",
+          "Send a GET request to the '/watermelon' endpoint.",
+          "Assert that the response body is 'watermelon 🐓'.",
+          "Assert that the HTTP status code is 200.",
+          "Mark the asynchronous test as complete."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 33.4
+    },
+    {
+      "intent": {
+        "objects": [
+          "app",
+          "/watermelon"
+        ],
+        "goals": [
+          "Verify the `/watermelon` endpoint returns a 200 status and the body 'watermelon 🐓'."
+        ],
+        "activities": [
+          "Initialize a test request with the application under test.",
+          "Send an HTTP GET request to the \"/watermelon\" endpoint.",
+          "Verify that the response body is \"watermelon 🐓\".",
+          "Verify that the HTTP status code is 200."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 35.3
+    },
+    {
+      "intent": {
+        "objects": [
+          "app"
+        ],
+        "goals": [
+          "Verify the /watermelon endpoint returns 'watermelon 🐓' with a 200 status code"
+        ],
+        "activities": [
+          "Create an HTTP request instance.",
+          "Send a GET request to the '/watermelon' endpoint.",
+          "Verify the response body content.",
+          "Verify the HTTP status code is 200."
+        ]
+      },
+      "feedback": "- object 'app' is a test-framework construct or code, not a domain entity under test",
+      "check": {
+        "passed": false,
+        "complete": false,
+        "supported": false,
+        "consistent": false,
+        "issues": [
+          "object 'app' is a test-framework construct or code, not a domain entity under test"
+        ]
+      },
+      "extract_seconds": 32.2
+    }
+  ],
+  "reextract_count": 5,
+  "final_check_passed": false,
+  "refined": {
+    "objects": [
+      "app"
+    ],
+    "goals": [
+      "Verify the endpoint provides the correct response."
+    ],
+    "activities": [
+      "Create an HTTP request.",
+      "Send a GET request to the '/watermelon' endpoint.",
+      "Verify the response body content.",
+      "Verify the HTTP status code is 200."
+    ]
+  },
+  "granularity": {
+    "objects": 0.2,
+    "goals": 0.6,
+    "activities": 0.4
+  },
+  "llm_calls": [
+    {
+      "prompt_head": "Rewrite the test intent below so each part matches the requested level of detail.\nDo not add anything that is not alread",
+      "input_tokens": null,
+      "response": "```json\n{\n  \"objects\": [\n    \"app\"\n  ],\n  \"goals\": [\n    \"Verify the endpoint provides the correct response.\"\n  ],\n  \"activities\": [\n    \"Create an HTTP request.\",\n    \"Send a GET request to the '/watermelon' endpoint.\",\n    \"Verify the response body content.\",\n    \"Verify the HTTP status code is 200.\"\n  ]\n}\n```"
+    }
+  ],
+  "seconds": 229.5
+}

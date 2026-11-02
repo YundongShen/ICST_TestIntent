@@ -1,0 +1,18 @@
+{
+  "test_case": "pytest_unit/POPULATE_test__1",
+  "objects": [
+    "POPULATE.POPULATE"
+  ],
+  "goals": [
+    "Ensure the function's output retains the original input values.",
+    "Confirm that generated values fall within the defined range for a specific distribution type."
+  ],
+  "activities": [
+    "Import the POPULATE module.",
+    "Create input data 'x' with even numbers from 0 to 98.",
+    "Call the POPULATE function with 'x', a 'uniform' distribution, a lower bound of 0, and an upper bound of 1.",
+    "Assert the 'x' component of the result matches the original 'x' values.",
+    "Assert all 'y' component values are less than 1.",
+    "Assert all 'y' component values are greater than 0."
+  ]
+}

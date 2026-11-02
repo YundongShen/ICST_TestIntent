@@ -1,0 +1,14 @@
+{
+  "test_case": "playwright/module.spec_5",
+  "objects": [
+    "button with the text 'Launch demo modal'"
+  ],
+  "goals": [
+    "Verify that a UI element can be located."
+  ],
+  "activities": [
+    "Navigate to the base URL",
+    "Locate the button with the text 'Launch demo modal'",
+    "Verify that the button locator object is defined"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "test_case": "supertest/app.test_2",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify the endpoint provides the correct response."
+  ],
+  "activities": [
+    "Create an HTTP request.",
+    "Send a GET request to the '/watermelon' endpoint.",
+    "Verify the response body content.",
+    "Verify the HTTP status code is 200."
+  ]
+}

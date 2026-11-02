@@ -1,0 +1,14 @@
+{
+  "test_case": "playwright/module.spec_2",
+  "objects": [
+    "page",
+    "body"
+  ],
+  "goals": [
+    "Verify Bootstrap 4 styling and initial page content display."
+  ],
+  "activities": [
+    "Navigate to the base URL.",
+    "Assert that the page body is visible."
+  ]
+}

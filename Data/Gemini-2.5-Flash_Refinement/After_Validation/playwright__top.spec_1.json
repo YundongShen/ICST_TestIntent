@@ -1,0 +1,16 @@
+{
+  "test_case": "playwright/top.spec_1",
+  "objects": [
+    "navigation element",
+    "Login link"
+  ],
+  "goals": [
+    "Ensure the primary navigation shows the application's name.",
+    "Confirm that the user can access the login feature."
+  ],
+  "activities": [
+    "Navigate the page to the root URL.",
+    "Verify the navigation element contains the text 'SPARQList'.",
+    "Verify the 'Login' link is visible."
+  ]
+}

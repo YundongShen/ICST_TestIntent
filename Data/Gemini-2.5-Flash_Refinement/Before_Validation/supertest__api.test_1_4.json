@@ -1,0 +1,16 @@
+{
+  "test_case": "supertest/api.test_1_4",
+  "objects": [
+    "app"
+  ],
+  "goals": [
+    "Verify the CRUD (Create, Read, Update, Delete) functionalities of the Books API.",
+    "Ensure the Books API correctly handles requests for existing and non-existing book resources."
+  ],
+  "activities": [
+    "Define a new book object with title, author, genre, and copies available.",
+    "Send a POST request to the /api/books endpoint with the new book data.",
+    "Assert the response status code is 201.",
+    "Assert the response body's title is 'Dune'."
+  ]
+}

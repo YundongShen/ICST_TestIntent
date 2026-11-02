@@ -1,0 +1,20 @@
+{
+  "test_case": "pytest_unit/ADD_test__3",
+  "objects": [
+    "ADD",
+    "OrderedPair",
+    "Vector"
+  ],
+  "goals": [
+    "Verify the arithmetic addition of an OrderedPair and a Vector using the ADD function."
+  ],
+  "activities": [
+    "Import the ADD module.",
+    "Create array 'x' ranging from -10 to 9.",
+    "Create array 'y' ranging from -20 to 18 with a step of 2.",
+    "Create array 'z' ranging from -30 to 27 with a step of 3.",
+    "Call the ADD function with an OrderedPair (from 'x' and 'y') and a Vector (from 'z') as inputs.",
+    "Assert that the 'x' component of the result is approximately equal to the 'x' array.",
+    "Assert that the 'y' component of the result is approximately equal to the sum of the 'y' and 'z' arrays."
+  ]
+}
