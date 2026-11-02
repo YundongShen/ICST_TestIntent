@@ -23,6 +23,33 @@ The local checkpoint IDs are `deepseek-ai/deepseek-llm-7b-chat` and
 `Qwen/Qwen3.5-27B`. The API model IDs above identify the requested API models;
 the Pro configuration uses the preview model ID.
 
+## Inference settings
+
+The following settings describe the current comparison extraction implementation
+in `extract_for_comparison.py`.
+
+| Setting | Qwen 3.5-27B | DeepSeek-LLM-7B-Chat | Gemini 2.5 Flash | Gemini 3.1 Pro |
+|---|---|---|---|---|
+| Backend | Local Hugging Face Transformers | Local Hugging Face Transformers | Vertex AI or Gemini API | Vertex AI or Gemini API |
+| Loading precision | BF16 | FP16 | Managed by the API | Managed by the API |
+| Sampling configuration | `do_sample=True` | `do_sample=True` | API generation settings | API generation settings |
+| `temperature` | 0.5 | 0.5 | 0.5 | 0.5 |
+| `top_p` | 0.95 | 0.95 | 0.95 | 0.95 |
+| `top_k` | 50 | 50 | Not set | Not set |
+| Default requested output budget per call | 8000 tokens | 8000 tokens | 8000 tokens | 8000 tokens |
+| Thinking configuration | Tokenizer chat-template default | No separate thinking configuration | Not set | Not set |
+
+The output budget defaults to 8000 tokens for Independent, Combined, and Chained
+Extraction. Use `--max-tokens` to change it. Local generation is also capped by
+the configured context length minus the input token count. The configured context
+lengths are 32768 tokens for Qwen and 2048 tokens for DeepSeek.
+
+Comparison extraction does not explicitly pass `enable_thinking=True` to Qwen's
+chat template. The Gemini client does not supply `top_k` or a thinking
+configuration. API settings that are not supplied follow the selected model and
+service defaults. Setting `VERTEX_API_KEY` selects Vertex AI; otherwise,
+`GOOGLE_API_KEY` selects the Gemini API client.
+
 ## Local inference
 
 Qwen 3.5-27B:
