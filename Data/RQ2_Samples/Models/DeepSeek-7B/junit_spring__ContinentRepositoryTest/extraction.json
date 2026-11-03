@@ -1,6 +1,8 @@
 {
   "test_case": "ContinentRepositoryTest",
-  "objects": [],
+  "objects": [
+    "ContinentRepository"
+  ],
   "goals": [
     "test the ability of the application to find the population in continent filtered by provided data"
   ],

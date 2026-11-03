@@ -4,9 +4,7 @@
     "planta",
     "pgina detallada"
   ],
-  "goals": [
-    "..."
-  ],
+  "goals": [],
   "activities": [
     "Seleccionar la planta deseada de la lista",
     "Verificar la apertura de la pgina detallada con informacin de la planta"

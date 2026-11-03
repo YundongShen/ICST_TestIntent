@@ -6,9 +6,7 @@
     "#password",
     ".z-0"
   ],
-  "goals": [
-    "..."
-  ],
+  "goals": [],
   "activities": [
     "Navigate to login page",
     "Verify login form fields exist",
